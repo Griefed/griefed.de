@@ -1,4 +1,4 @@
-# Griefed.de Homepage (griefed_de)
+# Griefed.de Homepage (griefed.de)
 
 Griefed's Homepage
 

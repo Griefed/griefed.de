@@ -31,3 +31,9 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+# Yarn
+yarn.lock
+
+# VueJS
+package-lock.json
