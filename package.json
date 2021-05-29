@@ -1,0 +1,45 @@
+{
+  "name": "griefed_de",
+  "version": "0.0.1",
+  "description": "Griefed's Homepage",
+  "productName": "Griefed.de Homepage",
+  "author": "Griefed <griefed@griefed.de>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "test": "echo \"No test specified\" && exit 0",
+    "clean": "quasar clean",
+    "dev": "quasar dev",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.10.4",
+    "axios": "^0.21.1",
+    "core-js": "^3.12.1",
+    "quasar": "^2.0.0-beta.17"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.14.2",
+    "@quasar/app": "^3.0.0-beta.24",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "eslint-webpack-plugin": "^2.5.4"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 16.1.0",
+    "npm": ">= 7.13.0",
+    "yarn": ">= 1.22.10"
+  }
+}
