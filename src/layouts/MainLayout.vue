@@ -3,12 +3,19 @@
     <q-header reveal elevated :class="$q.dark.isActive ? 'header_dark' : 'header_normal'">
       <q-toolbar class="shadow-5 toolbar">
 
-        <img :ratio="323/54" alt="header" src="~assets/header.svg" width="380">
+        <q-item to="/">
+        <img :ratio="323/54" alt="header" src="~assets/header.svg" width="380" >
+        </q-item>
+
         <q-toolbar-title></q-toolbar-title>
 
         <q-btn stretch flat>
           <a href="https://blog.griefed.de" rel="noreferrer noopener" target="_blank">
-            <span class="has-inline-color" style="color:#c0ffee">News</span></a>
+            <span class="has-inline-color my-link" style="color:#c0ffee">News</span></a>
+        </q-btn>
+
+        <q-btn stretch flat to="/Minecraft">
+          <span style="color:#c0ffee">Minecraft</span>
         </q-btn>
 
         <q-btn stretch flat>
@@ -21,47 +28,10 @@
             <span class="has-inline-color" style="color:#c0ffee">DockerHub</span></a>
         </q-btn>
 
-        <q-btn stretch flat label="Wiki">
+        <q-btn stretch flat>
           <a href="https://wiki.griefed.de/" rel="noreferrer noopener" target="_blank">
             <span class="has-inline-color" style="color:#c0ffee">Wiki</span></a>
         </q-btn>
-
-        <q-btn-dropdown stretch flat label="Minecraft" v-model="minecraft"  model-value="false">
-          <q-list>
-
-            <q-item-label header>Modpacks</q-item-label>
-            <q-item clickable tabindex="0">
-              <q-item-section avatar>
-                <q-avatar icon="folder" color="secondary" text-color="white" />
-              </q-item-section>
-              <q-item-section>
-                <q-item-label>Survive Create Prosper 3</q-item-label>
-              </q-item-section>
-            </q-item>
-            <q-item clickable tabindex="0">
-              <q-item-section avatar>
-                <q-avatar icon="folder" color="secondary" text-color="white" />
-              </q-item-section>
-              <q-item-section>
-                <q-item-label>Photos</q-item-label>
-              </q-item-section>
-            </q-item>
-
-            <q-separator inset="" spaced=""/>
-
-            <q-item-label header>Software</q-item-label>
-            <q-item clickable v-close-popup tabindex="1">
-              <q-item-section avatar>
-                <q-avatar icon="assignment" color="primary" text-color="white" />
-              </q-item-section>
-
-              <q-item-section>
-                <q-item-label>Vacation</q-item-label>
-              </q-item-section>
-
-            </q-item>
-          </q-list>
-        </q-btn-dropdown>
 
         <q-btn
           :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
@@ -185,5 +155,21 @@ export default {
     150deg,
     rgb(50, 83, 88) 15%,
     #76cead 70%);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 </style>
