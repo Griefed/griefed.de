@@ -3,10 +3,10 @@
               :autoplay="6000" animated class="shadow-1 my-carousel"
               full-width height="920px" infinite
               row transition-next="fade">
-    <q-carousel-slide :name="1" img-src="/images/carousel_1.webp"/>
-    <q-carousel-slide :name="2" img-src="/images/carousel_2.webp"/>
-    <q-carousel-slide :name="3" img-src="/images/carousel_3.webp"/>
-    <q-carousel-slide :name="4" img-src="/images/carousel_4.webp"/>
+    <q-carousel-slide :name="1" img-src="~assets/carousel_1.webp"/>
+    <q-carousel-slide :name="2" img-src="~assets/carousel_2.webp"/>
+    <q-carousel-slide :name="3" img-src="~assets/carousel_3.webp"/>
+    <q-carousel-slide :name="4" img-src="~assets/carousel_4.webp"/>
   </q-carousel>
 
   <q-card class="my-card text-center text-white">
