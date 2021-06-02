@@ -4,14 +4,14 @@
       <q-toolbar class="shadow-5 toolbar">
 
         <q-item to="/">
-        <img :ratio="323/54" alt="header" src="~assets/header.svg" width="380" >
+        <img :ratio="323/54" alt="header" src="~assets/header.svg" width="250" >
         </q-item>
 
         <q-toolbar-title></q-toolbar-title>
 
         <q-btn stretch flat>
           <a href="https://blog.griefed.de" rel="noreferrer noopener" target="_blank">
-            <span class="has-inline-color my-link" style="color:#c0ffee">News</span></a>
+            <span class="has-inline-color" style="color:#c0ffee">News</span></a>
         </q-btn>
 
         <q-btn stretch flat to="/Minecraft">
