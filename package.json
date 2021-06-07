@@ -13,14 +13,15 @@
     "build": "quasar build"
   },
   "dependencies": {
-    "@quasar/extras": "^1.10.4",
+    "@quasar/cli": "^1.2.0",
+    "@quasar/extras": "^1.10.6",
     "axios": "^0.21.1",
     "core-js": "^3.12.1",
-    "quasar": "^2.0.0-beta.17"
+    "quasar": "^2.0.0-rc.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.2",
-    "@quasar/app": "^3.0.0-beta.24",
+    "@quasar/app": "^3.0.0-rc.1",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^7.9.0",
