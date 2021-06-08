@@ -4,8 +4,14 @@
       <q-toolbar class="shadow-5 toolbar">
 
         <q-item to="/">
-          <img :ratio="323/54" alt="header" src="~assets/header.svg" width="250">
+          <img :ratio="323/54" alt="header" src="~assets/header.webp" width="250">
         </q-item>
+
+        <a href="" rel="noreferrer noopener" target="_blank">
+          <q-btn flat stretch to="/">
+            <span class="has-inline-color" style="color:#c0ffee">Home</span>
+          </q-btn>
+        </a>
 
         <q-toolbar-title></q-toolbar-title>
 
@@ -16,30 +22,33 @@
         </a>
 
         <a href="" rel="noreferrer noopener" target="_blank">
-        <q-btn flat stretch to="/Minecraft">
-          <span class="has-inline-color" style="color:#c0ffee">Minecraft</span>
-        </q-btn>
+          <q-btn flat stretch to="/serverpackcreator">
+            <span class="has-inline-color" style="color:#c0ffee">ServerPackCreator</span>
+          </q-btn>
+        </a>
+
+        <a href="" rel="noreferrer noopener" target="_blank">
+          <q-btn flat stretch to="/Minecraft">
+            <span class="has-inline-color" style="color:#c0ffee">Minecraft</span>
+          </q-btn>
         </a>
 
         <a href="https://github.com/Griefed" rel="noreferrer noopener" target="_blank">
-        <q-btn flat stretch>
-
+          <q-btn flat stretch>
             <span class="has-inline-color" style="color:#c0ffee">GitHub</span>
-        </q-btn>
+          </q-btn>
         </a>
 
         <a href="https://hub.docker.com/u/griefed" rel="noreferrer noopener" target="_blank">
-        <q-btn flat stretch>
-
+          <q-btn flat stretch>
             <span class="has-inline-color" style="color:#c0ffee">DockerHub</span>
-        </q-btn>
+          </q-btn>
         </a>
 
         <a href="https://wiki.griefed.de/" rel="noreferrer noopener" target="_blank">
-        <q-btn flat stretch>
-
+          <q-btn flat stretch>
             <span class="has-inline-color" style="color:#c0ffee">Wiki</span>
-        </q-btn>
+          </q-btn>
         </a>
 
         <q-btn
@@ -74,14 +83,11 @@
 
     <q-page-container>
       <q-page class="row no-wrap ">
-
         <div class="col">
           <div class="full-height full-width">
-
             <q-scroll-area class="full-height full-width">
               <router-view/>
             </q-scroll-area>
-
           </div>
         </div>
       </q-page>
@@ -99,7 +105,6 @@
             <b>Site Notice & About</b>
           </q-item-section>
         </q-item>
-
         <q-item
           v-ripple
           clickable
