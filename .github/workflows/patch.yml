@@ -32,7 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.compute_tag.outputs.next_tag }}
-          release_name: "ServerPackCreator"
+          release_name: "Griefed.de"
           body: |
             Automatic release of version: **${{ steps.compute_tag.outputs.next_tag }}**
             **Changes in this release:**
@@ -51,13 +51,14 @@ jobs:
       - run: npm install -g @quasar/cli
       - run: npm install
       - run: quasar build
+      - run: ls -al build
 
       # DEPLOY TO GH-PAGES
       - name: Deploy to GitHub-Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: build/spa
+          folder: /home/runner/work/griefed.de/griefed.de/build/spa
 
       # DOCKER RELATED
       - name: Set up QEMU
