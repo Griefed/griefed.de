@@ -9,6 +9,7 @@ RUN \
     https://github.com/Griefed/griefed.de.git \
       /tmp/griefed.de && \
   cd /tmp/serverpackcreator && \
+  npm install && \
   quasar build
 
 FROM lsiobase/nginx:3.12

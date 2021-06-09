@@ -2,7 +2,7 @@ name: Test
 
 on:
   push:
-    branches: 
+    branches:
     - master
     - develop
     - tests
@@ -10,7 +10,7 @@ on:
     branches:
     - main
   workflow_dispatch:
-  
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -24,6 +24,7 @@ jobs:
           # Set this option if you want the action to check for the latest available version that satisfies the version spec
           check-latest: false
       - run: npm install -g @quasar/cli
+      - run: npm install
       - run: quasar build
       # DOCKER RELATED
       - name: Set up QEMU
