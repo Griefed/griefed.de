@@ -4,11 +4,11 @@ RUN \
   apk add \
     git \
     npm && \
-  npm install -g @quasar/cli && \
   git clone \
     https://github.com/Griefed/griefed.de.git \
       /tmp/griefed.de && \
-  cd /tmp/serverpackcreator && \
+  cd /tmp/griefed.de && \
+  npm install -g @quasar/cli && \
   npm install && \
   quasar build
 
