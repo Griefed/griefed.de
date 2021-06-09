@@ -30,7 +30,7 @@ See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js
 version: "2"
 services:
   griefed.de:
-    image: griefed/griefed.de:Unknown
+    image: griefed/griefed.de:latest
     container_name: griefed.de
     restart: unless-stopped
     environment:
@@ -55,5 +55,5 @@ docker create \
   -p 443:443/tcp `# HTTPS` \
   -p 80:80/tcp `# HTTP` \
   --restart unless-stopped \
-  griefed/griefed.de:Unknown
+  griefed/griefed.de:latest
 ```
