@@ -52,13 +52,6 @@ jobs:
       - run: npm install
       - run: quasar build
 
-      # DEPLOY TO GH-PAGES
-      - name: Deploy to GitHub-Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages
-          folder: dist/spa
-
       # DOCKER RELATED
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
