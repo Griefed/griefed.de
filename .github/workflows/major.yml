@@ -57,7 +57,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: /home/runner/work/griefed.de/griefed.de/build/spa
+          folder: dist/spa
 
       # DOCKER RELATED
       - name: Set up QEMU
