@@ -1,5 +1,7 @@
 # Griefed.de Homepage (griefed.de)
 
+# Not meant for public consumption.
+
 Griefed's Homepage
 
 ## Install the dependencies
