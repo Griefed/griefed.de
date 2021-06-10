@@ -1,6 +1,6 @@
 # Griefed.de Homepage (griefed.de)
 
-# Not meant for public consumption.
+# Not intended for public consumption.
 
 Griefed's Homepage
 
