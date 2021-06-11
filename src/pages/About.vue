@@ -49,7 +49,7 @@
       <h5><strong>
         <p><span class="has-inline-color has-palette-color-5-color">If you wish to get in contact with me, even though I don't know why you would want to, here are the details:</span><br><span
           class="has-inline-color has-palette-color-5-color">E-Mail:</span> <a href="mailto:kontakt@griefed.de">kontakt@griefed.de</a>
-          <span class="has-inline-color has-palette-color-5-color">(as seen on the "Impressum / Site Notice"-Page)</span><br><span
+          <span class="has-inline-color has-palette-color-5-color">(as seen on the "Impressum / Site Notice"-Page)</span><br>
         </p>
       </strong></h5>
     </q-card-section>
