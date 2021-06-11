@@ -225,7 +225,6 @@
                  style="text-decoration: none !important; color:inherit;" target="_blank"><span
                 class="has-inline-color">
             <q-btn icon="mdi-post-outline" round size="8em">
-
             </q-btn>
             </span></a>
 
@@ -233,6 +232,12 @@
           </div>
           <div class="col-4 offset-md-0 sm-12">
             <q-img src="~assets/griefed.webp" width="100%"/>
+
+            <b>With kind permission by @Debbysheen_ to use this picture as my avatar:</b><br>
+            <a href="https://twitter.com/Debbysheen_/status/1159173289719341057?s=20" rel="noreferrer noopener"
+               target="_blank">
+              <b>Link to tweet</b>
+              </a>
           </div>
         </div>
       </q-card-section>
