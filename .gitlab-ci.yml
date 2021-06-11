@@ -11,6 +11,7 @@ cache:
 before_script:
   - npm install -g @quasar/cli
   - npm install
+  - rm -Rf dist public
 
 test:
   stage: test
