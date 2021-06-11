@@ -114,6 +114,8 @@
             <b>Privacy</b>
           </q-item-section>
         </q-item>
+        <q-toolbar-title></q-toolbar-title>
+        Copyright © 2021 Griefed.de
       </q-toolbar>
     </q-footer>
   </q-layout>
