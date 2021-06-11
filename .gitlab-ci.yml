@@ -1,0 +1,28 @@
+image: node:16.1.0-alpine3.13
+
+stages:
+  - test
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install -g @quasar/cli
+  - yarn install
+
+test:
+  stage: test
+  scripts:
+    - quasar build
+
+pages:
+  stage: deploy
+  script:
+    - quasar build
+  artifacts:
+    paths:
+      - dist/spa
+  only:
+    - master
