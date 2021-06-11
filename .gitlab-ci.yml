@@ -10,7 +10,7 @@ cache:
 
 before_script:
   - npm install -g @quasar/cli
-  - yarn install
+  - npm install
 
 test:
   stage: test
