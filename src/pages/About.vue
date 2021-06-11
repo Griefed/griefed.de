@@ -15,9 +15,6 @@
         All company, product and service names used on this website are for identification purposes only.<br>
         The use of these names, logos and trademarks does not constitute endorsement.<br><br>
 
-        David Hengstmann<br>
-        Schulenbeksweg 10<br>
-        20535 Hamburg<br><br>
         Kontakt/Contact:<br>
         E-Mail: kontakt@griefed.de<br>
         Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV /<br>Responsible for the content according to § 55 para. 2 RStV:<br>
@@ -41,7 +38,7 @@
         - GitHub Repositories<br>
         - Docker Hub Repositories<br>
         - Minecraft related things, like my own Modpack<br>
-        - Websites & Services I am hosting with Docker (See my Docker / GitHub Repositories)
+        - Websites & Services I am hosting
       </strong></h5>
     </q-card-section>
 
@@ -52,10 +49,7 @@
       <h5><strong>
         <p><span class="has-inline-color has-palette-color-5-color">If you wish to get in contact with me, even though I don't know why you would want to, here are the details:</span><br><span
           class="has-inline-color has-palette-color-5-color">E-Mail:</span> <a href="mailto:kontakt@griefed.de">kontakt@griefed.de</a>
-          <span
-            class="has-inline-color has-palette-color-5-color">(as seen on the "Impressum / Site Notice"-Page)</span><br><span
-            class="has-inline-color has-palette-color-5-color">Twitter: </span><a href="https://twitter.com/Griefed_">https://twitter.com/Griefed_</a><br><span
-            class="has-inline-color has-palette-color-5-color">Or find me in the real world on planet earth. Good luck with that. :D</span>
+          <span class="has-inline-color has-palette-color-5-color">(as seen on the "Impressum / Site Notice"-Page)</span><br><span
         </p>
       </strong></h5>
     </q-card-section>
