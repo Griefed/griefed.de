@@ -11,7 +11,7 @@ cache:
 before_script:
   - npm install -g @quasar/cli
   - npm install
-  - rm -Rf dist public
+  - rm -Rf dist
 
 test:
   stage: test
@@ -22,7 +22,7 @@ pages:
   stage: deploy
   script:
     - quasar build
-    - mv -f dist/spa public
+    - cp -Rf dist/spa public
   artifacts:
     paths:
       - public
