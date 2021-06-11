@@ -21,7 +21,7 @@ pages:
   stage: deploy
   script:
     - quasar build
-    - mv -R dist/spa public
+    - mv -f dist/spa public
   artifacts:
     paths:
       - public
