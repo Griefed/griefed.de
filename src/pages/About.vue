@@ -17,11 +17,12 @@
 
         Kontakt/Contact:<br>
         E-Mail: kontakt@griefed.de<br>
-        Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV /<br>Responsible for the content according to § 55 para. 2 RStV:<br>
+        Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV /<br>Responsible for the content according to § 55 para. 2
+        RStV:<br>
         David Hengstmann<br>
         Schulenbeksweg 10<br>
         20535 Hamburg<br><br>
-        Quelle:
+        Quelle/Source:
         <a href="https://www.e-recht24.de/impressum-generator.html" rel="noreferrer noopener" target="_blank">
           <span class="has-inline-color" style="color:#c0ffee">https://www.e-recht24.de/impressum-generator.html</span></a>
       </strong></h5>
@@ -38,19 +39,8 @@
         - GitHub Repositories<br>
         - Docker Hub Repositories<br>
         - Minecraft related things, like my own Modpack<br>
-        - Websites & Services I am hosting
-      </strong></h5>
-    </q-card-section>
-
-    <q-card-section class="my-section">
-      <h3><strong>
-        Contact
-      </strong></h3>
-      <h5><strong>
-        <p><span class="has-inline-color has-palette-color-5-color">If you wish to get in contact with me, even though I don't know why you would want to, here are the details:</span><br><span
-          class="has-inline-color has-palette-color-5-color">E-Mail:</span> <a href="mailto:kontakt@griefed.de">kontakt@griefed.de</a>
-          <span class="has-inline-color has-palette-color-5-color">(as seen on the "Impressum / Site Notice"-Page)</span><br>
-        </p>
+        - Websites & Services I am hosting<br><br>
+        Images and photos were created/taken by me, unless otherwise stated or implied.
       </strong></h5>
     </q-card-section>
 
