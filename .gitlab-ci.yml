@@ -22,7 +22,6 @@ pages:
   stage: deploy
   script:
     - quasar build
-    - rm -Rf public && mkdir public
     - cp -Rf dist/spa/* public/
     - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec gzip -f -k {} \;
   artifacts:
