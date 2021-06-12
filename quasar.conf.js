@@ -52,7 +52,7 @@ module.exports = configure(function (ctx) {
       showProgress: true,
       gzip: false,
       analyze: false,
-      publicPath: process.env.NODE_ENV === 'production' ? '/repositoryPath/' : '/',
+      publicPath: process.env.NODE_ENV === 'production' ? '/griefed-de/' : '/',
       // transpile: false,
 
       // Add dependencies for transpiling with Babel (Array of string/regex)
