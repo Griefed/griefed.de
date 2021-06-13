@@ -52,7 +52,7 @@ module.exports = configure(function (ctx) {
       showProgress: true,
       gzip: false,
       analyze: false,
-      publicPath: 'auto',
+      publicPath: '',
       // transpile: false,
 
       // Add dependencies for transpiling with Babel (Array of string/regex)
