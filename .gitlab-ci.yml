@@ -60,7 +60,7 @@ fetch-version:
       - master
       - main
   script:
-    - npm install @semantic-release/gitlab @semantic-release/exec @semantic-release/changelog
+    - npm install @semantic-release/commit-analyzer @semantic-release/gitlab @semantic-release/exec
     - npx semantic-release --generate-notes false --dry-run true
   artifacts:
     paths:
@@ -77,7 +77,7 @@ dockerhub:
   services:
     - docker:dind
   before_script:
-    - docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_TOKEN"
+    - docker login -username "$DOCKERHUB_USER" --password-stdin "$DOCKERHUB_TOKEN"
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     - docker buildx create --use
