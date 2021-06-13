@@ -54,9 +54,8 @@ fetch-version:
       - master
       - main
   script:
-    - git checkout $CI_COMMIT_REF_NAME
     - npm install @semantic-release/gitlab @semantic-release/exec @semantic-release/changelog
-    - npx semantic-release --generate-notes false --dry-run
+    - npx semantic-release --generate-notes false --dry-run true
   artifacts:
     paths:
       - VERSION.txt
