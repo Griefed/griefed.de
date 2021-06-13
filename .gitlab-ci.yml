@@ -7,7 +7,6 @@ variables:
   project_name: $CI_PROJECT_NAME
   SEMANTIC_RELEASE_PACKAGE: $CI_PROJECT_NAME
 
-
 test quasar:
   image: node:16.1.0-alpine3.13
   stage: test
