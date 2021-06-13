@@ -55,17 +55,15 @@ fetch-version:
       - main
   script:
     - npm install @semantic-release/gitlab @semantic-release/exec @semantic-release/changelog
-    - npx semantic-release --dry-run
+    - npx semantic-release --generate-notes false --dry-run
   artifacts:
     paths:
       - VERSION.txt
-      - CHANGELOG.md
 
 version:
   stage: fetch-version
   script:
     - echo "Next version will be $(cat VERSION.txt)"
-    - echo "Changelog for new version is $(cat CHANGELOG.md)"
 
 dockerhub:
   stage: deploy
