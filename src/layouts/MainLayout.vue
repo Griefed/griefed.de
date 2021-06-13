@@ -82,10 +82,10 @@
     </q-header>
 
     <q-page-container>
-      <q-page class="row no-wrap ">
+      <q-page class="row no-wrap">
         <div class="col">
           <div class="full-height full-width">
-            <q-scroll-area class="full-height full-width">
+            <q-scroll-area class="full-height full-width page">
               <router-view/>
             </q-scroll-area>
           </div>
@@ -137,12 +137,18 @@ export default {
   border-bottom: #c0ffee 1px solid;
 }
 
+.page {
+  background-image: url("~assets/background.webp");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
 .background {
-  background: #fff8eb !important;
+  background: #fff8eb;
 }
 
 .background_dark {
-  background: #a1a1a1 !important;
+  background: #a1a1a1;
 }
 
 .header_normal {
