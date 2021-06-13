@@ -78,7 +78,7 @@ dockerhub:
   services:
     - docker:dind
   before_script:
-    - docker login --username "$DOCKERHUB_USER" --password-stdin "$DOCKERHUB_TOKEN"
+    - docker login --username $DOCKERHUB_USER --password-stdin $DOCKERHUB_TOKEN
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     - docker buildx create --use
