@@ -31,7 +31,7 @@ test docker:
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     - docker buildx create --use
   script:
-    - docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --cache-from "$CI_REGISTRY_IMAGE:develop" --tag "$CI_REGISTRY_IMAGE:develop" --tag "index.docker.io/$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop" .
+    - docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --cache-from "$CI_REGISTRY_IMAGE:develop" --tag "$CI_REGISTRY_IMAGE:develop" --tag "index.docker.io$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop" .
     - docker push "$CI_REGISTRY_IMAGE:develop"
     - docker push "$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop"
 
