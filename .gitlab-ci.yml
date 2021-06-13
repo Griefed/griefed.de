@@ -31,7 +31,7 @@ test docker:
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     - docker buildx create --use
   script:
-    - docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --cache-from "$CI_REGISTRY_IMAGE:develop" --tag "$CI_REGISTRY_IMAGE:develop" --tag "$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop" .
+    - docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --cache-from "$CI_REGISTRY_IMAGE:develop" --tag "$CI_REGISTRY_IMAGE:develop" --tag "index.docker.io/$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop" .
     - docker push "$CI_REGISTRY_IMAGE:develop"
     - docker push "$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop"
 
@@ -78,12 +78,12 @@ dockerhub:
   services:
     - docker:dind
   before_script:
-    - docker login --username $DOCKERHUB_USER --password-stdin $DOCKERHUB_TOKEN docker.io
+    - docker login -u $DOCKERHUB_USER -p $DOCKERHUB_TOKEN docker.io
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     - docker buildx create --use
   script:
-    - docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --cache-from "$CI_REGISTRY_IMAGE:develop" --tag "$CI_REGISTRY_IMAGE:latest" --tag "$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:latest" .
+    - docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --cache-from "$CI_REGISTRY_IMAGE:develop" --tag "$CI_REGISTRY_IMAGE:latest" --tag "index.docker.io/$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:latest" .
     - docker push "$CI_REGISTRY_IMAGE:latest"
     - docker push "$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:latest"
   only:
