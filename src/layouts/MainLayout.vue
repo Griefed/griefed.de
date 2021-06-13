@@ -146,7 +146,7 @@ export default {
 }
 
 .header_normal {
-  background: url("/images/tile.webp");
+  background: url("~assets/tile.webp");
   background-repeat: repeat-x;
   background-color: linear-gradient(
     150deg,
@@ -155,7 +155,7 @@ export default {
 }
 
 .header_dark {
-  background: url("/images/tile.webp");
+  background: url("~assets/tile.webp");
   background-repeat: repeat-x;
   background-color: linear-gradient(
     200deg,
@@ -165,7 +165,7 @@ export default {
 
 .footer {
   border-top: #c0ffee 1px solid;
-  background: url("/images/tile.webp");
+  background: url("~assets/tile.webp");
   background-repeat: repeat-x;
   background-color: linear-gradient(
     150deg,

@@ -288,7 +288,7 @@ export default {
 
 .my-card {
   /*noinspection CssUnknownTarget*/
-  background-image: url("/images/background.webp");
+  background-image: url("~assets/background.webp");
   background-repeat: repeat;
   background-attachment: fixed;
 }
