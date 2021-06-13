@@ -65,6 +65,7 @@ version:
   stage: fetch-version
   script:
     - echo "Next version will be $(cat VERSION.txt)"
+    - echo "Changelog for new version is $(cat CHANGELOG.md)"
 
 dockerhub:
   stage: deploy
