@@ -61,7 +61,7 @@ fetch-version:
       - master
       - main
   script:
-    - npm install @semantic-release/commit-analyzer @semantic-release/changelog @semantic-release/gitlab @semantic-release/exec
+    - npm install @semantic-release/commit-analyzer @semantic-release/changelog @semantic-release/gitlab @semantic-release/exec @semantic-release/git
     - npx semantic-release --generate-notes false --dry-run true
   artifacts:
     paths:
