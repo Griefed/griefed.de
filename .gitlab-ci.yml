@@ -63,16 +63,16 @@ fetch-version:
       - main
   before_script:
     - apt-get update && apt-get install -y --no-install-recommends git-core ca-certificates
-    - npm install \
-      conventional-changelog-conventionalcommits \
-      semantic-release \
-      @semantic-release/changelog \
-      @semantic-release/commit-analyzer \
-      @semantic-release/exec \
-      @semantic-release/git \
-      @semantic-release/gitlab \
-      @semantic-release/npm \
-      @semantic-release/release-notes-generator \
+    - npm install
+      conventional-changelog-conventionalcommits
+      semantic-release
+      @semantic-release/changelog
+      @semantic-release/commit-analyzer
+      @semantic-release/exec
+      @semantic-release/git
+      @semantic-release/gitlab
+      @semantic-release/npm
+      @semantic-release/release-notes-generator
   script:
     - npm install @semantic-release/commit-analyzer @semantic-release/changelog @semantic-release/gitlab @semantic-release/exec
     - npx semantic-release --generate-notes false --dry-run true
