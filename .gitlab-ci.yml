@@ -22,7 +22,7 @@ test quasar:
 
 test docker:
   stage: test
-  image: jdrouet/docker-with-buildx:stable
+  image: registry.griefed.de/prosper/docker-with-buildx:latest
   services:
     - docker:dind
   before_script:
@@ -31,9 +31,12 @@ test docker:
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     - docker buildx create --use
   script:
-    - docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --cache-from "$CI_REGISTRY_IMAGE:develop" --tag "$CI_REGISTRY_IMAGE:develop" --tag "index.docker.io$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop" .
-    - docker push "$CI_REGISTRY_IMAGE:develop"
-    - docker push "$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop"
+    - docker buildx build
+      --push
+      --platform linux/amd64,linux/arm/v7,linux/arm64
+      --cache-from "$CI_REGISTRY_IMAGE:develop"
+      --tag "$CI_REGISTRY_IMAGE:develop"
+      --tag "index.docker.io$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop" .
 
 pages:
   needs: ['test quasar']
@@ -55,27 +58,14 @@ pages:
     expire_in: 1 week
 
 fetch-version:
-  image: node:13
+  image: registry.griefed.de/prosper/gitlab-semantic-release:latest
   stage: fetch-version
   only:
     refs:
       - master
       - main
-  before_script:
-    - apt-get update && apt-get install -y --no-install-recommends git-core ca-certificates
-    - npm install
-      conventional-changelog-conventionalcommits
-      semantic-release
-      @semantic-release/changelog
-      @semantic-release/commit-analyzer
-      @semantic-release/exec
-      @semantic-release/git
-      @semantic-release/gitlab
-      @semantic-release/npm
-      @semantic-release/release-notes-generator
   script:
-    - npm install @semantic-release/commit-analyzer @semantic-release/changelog @semantic-release/gitlab @semantic-release/exec
-    - npx semantic-release --generate-notes false --dry-run true
+    - npx semantic-release
   artifacts:
     paths:
       - VERSION.txt
@@ -84,7 +74,7 @@ fetch-version:
 dockerhub:
   needs: ['release']
   stage: deploy
-  image: jdrouet/docker-with-buildx:stable
+  image: registry.griefed.de/prosper/docker-with-buildx:latest
   services:
     - docker:dind
   before_script:
@@ -93,14 +83,14 @@ dockerhub:
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     - docker buildx create --use
   script:
-    - docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 \
+    - docker buildx build
+      --push
+      --platform linux/amd64,linux/arm/v7,linux/arm64 \
       --cache-from "$CI_REGISTRY_IMAGE:develop" \
       --tag "$CI_REGISTRY_IMAGE:latest" \
       --tag "$CI_REGISTRY_IMAGE:${version}" \
       --tag "index.docker.io/$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:latest" \
       --tag "index.docker.io/$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:${version}" .
-    - docker push "$CI_REGISTRY_IMAGE:latest"
-    - docker push "index.docker.io/$DOCKERHUB_USER/$DOCKERHUB_REPO:latest"
   only:
     - master
     - main
