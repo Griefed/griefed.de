@@ -1,7 +1,7 @@
 branches: ['master','main']
 ci: true
 debug: true
-dryRun: true
+dryRun: false
 tagFormat: '${version}'
 
 # Global plugin options (will be passed to all plugins)
@@ -111,19 +111,10 @@ prepare:
   - path: '@semantic-release/git'
     # Push a release commit and tag, including configurable files
     message: 'RELEASE: ${nextRelease.version}'
-    assets: ['CHANGELOG.md', 'version', 'openapi.yaml']
+    assets: ['CHANGELOG.md', 'version', 'openapi.yaml', 'VERSION.txt']
 
 # Responsible for publishing the release.
 publish:
   - path: '@semantic-release/gitlab'
     # Publish a GitLab release
     #  (https://docs.gitlab.com/ce/user/project/releases/index.html#add-release-notes-to-git-tags)
-
-# success: false
-  # - path: 'semantic-release-slack-bot'
-  #   notifyOnSuccess: true
-#   markdownReleaseNotes: false
-
-# fail: false
-  # - path: 'semantic-release-slack-bot'
-#   notifyOnFail: true
