@@ -6,7 +6,6 @@ stages:
 variables:
   project_name: $CI_PROJECT_NAME
   SEMANTIC_RELEASE_PACKAGE: $CI_PROJECT_NAME
-  DOCKER_HOST: tcp://docker:2375/
 
 test quasar:
   image: node:16.1.0-alpine3.13
@@ -24,8 +23,6 @@ test quasar:
 test docker:
   stage: test
   image: registry.griefed.de/prosper/docker-with-buildx:latest
-  variables:
-    DOCKER_HOST: tcp://docker:2375/
   services:
     - docker:dind
   before_script:
@@ -78,8 +75,6 @@ dockerhub:
   needs: ['release']
   stage: deploy
   image: registry.griefed.de/prosper/docker-with-buildx:latest
-  variables:
-    DOCKER_HOST: tcp://docker:2375/
   services:
     - docker:dind
   artifacts:
