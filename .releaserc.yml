@@ -87,7 +87,7 @@ generateNotes:
           section: ':scissors: Refactor'
           hidden: false
         - type: 'revert'
-          section: '🙅‍♂️ Reverts'
+          section: '👀 Reverts'
         - type: 'style'
           section: '💈 Style'
         - type: 'test'
