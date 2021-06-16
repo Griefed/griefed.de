@@ -8,6 +8,7 @@ RUN \
     https://github.com/Griefed/griefed.de.git \
       /tmp/griefed.de && \
   cd /tmp/griefed.de && \
+  npm install -g npm@7.17.0 && \
   npm install -g @quasar/cli && \
   npm install && \
   quasar build
