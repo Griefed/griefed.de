@@ -1,3 +1,15 @@
+### [1.0.3](https://git.griefed.de/Griefed/griefed-de/compare/1.0.2...1.0.3) (2021-06-16)
+
+
+### 🦊 CI/CD
+
+* Remove needs in dockerhub job ([4966590](https://git.griefed.de/Griefed/griefed-de/commit/496659068cb2c17ab86e8bdecd56d6b7fd8fa28c))
+
+
+### 🛠 Fixes
+
+* Remove male gender symbol because why tf was it there in the first place ([5ee8876](https://git.griefed.de/Griefed/griefed-de/commit/5ee8876e644316bedc9269780afadb9d24a1d0f0))
+
 ### [1.0.2](https://git.griefed.de/Griefed/griefed-de/compare/1.0.1...1.0.2) (2021-06-16)
 
 
