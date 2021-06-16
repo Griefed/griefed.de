@@ -65,7 +65,7 @@ release:
       - master
       - main
   script:
-    - npx semantic-release
+    - npx semantic-release-gitlab
   artifacts:
     paths:
       - VERSION.txt
