@@ -1,3 +1,15 @@
+### [1.0.4](https://git.griefed.de/Griefed/griefed-de/compare/1.0.3...1.0.4) (2021-06-16)
+
+
+### 👀 Reverts
+
+* remove argument from buildx create ([81ebe7f](https://git.griefed.de/Griefed/griefed-de/commit/81ebe7f7c55e6b2001500069e296d2b9dd71a142))
+
+
+### 🛠 Fixes
+
+* Hopefully fix docker build failing ([df3ec2b](https://git.griefed.de/Griefed/griefed-de/commit/df3ec2b68f449641a5553cdf6086f09b2af0af96))
+
 ### [1.0.3](https://git.griefed.de/Griefed/griefed-de/compare/1.0.2...1.0.3) (2021-06-16)
 
 
