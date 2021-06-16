@@ -72,7 +72,6 @@ release:
 
 
 dockerhub:
-  needs: ['release']
   stage: deploy
   image: registry.griefed.de/prosper/docker-with-buildx:latest
   services:
