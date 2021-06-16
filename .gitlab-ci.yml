@@ -29,14 +29,14 @@ test docker:
     - docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_TOKEN" docker.io
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
-    - docker buildx create --use
+    # - docker buildx create --use
   script:
     - docker buildx build
       --push
       --platform linux/amd64,linux/arm/v7,linux/arm64
       --cache-from "$CI_REGISTRY_IMAGE:develop"
       --tag "$CI_REGISTRY_IMAGE:develop"
-      --tag "index.docker.io$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:develop" .
+      --tag "index.docker.io/$DOCKERHUB_USER/$DOCKERHUB_REPO:develop" .
 
 pages:
   needs: ['test quasar']
@@ -85,21 +85,16 @@ dockerhub:
     - docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_TOKEN" docker.io
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
-    - docker buildx create --use
+    # - docker buildx create --use
   script:
     - docker buildx build
       --push
       --platform linux/amd64,linux/arm/v7,linux/arm64 \
       --cache-from "$CI_REGISTRY_IMAGE:develop" \
       --tag "$CI_REGISTRY_IMAGE:latest" \
-      --tag "$CI_REGISTRY_IMAGE:${version}" \
+      --tag "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG" \
       --tag "index.docker.io/$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:latest" \
-      --tag "index.docker.io/$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:${version}" .
+      --tag "index.docker.io/$DOCKERHUB_USERNAME/$DOCKERHUB_REPO:$CI_COMMIT_TAG" .
   only:
-    - master
-    - main
-  except:
     refs:
       - tags
-    variables:
-      - $CI_COMMIT_TITLE =~ /^RELEASE:.+$/
