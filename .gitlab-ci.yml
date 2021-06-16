@@ -6,6 +6,7 @@ stages:
 variables:
   project_name: $CI_PROJECT_NAME
   SEMANTIC_RELEASE_PACKAGE: $CI_PROJECT_NAME
+  DOCKER_HOST: tcp://docker:2375/
 
 test quasar:
   image: node:16.1.0-alpine3.13
@@ -29,7 +30,7 @@ test docker:
     - docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_TOKEN" docker.io
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
-    - docker buildx create --use
+    - docker buildx create --driver docker-container --use
   script:
     - docker buildx build
       --push
@@ -85,7 +86,7 @@ dockerhub:
     - docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_TOKEN" docker.io
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
-    - docker buildx create --use
+    - docker buildx create --driver docker-container --use
   script:
     - docker buildx build
       --push
