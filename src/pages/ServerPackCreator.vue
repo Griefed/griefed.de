@@ -116,6 +116,8 @@
             </div>
           </div>
         </div>
+        JetBrains, IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.
+
       </q-card-section>
     </q-intersection>
   </q-card>
