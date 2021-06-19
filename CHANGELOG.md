@@ -1,3 +1,17 @@
+### [1.0.5](https://git.griefed.de/Griefed/griefed-de/compare/1.0.4...1.0.5) (2021-06-19)
+
+
+### 🦊 CI/CD
+
+* Equalize releaserc with results from docker-with-buildx ([408e20e](https://git.griefed.de/Griefed/griefed-de/commit/408e20eb3be2a9ca4a2f6723b4e755e6bc8e6f0e))
+* Update gitlab-ci with results from docker-with-buildx ([8674755](https://git.griefed.de/Griefed/griefed-de/commit/8674755da2c0dfb75ca5210c12099240972b3682))
+
+
+### 🛠 Fixes
+
+* Inform visitors about BisectHosting logo ownership ([735d1c5](https://git.griefed.de/Griefed/griefed-de/commit/735d1c517fdb2dccb64d763b05b4e928f2d90156))
+* Inform visitors about JetBrains logo ownership ([2f537c9](https://git.griefed.de/Griefed/griefed-de/commit/2f537c923a0c265fb1f02b9c5fba3d7b59ba16e0))
+
 ### [1.0.4](https://git.griefed.de/Griefed/griefed-de/compare/1.0.3...1.0.4) (2021-06-16)
 
 
