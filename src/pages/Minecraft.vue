@@ -94,6 +94,7 @@
               <!--              <q-img src="~assets/banner.webp" width="30%"/>-->
             </span></a>
         </div>
+        BisectHosting logo property of BisectHosting
       </q-card-section>
     </q-intersection>
 
