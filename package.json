@@ -13,19 +13,19 @@
     "build": "quasar build"
   },
   "dependencies": {
-    "@quasar/cli": "^1.2.1",
-    "@quasar/extras": "^1.10.6",
-    "axios": "^0.21.1",
-    "core-js": "^3.12.1",
-    "quasar": "^2.0.0-rc.1"
+    "@quasar/cli": "1.2.1",
+    "@quasar/extras": "1.10.7",
+    "axios": "0.21.1",
+    "core-js": "3.14.0",
+    "quasar": "2.0.0-rc.3"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.2",
-    "@quasar/app": "^3.0.0-rc.1",
-    "eslint": "^7.26.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-vue": "^7.9.0",
-    "eslint-webpack-plugin": "^2.5.4"
+    "@babel/eslint-parser": "7.14.5",
+    "@quasar/app": "3.0.0-rc.3",
+    "eslint": "7.29.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-vue": "7.11.1",
+    "eslint-webpack-plugin": "2.5.4"
   },
   "browserslist": [
     "last 10 Chrome versions",
