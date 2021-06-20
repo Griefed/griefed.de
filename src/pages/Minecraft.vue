@@ -73,7 +73,7 @@
         <a href="https://www.bisecthosting.com/griefed" rel="noreferrer noopener"
            target="_blank">
             <span class="has-inline-color" style="color:#c0ffee">
-              <q-img src="~assets/bisect.webp" width="30%"/>
+              <q-img src="~assets/bisect.webp" width="20%"/>
             </span></a>
         <div class="has-text-align-center"><h6><strong>
           Proudly sponsored by BisectHosting! Click the banner below to get 25% off of your first month when ordering a
