@@ -1,3 +1,23 @@
+### [1.0.6](https://git.griefed.de/Griefed/griefed-de/compare/1.0.5...1.0.6) (2021-06-20)
+
+
+### 🦊 CI/CD
+
+* Remove from.cache in docker test job. Refactor build to use cache from develop tag. ([6b9a891](https://git.griefed.de/Griefed/griefed-de/commit/6b9a891d316daa5b21b17bf58f861530101daf5e))
+* Switch images to DockerHub ([9e62f86](https://git.griefed.de/Griefed/griefed-de/commit/9e62f86c2e2f661484779de098890f409fa1bf04))
+
+
+### 🛠 Fixes
+
+* Reduce size of BisectHosting logo ([898ea05](https://git.griefed.de/Griefed/griefed-de/commit/898ea057c470cdb1bc7fcb6572966c680c7490e1))
+
+
+### Other
+
+* **deps:** pin dependencies ([57d4bcf](https://git.griefed.de/Griefed/griefed-de/commit/57d4bcf506b5fdd5b7c8631749d9d05339c207bc))
+* **deps:** update lsiobase/nginx docker tag to v3.14 ([22130da](https://git.griefed.de/Griefed/griefed-de/commit/22130da6a93f81edf298b9d3338695ddfe1faae4))
+* **deps:** update node.js to v16.3.0 ([3543168](https://git.griefed.de/Griefed/griefed-de/commit/3543168af8ea9bf33cc5100c139159e3e0eb9ab5))
+
 ### [1.0.4](https://git.griefed.de/Griefed/griefed-de/compare/1.0.3...1.0.4) (2021-06-16)
 
 
