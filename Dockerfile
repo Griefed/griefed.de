@@ -5,7 +5,7 @@ RUN \
     git \
     npm && \
   git clone \
-    https://github.com/Griefed/griefed.de.git \
+    https://git.griefed.de/Griefed/griefed-de.git \
       /tmp/griefed.de && \
   cd /tmp/griefed.de && \
   npm install -g npm@7.17.0 && \
