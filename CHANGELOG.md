@@ -1,3 +1,10 @@
+### [1.0.8](https://git.griefed.de/Griefed/griefed-de/compare/1.0.7...1.0.8) (2021-06-21)
+
+
+### 🛠 Fixes
+
+* Switch to new address ([eb72585](https://git.griefed.de/Griefed/griefed-de/commit/eb7258572c032a9933c99608f465ed9aaf40f4d9))
+
 ### [1.0.7](https://git.griefed.de/Griefed/griefed-de/compare/1.0.6...1.0.7) (2021-06-21)
 
 
