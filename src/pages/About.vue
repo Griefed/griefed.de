@@ -19,9 +19,10 @@
         E-Mail: kontakt@griefed.de<br>
         Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV /<br>Responsible for the content according to § 55 para. 2
         RStV:<br>
-        David Hengstmann<br>
-        Schulenbeksweg 10<br>
-        20535 Hamburg<br><br>
+        Pondworth<br>
+        c/o Block Services<br>
+        Stuttgarter Str. 106<br>
+        70736 Fellbach<br>
         Quelle/Source:
         <a href="https://www.e-recht24.de/impressum-generator.html" rel="noreferrer noopener" target="_blank">
           <span class="has-inline-color" style="color:#c0ffee">https://www.e-recht24.de/impressum-generator.html</span></a>
