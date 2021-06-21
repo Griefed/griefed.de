@@ -1,3 +1,15 @@
+### [1.0.7](https://git.griefed.de/Griefed/griefed-de/compare/1.0.6...1.0.7) (2021-06-21)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency quasar to v2.0.0 ([d1752e4](https://git.griefed.de/Griefed/griefed-de/commit/d1752e4a856d7ef4f96bbb5af75ae07cdf718d77))
+
+
+### Other
+
+* **deps:** update dependency @quasar/app to v3.0.0 ([b08dce6](https://git.griefed.de/Griefed/griefed-de/commit/b08dce6459eb7589f58323a2414b85ef7fc593b0))
+
 ### [1.0.6](https://git.griefed.de/Griefed/griefed-de/compare/1.0.5...1.0.6) (2021-06-20)
 
 
