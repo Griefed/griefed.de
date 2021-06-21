@@ -1,3 +1,15 @@
+### [1.0.9](https://git.griefed.de/Griefed/griefed-de/compare/1.0.8...1.0.9) (2021-06-21)
+
+
+### 🛠 Fixes
+
+* Fetch correct source ([f1b0f7a](https://git.griefed.de/Griefed/griefed-de/commit/f1b0f7ab342187eb386177f5ce9f7bf2e0a7c952))
+
+
+### Other
+
+* Add LICENSE ([aa0ca2d](https://git.griefed.de/Griefed/griefed-de/commit/aa0ca2d935b852a9007d2a63fc9b50252c6d83ef))
+
 ### [1.0.8](https://git.griefed.de/Griefed/griefed-de/compare/1.0.7...1.0.8) (2021-06-21)
 
 
