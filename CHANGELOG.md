@@ -1,3 +1,15 @@
+### [1.0.10](https://git.griefed.de/Griefed/griefed-de/compare/1.0.9...1.0.10) (2021-06-22)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency core-js to v3.15.0 ([1536f1e](https://git.griefed.de/Griefed/griefed-de/commit/1536f1e78b0d121f0b57e1b31d1c39c31d80a3ca))
+
+
+### Other
+
+* **deps:** update dependency @babel/eslint-parser to v7.14.7 ([6208f69](https://git.griefed.de/Griefed/griefed-de/commit/6208f69c4fbb6bddceda97ebb6d2b73d980edca6))
+
 ### [1.0.9](https://git.griefed.de/Griefed/griefed-de/compare/1.0.8...1.0.9) (2021-06-21)
 
 
