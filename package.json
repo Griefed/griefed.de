@@ -24,7 +24,7 @@
     "@quasar/app": "3.0.0",
     "eslint": "7.29.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-vue": "7.11.1",
+    "eslint-plugin-vue": "7.12.1",
     "eslint-webpack-plugin": "2.5.4"
   },
   "browserslist": [
