@@ -4,6 +4,8 @@
 
 Griefed's Homepage
 
+[[_TOC_]]
+
 ## Install the dependencies
 ```bash
 yarn
