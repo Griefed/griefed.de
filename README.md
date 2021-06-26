@@ -2,6 +2,14 @@
 
 # Not intended for public consumption.
 
+# Sources, GitHub, GitLab and Mirroring and all that good stuff
+
+Repositories on GitHub are now for issues only. I've set up my own installation of GitLab and moved all my repositories over to [Git.Griefed.de](https://git.griefed.de/users/Griefed/projects). Make sure to check there first for the latest code before opening an issue on GitHub.
+
+For questions, you can always join my [Discord server](https://discord.griefed.de) and talk to me there.
+
+---
+
 Griefed's Homepage
 
 [[_TOC_]]
@@ -47,7 +55,7 @@ services:
       - 443:443/tcp # HTTPS
       - 80:80/tcp # HTTP
 ```
-      
+
 ## CLI
 ```bash
 docker create \
