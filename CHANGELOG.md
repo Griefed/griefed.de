@@ -1,3 +1,15 @@
+### [1.0.12](https://git.griefed.de/Griefed/griefed-de/compare/1.0.11...1.0.12) (2021-06-29)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency core-js to v3.15.2 ([a201d5d](https://git.griefed.de/Griefed/griefed-de/commit/a201d5d4a3de18aa0cdf37e6d872531a0166841f))
+
+
+### Other
+
+* Inform users/visitors about move to GitLab ([35bbe7b](https://git.griefed.de/Griefed/griefed-de/commit/35bbe7b25960836c450f98b46cb8af921cfc4a24))
+
 ### [1.0.11](https://git.griefed.de/Griefed/griefed-de/compare/1.0.10...1.0.11) (2021-06-23)
 
 
