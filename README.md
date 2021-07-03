@@ -1,6 +1,4 @@
-# Griefed.de Homepage (griefed.de)
 
-# Not intended for public consumption.
 
 # Sources, GitHub, GitLab and Mirroring and all that good stuff
 
@@ -10,7 +8,19 @@ For questions, you can always join my [Discord server](https://discord.griefed.d
 
 ---
 
-Griefed's Homepage
+# Griefed.de Homepage: [griefed.de](https://griefed.de)
+**Not intended for public consumption.**
+
+This is my hompeage rebuild in VueJS3 and Quasar 2. Previously created and hosted with Wordpress, I decided to take a gander at VueJS and Quasar and recreate my homepage from scratch. One goal was to be independant from Wordpress.
+Another was efficiency and load times. Loading a Wordpress site can sometimes take ages, whereas a simple little homepage written in Quasar2? Not so much.
+
+This repository is not meant for public consumption, meaning: No support, at all.
+Feel free to fork it and make your own thing out of it, or copy paste some code. As long as you learn something from looking at my code, we're good.
+
+Index.vue makes use of of Docker repository management software called [Fleet](https://github.com/linuxserver/fleet). Fleet provides an API which, among other things, tells you how many times all your Docker images have been pulled in total.
+I'm making use of said API to display the amount of Docker pulls on my homepage.
+Huge shoutout to [Linuxserver.io](https://www.linuxserver.io/) for giving me the idea. They're showing their total pull count on their homepage, too, and I love it.
+The number itself is a bit meaningless, much like followers on Twitter, Twitch and what have you, but it's still nice to see that at least some people enjoy / make use of these images.
 
 [[_TOC_]]
 
