@@ -45,7 +45,6 @@ test docker:
       - $CI_COMMIT_TITLE =~ /^RELEASE:.+$/
 
 pages:
-  needs: ['test quasar']
   image: node:16.3.0-alpine3.13
   stage: build
   cache:
