@@ -1,4 +1,4 @@
-FROM node:16.3.0-alpine3.13 AS builder
+FROM node:16.4.1-alpine3.13 AS builder
 
 RUN \
   apk add \
