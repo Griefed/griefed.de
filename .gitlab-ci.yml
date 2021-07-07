@@ -4,7 +4,7 @@ stages:
   - build
 
 test quasar:
-  image: node:16.3.0-alpine3.13
+  image: node:16.4.1-alpine3.13
   stage: test
   cache:
     paths:
@@ -45,7 +45,7 @@ test docker:
       - $CI_COMMIT_TITLE =~ /^RELEASE:.+$/
 
 pages:
-  image: node:16.3.0-alpine3.13
+  image: node:16.4.1-alpine3.13
   stage: build
   cache:
     paths:
