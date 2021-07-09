@@ -1,3 +1,32 @@
+### [1.0.13](https://git.griefed.de/Griefed/griefed-de/compare/1.0.12...1.0.13) (2021-07-09)
+
+
+### 📔 Docs
+
+* Update README with a little flavour text ([a71d7ae](https://git.griefed.de/Griefed/griefed-de/commit/a71d7aec499c363c03a14ac798ab194c8794f6fd))
+
+
+### 🦊 CI/CD
+
+* Create release on GitHub after tag mirror from GitLab ([a38f0bc](https://git.griefed.de/Griefed/griefed-de/commit/a38f0bc18e4935d3ca4e59843b3ac7a7d81620b4))
+* Move Docker build for GitHub container registry to GitLab. Move pages deploy to separate workflow. ([8a22159](https://git.griefed.de/Griefed/griefed-de/commit/8a22159cc68c53f0101a691bf4a5ecbcf0d16174))
+* Try and fix pages deploy on GitLab ([e6ce16c](https://git.griefed.de/Griefed/griefed-de/commit/e6ce16cf1fdda470cf9f72d68b6e61ed34072155))
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency quasar to v2.0.2 ([ce5e1fd](https://git.griefed.de/Griefed/griefed-de/commit/ce5e1fd09eef68fc66bc2c4df576dff278b1ed0b))
+
+
+### Other
+
+* **deps:** update actions/setup-node action to v2.2.0 ([7c435cb](https://git.griefed.de/Griefed/griefed-de/commit/7c435cbe9ad8565b0f02ff4323ef978cbe3e6b51))
+* **deps:** update dependency @quasar/app to v3.0.2 ([2b76cef](https://git.griefed.de/Griefed/griefed-de/commit/2b76cefbbf80dafff6a3c135408fbfdfb4cb0ec5))
+* **deps:** update dependency eslint to v7.30.0 ([331fce4](https://git.griefed.de/Griefed/griefed-de/commit/331fce498707f767ad4dd00db6f1279c6e99ad2c))
+* **deps:** update dependency eslint-plugin-vue to v7.13.0 ([6e3b0d9](https://git.griefed.de/Griefed/griefed-de/commit/6e3b0d91fb206287b4f5fc0a8af120fe5e5e0fb9))
+* **deps:** update node.js to v16.4.1 ([e89012c](https://git.griefed.de/Griefed/griefed-de/commit/e89012cff10dd4957bd53f2f73b9859d43d303a0))
+* **deps:** update node.js to v16.4.2 ([70fca4a](https://git.griefed.de/Griefed/griefed-de/commit/70fca4a3c78eba5837d93d149849635b30a5c11e))
+
 ### [1.0.12](https://git.griefed.de/Griefed/griefed-de/compare/1.0.11...1.0.12) (2021-06-29)
 
 
