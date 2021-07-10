@@ -10,7 +10,6 @@ test quasar:
     paths:
       - node_modules/
   before_script:
-    - npm install -g @quasar/cli
     - npm install
     - rm -Rf dist
   script:
@@ -51,7 +50,6 @@ pages:
     paths:
       - node_modules/
   before_script:
-    - npm install -g @quasar/cli
     - npm install
     - rm -Rf dist
   script:
