@@ -1,3 +1,31 @@
+## [1.1.0](https://git.griefed.de/Griefed/griefed-de/compare/1.0.13...1.1.0) (2021-07-13)
+
+
+### :scissors: Refactor
+
+* Apply Griefed.de style to Error404 page ([61eed62](https://git.griefed.de/Griefed/griefed-de/commit/61eed62e8db74523b84950d968cd2eb906e3df55))
+
+
+### 🦊 CI/CD
+
+* Fix "breaking" type ([04de51c](https://git.griefed.de/Griefed/griefed-de/commit/04de51c9c1b2ad7ec3f090b6dbd91f05fc5f2d9c))
+* Remove installation of quasar as we have griefed/gitlab-ci-cd now which comes with quasar installed ([5f4f977](https://git.griefed.de/Griefed/griefed-de/commit/5f4f977723f7058b7fc288d3ebe0d15e6de6da9c))
+
+
+### 🧪 Tests
+
+* Test new CI/CD image which provides for all jobs ([cd45d47](https://git.griefed.de/Griefed/griefed-de/commit/cd45d47bde8d3b4fc0f2befd236370ef97725099))
+
+
+### 🚀 Features
+
+* Wrap MainLayout around Error404 page ([28c3bc6](https://git.griefed.de/Griefed/griefed-de/commit/28c3bc62061c5ae3837b2e9fdd53f7e80da9c545))
+
+
+### Other
+
+* **deps:** update griefed/gitlab-ci-cd docker tag to v1.0.1 ([a281e29](https://git.griefed.de/Griefed/griefed-de/commit/a281e29d98b636f2541c4205f9c534c1fd7f4fdc))
+
 ### [1.0.13](https://git.griefed.de/Griefed/griefed-de/compare/1.0.12...1.0.13) (2021-07-09)
 
 
