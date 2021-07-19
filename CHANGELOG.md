@@ -1,3 +1,19 @@
+### [1.1.1](https://git.griefed.de/Griefed/griefed-de/compare/1.1.0...1.1.1) (2021-07-19)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency quasar to v2.0.3 ([b054356](https://git.griefed.de/Griefed/griefed-de/commit/b054356d21da80a860954c30beb8851a7458171b))
+
+
+### Other
+
+* Add GitLab issue templates ([836e078](https://git.griefed.de/Griefed/griefed-de/commit/836e0787678d33315dc0805ae84ac4cb388ce486))
+* **deps:** update dependency @quasar/app to v3.0.3 ([d4e6aef](https://git.griefed.de/Griefed/griefed-de/commit/d4e6aef93621edf01ae0524deb8a7bec444cd909))
+* **deps:** update dependency eslint to v7.31.0 ([06d0198](https://git.griefed.de/Griefed/griefed-de/commit/06d0198f5f92cabc2696b4f1fcbdf42ac0ba8f59))
+* **deps:** update dependency eslint-plugin-vue to v7.14.0 ([069f380](https://git.griefed.de/Griefed/griefed-de/commit/069f380cdbe4323b1f528ca236fffe514585009e))
+* **deps:** update node.js to v16.5.0 ([8f77d0c](https://git.griefed.de/Griefed/griefed-de/commit/8f77d0c3b877916bad0076043779f23556a5b41a))
+
 ## [1.1.0](https://git.griefed.de/Griefed/griefed-de/compare/1.0.13...1.1.0) (2021-07-13)
 
 
