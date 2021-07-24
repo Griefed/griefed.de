@@ -1,3 +1,15 @@
+### [1.1.2](https://git.griefed.de/Griefed/griefed-de/compare/1.1.1...1.1.2) (2021-07-24)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency @quasar/extras to v1.10.9 ([69292d7](https://git.griefed.de/Griefed/griefed-de/commit/69292d75c1a4e0eebf65d21932f8f322828e1048))
+
+
+### Other
+
+* **deps:** update actions/setup-node action to v2.3.0 ([4b88585](https://git.griefed.de/Griefed/griefed-de/commit/4b8858541f22d67e820028a733b698eb3798aa3f))
+
 ### [1.1.1](https://git.griefed.de/Griefed/griefed-de/compare/1.1.0...1.1.1) (2021-07-19)
 
 
