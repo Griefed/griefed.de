@@ -1,3 +1,10 @@
+### [1.1.3](https://git.griefed.de/Griefed/griefed-de/compare/1.1.2...1.1.3) (2021-07-30)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency core-js to v3.16.0 ([508306a](https://git.griefed.de/Griefed/griefed-de/commit/508306a465aed5674656375ce9e48fa7e41e4807))
+
 ### [1.1.2](https://git.griefed.de/Griefed/griefed-de/compare/1.1.1...1.1.2) (2021-07-24)
 
 
