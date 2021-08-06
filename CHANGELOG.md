@@ -1,3 +1,23 @@
+### [1.1.4](https://git.griefed.de/Griefed/griefed-de/compare/1.1.3...1.1.4) (2021-08-06)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency @quasar/extras to v1.10.10 ([0e40f52](https://git.griefed.de/Griefed/griefed-de/commit/0e40f52fb5b287d56cf1a46676f60002f18b252a))
+
+
+### Other
+
+* **deps:** update actions/setup-node action to v2.3.1 ([88f8dc7](https://git.griefed.de/Griefed/griefed-de/commit/88f8dc7eff77e018723986c69e3e55cdc451c426))
+* **deps:** update actions/setup-node action to v2.4.0 ([b08d7c1](https://git.griefed.de/Griefed/griefed-de/commit/b08d7c10948fdb665614024479d04869e0cbe480))
+* **deps:** update dependency @babel/eslint-parser to v7.14.9 ([1852c6e](https://git.griefed.de/Griefed/griefed-de/commit/1852c6ebdeafb76af79d444960302ee22afe07b3))
+* **deps:** update dependency @babel/eslint-parser to v7.15.0 ([1e587cd](https://git.griefed.de/Griefed/griefed-de/commit/1e587cd2ade04000d0e04f6cc8bd253ac9c83cbe))
+* **deps:** update dependency @quasar/app to v3.0.4 ([4cdcaf8](https://git.griefed.de/Griefed/griefed-de/commit/4cdcaf856202e042a85a2fa7695a667e9cbc0f01))
+* **deps:** update dependency eslint to v7.32.0 ([ca7dbce](https://git.griefed.de/Griefed/griefed-de/commit/ca7dbce5b9bcee2e6463a186fe4b4c85730227bb))
+* **deps:** update dependency eslint-plugin-vue to v7.15.0 ([4ec48ff](https://git.griefed.de/Griefed/griefed-de/commit/4ec48ff5c6f5216438e4accca8144fd4d0b43622))
+* **deps:** update node.js to v16.6.0 ([34f31a9](https://git.griefed.de/Griefed/griefed-de/commit/34f31a9291e4fa7c41f639d99a935052e5a02194))
+* **deps:** update node.js to v16.6.1 ([03e589e](https://git.griefed.de/Griefed/griefed-de/commit/03e589ef9c8f6f75d8eaf7aefbce63245efc8f5f))
+
 ### [1.1.3](https://git.griefed.de/Griefed/griefed-de/compare/1.1.2...1.1.3) (2021-07-30)
 
 
