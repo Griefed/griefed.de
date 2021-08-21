@@ -1,3 +1,21 @@
+### [1.1.6](https://git.griefed.de/Griefed/griefed-de/compare/1.1.5...1.1.6) (2021-08-21)
+
+
+### 🦊 CI/CD
+
+* Add --no-cache to test job ([f81ed8d](https://git.griefed.de/Griefed/griefed-de/commit/f81ed8d99325853e66b6d497edf1f8df12132c4f))
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency @quasar/extras to v1.10.11 ([af59cbc](https://git.griefed.de/Griefed/griefed-de/commit/af59cbcb2777279f6b4225b31e1cd6a332d813a5))
+* **deps:** update dependency core-js to v3.16.2 ([eddc45b](https://git.griefed.de/Griefed/griefed-de/commit/eddc45b9394e010209cf54728d5a0e448dcd2b96))
+
+
+### Other
+
+* **deps:** update dependency eslint-plugin-vue to v7.16.0 ([f2f8e87](https://git.griefed.de/Griefed/griefed-de/commit/f2f8e87075b4539babb1577cc26c0b100fc0d221))
+
 ### [1.1.5](https://git.griefed.de/Griefed/griefed-de/compare/1.1.4...1.1.5) (2021-08-10)
 
 
