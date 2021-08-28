@@ -1,3 +1,15 @@
+### [1.1.7](https://git.griefed.de/Griefed/griefed-de/compare/1.1.6...1.1.7) (2021-08-28)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency core-js to v3.16.3 ([b06aca2](https://git.griefed.de/Griefed/griefed-de/commit/b06aca27d3501d9b17585965d30233f46120f485))
+
+
+### Other
+
+* **deps:** update jamesives/github-pages-deploy-action action to v4.1.5 ([29b7b97](https://git.griefed.de/Griefed/griefed-de/commit/29b7b974d4a2a65274ecb97045f1c8b1f83c5ea3))
+
 ### [1.1.6](https://git.griefed.de/Griefed/griefed-de/compare/1.1.5...1.1.6) (2021-08-21)
 
 
