@@ -1,3 +1,15 @@
+### [1.1.8](https://git.griefed.de/Griefed/griefed-de/compare/1.1.7...1.1.8) (2021-09-04)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency @quasar/extras to v1.10.12 ([ab192b2](https://git.griefed.de/Griefed/griefed-de/commit/ab192b275cb37845fb295c9d6404ee312a150306))
+
+
+### Other
+
+* **deps:** update dependency @babel/eslint-parser to v7.15.4 ([0848249](https://git.griefed.de/Griefed/griefed-de/commit/084824997c5c166ea160406d8f581334569e7a98))
+
 ### [1.1.7](https://git.griefed.de/Griefed/griefed-de/compare/1.1.6...1.1.7) (2021-08-28)
 
 
