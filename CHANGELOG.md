@@ -1,3 +1,17 @@
+### [1.1.9](https://git.griefed.de/Griefed/griefed-de/compare/1.1.8...1.1.9) (2021-09-11)
+
+
+### 🦊 CI/CD
+
+* Update dependencies ([c695f8e](https://git.griefed.de/Griefed/griefed-de/commit/c695f8e6bc254dbe2b186804de46b1285abb5f2b))
+* Update deps ([ff16a70](https://git.griefed.de/Griefed/griefed-de/commit/ff16a7014717f7fbcbcdfa2f32fe40219a8e7cd1))
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency axios to v0.21.4 ([4b28006](https://git.griefed.de/Griefed/griefed-de/commit/4b280060795da64b71845ce38536f4e5f7e06f28))
+* **deps:** update dependency quasar to v2.0.4 ([af0c042](https://git.griefed.de/Griefed/griefed-de/commit/af0c042a15f5b2d7740cf7e005a3953043bb532f))
+
 ### [1.1.8](https://git.griefed.de/Griefed/griefed-de/compare/1.1.7...1.1.8) (2021-09-04)
 
 
