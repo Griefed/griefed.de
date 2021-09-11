@@ -13,11 +13,11 @@
     "build": "quasar build"
   },
   "dependencies": {
-    "@quasar/cli": "^1.2.1",
-    "@quasar/extras": "^1.10.12",
-    "axios": "^0.21.4",
-    "core-js": "^3.17.3",
-    "quasar": "^2.0.4"
+    "@quasar/cli": "1.2.1",
+    "@quasar/extras": "1.10.12",
+    "axios": "0.21.4",
+    "core-js": "3.17.3",
+    "quasar": "2.0.4"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.4",
