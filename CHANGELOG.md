@@ -1,3 +1,32 @@
+### [1.1.10](https://git.griefed.de/Griefed/griefed-de/compare/1.1.9...1.1.10) (2021-11-18)
+
+
+### 🦊 CI/CD
+
+* Move to gitlab-ci-cd:1.0.4 which deprecates armv7 images. Staying up-to-date is more important than supporting old platforms. Sorry, you may need to consider getting a Raspberry Pi 4. ([4704e7a](https://git.griefed.de/Griefed/griefed-de/commit/4704e7a28651cace5ccd764ae01e0733002907c4))
+* Update ci-cd image to 1.0.2 ([5c831cd](https://git.griefed.de/Griefed/griefed-de/commit/5c831cdf676f45ccd6c355c08f4ccff65470a590))
+* Whoops ([7828b25](https://git.griefed.de/Griefed/griefed-de/commit/7828b257b75731b08e4d23b190534bef03c512a5))
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency @quasar/extras to v1.12.0 ([d8f25ec](https://git.griefed.de/Griefed/griefed-de/commit/d8f25eccc8d446cebad5e0fa4002b9075d43051b))
+* **deps:** update dependency quasar to v2.3.2 ([749c026](https://git.griefed.de/Griefed/griefed-de/commit/749c02603fdbdbf5cbe7a33bb1ac9554ace6ae07))
+
+
+### Other
+
+* **deps:** pin dependencies ([b8b7feb](https://git.griefed.de/Griefed/griefed-de/commit/b8b7febf3381cdca4bb63884b7e5b6a8d50a3dd8))
+* **deps:** pin dependencies ([3d3db18](https://git.griefed.de/Griefed/griefed-de/commit/3d3db18d58d95980126ac82664744befb8204c8b))
+* **deps:** pin dependency @babel/eslint-parser to 7.15.7 ([61cfcb4](https://git.griefed.de/Griefed/griefed-de/commit/61cfcb4954d254124af60e25713a6fd31df9a0a6))
+* **deps:** pin dependency @babel/eslint-parser to v7.15.4 ([28774ee](https://git.griefed.de/Griefed/griefed-de/commit/28774ee50c5c54ca1a503119df013218601990b0))
+* **deps:** update actions/setup-node action to v2.4.1 ([2cbe4c5](https://git.griefed.de/Griefed/griefed-de/commit/2cbe4c59decc312fd9f00aaf8387a6c690fc8767))
+* **deps:** update dependency @quasar/app to v3.1.2 ([38100f7](https://git.griefed.de/Griefed/griefed-de/commit/38100f75a35a1aa8e282bbe848cf36c016efce8d))
+* **deps:** update dependency @quasar/app to v3.2.3 ([a7c6343](https://git.griefed.de/Griefed/griefed-de/commit/a7c634304abb09b496e90345a4e5e72ae90e31d5))
+* **deps:** update dependency eslint-plugin-vue to v7.20.0 ([a890d41](https://git.griefed.de/Griefed/griefed-de/commit/a890d41e490eaa03b6d2e82ba1a8607c59d9c0ef))
+* **deps:** update griefed/gitlab-ci-cd docker tag to v1.0.3 ([ffdb17d](https://git.griefed.de/Griefed/griefed-de/commit/ffdb17de4200c66ef523e08f1cb9e87f1874095d))
+* **deps:** update node.js to v16.13.0 ([24777dd](https://git.griefed.de/Griefed/griefed-de/commit/24777dda7207e6ba971d74f19f19ad1bb7e35750))
+
 ### [1.1.9](https://git.griefed.de/Griefed/griefed-de/compare/1.1.8...1.1.9) (2021-09-11)
 
 
