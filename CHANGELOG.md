@@ -1,3 +1,17 @@
+### [1.1.11](https://git.griefed.de/Griefed/griefed-de/compare/1.1.10...1.1.11) (2021-11-18)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency axios to v0.24.0 ([d9acf1c](https://git.griefed.de/Griefed/griefed-de/commit/d9acf1caa318e66acfa21b327aa8d3fa86511095))
+* **deps:** update dependency core-js to v3.19.1 ([a191c05](https://git.griefed.de/Griefed/griefed-de/commit/a191c0578d2891c5088b1505e805cce674d5aab5))
+
+
+### Other
+
+* **deps:** update dependency @babel/eslint-parser to v7.16.3 ([a17e33c](https://git.griefed.de/Griefed/griefed-de/commit/a17e33c07f2100341a59996cb151f2609fab63c6))
+* **deps:** update dependency eslint-webpack-plugin to v3.1.1 ([430743f](https://git.griefed.de/Griefed/griefed-de/commit/430743fc579b23cb0e4b90c6991f630ec6bd2130))
+
 ### [1.1.10](https://git.griefed.de/Griefed/griefed-de/compare/1.1.9...1.1.10) (2021-11-18)
 
 
