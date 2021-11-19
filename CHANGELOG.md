@@ -1,3 +1,10 @@
+### [1.1.12](https://git.griefed.de/Griefed/griefed-de/compare/1.1.11...1.1.12) (2021-11-19)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency @quasar/cli to v1.2.2 ([71b10c3](https://git.griefed.de/Griefed/griefed-de/commit/71b10c3b5702546dee3c15661269096049e73609))
+
 ### [1.1.11](https://git.griefed.de/Griefed/griefed-de/compare/1.1.10...1.1.11) (2021-11-18)
 
 
