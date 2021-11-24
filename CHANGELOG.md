@@ -1,3 +1,15 @@
+### [1.1.14](https://git.griefed.de/Griefed/griefed-de/compare/1.1.13...1.1.14) (2021-11-24)
+
+
+### 🦊 CI/CD
+
+* Add dependabot configuration to make use of GitHubs dependabot in addition to our RenovateBot on GitLab ([be3cdb9](https://git.griefed.de/Griefed/griefed-de/commit/be3cdb98262464fb0dc76625b6e6e6e53a4f9bd4))
+
+
+### 🛠 Fixes
+
+* Add JProfiler and ej-Technologies badges to ServerPackCreator site after they have kindly provided ServerPackCreator with an open source license ([707f1c5](https://git.griefed.de/Griefed/griefed-de/commit/707f1c55e1ee8075ce58412f7ffd0284420e8bbf))
+
 ### [1.1.13](https://git.griefed.de/Griefed/griefed-de/compare/1.1.12...1.1.13) (2021-11-24)
 
 
