@@ -1,3 +1,11 @@
+### [1.1.13](https://git.griefed.de/Griefed/griefed-de/compare/1.1.12...1.1.13) (2021-11-24)
+
+
+### 🛠 Fixes
+
+* Bring content of the homepage up to speed. ([7f4b8f4](https://git.griefed.de/Griefed/griefed-de/commit/7f4b8f488d186d402dcdb6aaf8a28120d64b560c))
+* Update ServerPackCreator page to reflect changes made since I started working on the webservice ([693803f](https://git.griefed.de/Griefed/griefed-de/commit/693803fee5ef8837543051d46540f08fb1b57ee1))
+
 ### [1.1.12](https://git.griefed.de/Griefed/griefed-de/compare/1.1.11...1.1.12) (2021-11-19)
 
 
