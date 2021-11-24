@@ -26,9 +26,8 @@
           My name's Griefed, I'm from planet Earth, Sol System, Milky Way, Universe.<br>
           (That means it's none of your business where I am from)<br>
           I love to take care of my Minecraft Modpack SCP - Survive Create Prosper,<br>
-          I love creating and taking care of my Docker Container Images in my spare time,<br>
-          of which the source code can be <a href="https://github.com/Griefed" rel="noreferrer noopener"
-                                             target="_blank">viewed on GitHub</a>,<br>
+          I love creating and taking care of my Docker Images and other odd projects in my spare time,<br>
+          of which the source codes can be <a href="https://github.com/Griefed" rel="noreferrer noopener" target="_blank">viewed on GitHub</a>,<br>
           and I have a strong love for all forms of Retro Hardware &amp; Gaming.
         </strong></h4>
       </q-card-section>
@@ -87,89 +86,25 @@
         <div class="row justify-center items-center">
           <div class="col sm-12">
             <div class="has-text-align-center">
-              <h4><b>DockerHub and GitHub</b></h4>
+              <h4><b>Docker and Git</b></h4>
               <h6><strong>
-                I like to create Docker images for useful things in my spare time. There's a Docker container for the
-                web-based IDE
-                <a href="https://hub.docker.com/r/griefed/icecoder" rel="noreferrer noopener" target="_blank"><span
-                  style="color:#c0ffee">
-              ICEcoder
-            </span></a>,<br>
-                another fun example would be
-                <a href="https://hub.docker.com/r/griefed/d-zone" rel="noreferrer noopener" target="_blank"><span
-                  style="color:#c0ffee">
-              D-Zone
-            </span></a>
-                , which is "a graphical simulation meant to abstractly represent the activity in your Discord
-                server"<br>
-                with a very cute style to it. The container I am most proud of though, would be my App-Collection. <a
-                href="https://hub.docker.com/r/griefed/app-collection" rel="noreferrer noopener" target="_blank"><span
-                class="has-inline-color" style="color:#c0ffee">App-Collection</span></a><br>
-                is, as the name implies, a collection of various apps which I have previously released in separate
-                Docker
-                Containers<br>and am now moving/collecting into one single container.
+                I enjoy playing around with Docker and the occasional bit of Java and VueJS in my spare time.<br>
+                My main project is <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank"><span style="color:#c0ffee">ServerPackCreator</span></a>, a program written in Java, to create server packs from Minecraft Forge or Fabric modpacks.<br>
+                Aside from that, I've created a web-based <a href="https://github.com/Griefed/ltt-mapmaker" rel="noreferrer noopener" target="_blank"><span style="color:#c0ffee">mapeditor</span></a> for the game <a href="https://store.steampowered.com/app/1313290/Let_Them_Trade/" rel="noreferrer noopener" target="_blank"><span style="color:#c0ffee">Let Them Trade</span></a>, available <a href="https://griefed.github.io/ltt-mapmaker/#/" rel="noreferrer noopener" target="_blank"><span style="color:#c0ffee">here</span></a>.<br>
+                But I've also got a couple of docker images containing some everyday useful stuff,<br>
+                like <a href="https://github.com/Griefed/docker-ICEcoder" rel="noreferrer noopener" target="_blank"><span style="color:#c0ffee">ICEcoder</span></a>, a web-based IDE,<br>
+                or <a href="https://github.com/Griefed/docker-D-Zone" rel="noreferrer noopener" target="_blank"><span style="color:#c0ffee">D-Zone</span></a>, an abstract graphical simulation of Discord server activity<br>
+                and last but not least my <a href="https://github.com/Griefed/docker-App-Collection" rel="noreferrer noopener" target="_blank"><span style="color:#c0ffee">App-Collection</span></a>, bundling several useful things into one container.
               </strong></h6>
 
               <q-chip color="secondary" size="xl" text-color="white">
                 <q-avatar color="primary" icon="mdi-docker"/>
-                <b>Image Pulls: {{ dockerPulls }}</b>
+                <b>Docker Image Pulls: {{ dockerPulls }}</b>
               </q-chip>
             </div>
           </div>
           <div class="col-4 offset-md-0 sm-12">
             <q-img src="~assets/prosper.webp" width="100%"/>
-          </div>
-        </div>
-      </q-card-section>
-    </q-intersection>
-
-    <q-separator color="transparent" size="180px"/>
-
-    <q-intersection
-      class="my-intersection"
-      once
-      transition="scale">
-      <q-card-section>
-        <div class="row justify-center items-center">
-          <div class="col-4 offset-md-0 sm-12">
-            <q-img src="~assets/retro.webp" width="100%"/>
-          </div>
-          <div class="col sm-12">
-            <h4><b>I mentioned Retro Hardware and Gaming earlier.</b></h4>
-            <h6><strong>
-              I've made a <a href="https://github.com/Griefed/LSC64" rel="noreferrer noopener" target="_blank">
-              <span class="has-inline-color" style="color:#c0ffee">small addon board for the C64</span></a>
-              which boasts multiple features:
-              <q-list>
-                <q-item>
-                  <q-item-section>1. A Larson Scanner which lights up the air gaps on the top of your C64 case in a
-                    sweet
-                    Knight Rider or Cylon (Battlestar Galactica) way, with RGB LEDs, so you can configure it to your
-                    liking!
-                  </q-item-section>
-                </q-item>
-                <q-item>
-                  <q-item-section>2. An Expansion Port reset circuit. You just need to connect a button and off you go!
-                    Reset your C64 with the press of a button!
-                  </q-item-section>
-                </q-item>
-                <q-item>
-                  <q-item-section>3. A CPU brake: Throttle your CPU and slow down your game during the really tricky
-                    bits!
-                  </q-item-section>
-                </q-item>
-                <q-item>
-                  <q-item-section>4. Mono & Stereo Headphone Amp. Listen to the beautiful SID sounds with your
-                    headphones.
-                    Either in mono or in stereo, if you have an FPGA SID!
-                  </q-item-section>
-                </q-item>
-              </q-list>
-              It is still very much a WIP as I currently lack the funds to procure the PCB, the parts and equipment<br>
-              needed to assemble one and test it. That means that the code to adress the LEDs has yet to be implemented
-              as
-              well.
-            </strong></h6>
           </div>
         </div>
       </q-card-section>
