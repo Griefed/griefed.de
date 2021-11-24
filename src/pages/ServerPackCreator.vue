@@ -2,97 +2,154 @@
   <q-card class="my-card text-center text-white">
 
     <q-intersection class="my-intersection" once transition="scale">
-      <q-card-section>
-        <div class="justify-center items-center">
-          <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener"
-             target="_blank">
-            <span class="has-inline-color" style="color:#c0ffee">
-              <q-img src="~assets/serverpackcreator.webp" width="60%"/>
-            </span></a>
-          <h6><strong>
-            ServerPackCreator is a Java-program which creates a server pack from any given Forge or Fabric modpack.<br>
-            Customize the configuration to your liking and off you go.
-          </strong></h6>
-          <h6><strong>
-            Whenever you are working on an update to your modpack, you simply run ServerPackCreator and BAM!<br>
-            You’ve got yourself a server pack for your new modpack version.
-          </strong></h6>
-        </div>
+      <div class="justify-center items-center">
+
         <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener"
            target="_blank">
-            <span class="has-inline-color" style="color:#c0ffee">
-              <q-img src="~assets/screenshot.webp" width="60%"/>
-            </span></a>
-      </q-card-section>
+          <span class="has-inline-color" style="color:#c0ffee">
+            <q-img src="~assets/serverpackcreator.webp" width="60%"/>
+          </span></a>
+
+        <h5><strong>
+          ServerPackCreator is a Java-program which creates a server pack from any given Forge or Fabric modpack.<br>
+          Customize the configuration to your liking and off you go. Whenever you are working on an update to your<br>
+          modpack, you simply run ServerPackCreator and BAM! You've got yourself a server pack for your new modpack version.
+        </strong></h5>
+        <h6>
+          I am making this in my spare time, therefore progress is slow. I started getting into Java programming in february 2021,<br>
+          and I'm using ServerPackCreator as a way to teach myself Java, but also to create something useful for the Minecraft community.
+        </h6>
+      </div>
+
+      <h4><strong>
+        Screenshots
+      </strong></h4>
+      <h6><strong>
+        CLI
+      </strong></h6>
+      Left to right: Windows, Linux, Mac
+      <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener"
+         target="_blank">
+        <span class="has-inline-color row no-wrap flex-center" style="color:#c0ffee">
+          <q-img src="~assets/cli_windows.webp"/>
+          <q-img src="~assets/cli_linux.webp"/>
+          <q-img src="~assets/cli_mac.webp"/>
+        </span>
+      </a><br>
+      <h6><strong>
+        GUI
+      </strong></h6>
+      Left to right: Windows, Linux, Mac
+      <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener"
+         target="_blank">
+        <span class="has-inline-color row no-wrap flex-center" style="color:#c0ffee">
+          <q-img src="~assets/gui_windows_light.webp"/>
+          <q-img src="~assets/gui_linux_light.webp"/>
+          <q-img src="~assets/gui_mac_light.webp"/>
+        </span>
+        <span class="has-inline-color row no-wrap flex-center" style="color:#c0ffee">
+          <q-img src="~assets/gui_windows_dark.webp"/>
+          <q-img src="~assets/gui_linux_dark.webp"/>
+          <q-img src="~assets/gui_mac_dark.webp"/>
+          </span>
+      </a><br>
+      <h6><strong>
+        Web
+      </strong></h6>
+      <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener"
+         target="_blank">
+        <span class="has-inline-color row no-wrap flex-center" style="color:#c0ffee">
+          <q-img src="~assets/web_configuration_light.webp"/>
+          <q-img src="~assets/web_configuration_dark.webp"/>
+        </span>
+        <span class="has-inline-color row no-wrap flex-center" style="color:#c0ffee">
+          <q-img src="~assets/web_downloads_light.webp"/>
+          <q-img src="~assets/web_downloads_dark.webp"/>
+        </span>
+      </a><br>
     </q-intersection>
 
     <q-intersection class="my-intersection" once transition="scale">
-      <q-card-section class="justify-center">
-        <div class="justify-center text-left list">
-          <h3><strong>
-            Features
-          </strong></h3>
-          <h6><strong>
-            <p class="my-list">1. Generate a config step-by-step by running with argument -cgen</p>
-            <p class="my-list">2. Download a modpack and create a server pack from it</p>
-            <p class="my-list">3. Install a Forge of Fabric modloader server in your server pack</p>
-            <p class="my-list">4. Configurable list of clientside-only mods to not include in your server pack</p>
-            <p class="my-list">5. Configurable list of directories from your modpack to include in your server pack</p>
-            <p class="sub-list">5.1. Copying worlds from saves/world will result in the world being copied to
-              server_pack/world</p>
-            <p class="my-list">6. Include Forge or Fabric start scripts in your server pack</p>
-            <p class="my-list">7. Include a server-icon.png in your server pack</p>
-            <p class="my-list">8. Include a server.properties in your server pack</p>
-            <p class="my-list">9. Create a ZIP-archive of your server pack</p>
-            <p class="my-list">10. GUI to fully configure and run ServerPackCreator</p>
-            <p class="sub-list">10.1. Load an existing config</p>
-            <p class="sub-list">10.2. Browse local filesystem to select modpack directory, clientside-only mods,</p>
-            <p class="subsection">directories to include in your server pack, select the Java executable/binary</p>
-            <p class="sub-list">10.3. Separate tabs to check the latest log entries</p>
-            <p class="sub-list">10.4. About-tab with links to create HasteBins of your log and config file to start
-              sharing,</p>
-            <p class="subsection">link to the GitHub issues page, link to Griefed’s Discord server for support and chit
-              chat.</p>
-          </strong></h6>
-        </div>
-      </q-card-section>
+      <div class="justify-center text-left list">
+        <h3><strong>
+          Features
+        </strong></h3>
+        <h6><strong>
+          <p class="my-list">1. Generate a config step-by-step by running with argument.</p>
+          <p class="my-list">2. Download a modpack and create a server pack from it.</p>
+            <p class="sub-list">2.1. Enter a CurseForge projectID;FileID-combination as the modpack directory.</p>
+          <p class="my-list">3. Install a Forge or Fabric modloader server in your server pack.</p>
+          <p class="my-list">4. Configurable list of clientside-only mods to not include your server pack.</p>
+            <p class="sub-list">4.1. Allow ServerPackCreator to automatically detect clientside-only mods by setting `de.griefed.serverpackcreator.serverpack.autodiscoverenabled=true` in `serverpackcreator.properties`.</p>
+          <p class="my-list">5. Configurable list of directories from your modpack to include in your server pack.</p>
+            <p class="sub-list">5.1. Copying worlds from `saves/world` will result in the world being copied to `server_pack/world`.</p>
+            <p class="sub-list">5.2. Specify extra files to include in server pack like follows `source/path/to/file;server_pack/destination_file`.</p>
+            <p class="sub-list">5.3. Exclude files/directories by prefixing an entry with `!` or adding it to `de.griefed.serverpackcreator.configuration.copydirs.exclude=` in `serverpackcreator.properties`.</p>
+          <p class="my-list">6. Generate Forge or Fabric start-scripts in your server pack.</p>
+            <p class="sub-list">6.1. Specify JVM flags / Java Args for your start scripts!</p>
+          <p class="my-list">7. Include a server-icon.png-file in your server pack.</p>
+            <p class="sub-list">7.1. Replace the file in `server-files` with your own!</p>
+          <p class="my-list">8. Include a server.properties-file in your server pack</p>
+            <p class="sub-list">8.1. Replace the file in `server-files` with your own!</p>
+          <p class="my-list">9. Create a ZIP-archive of your server pack.</p>
+          <p class="my-list">10. GUI to fully configure and run ServerPackCreator</p>
+            <p class="sub-list">10.1. Load existing config...</p>
+            <p class="sub-list">10.2. Browse local filesystem to select modpack directory, clientside-only mods, directories to include in server pack, Java executable/binary</p>
+            <p class="sub-list">10.3. Logs from last run in separate tabs</p>
+            <p class="sub-list">10.4. Set a suffix for the server pack to be generated</p>
+            <p class="sub-list">10.5. And much more!</p>
+          <p class="my-list">11. WIP | Webservice providing a web-frontend to configure, generate and download server packs.</p>
+            <p class="sub-list">11.1. Generate a server pack from a projectID and fileID combination.</p>
+            <p class="sub-list">11.2. All generated server packs available for download by everyone.</p>
+            <p class="sub-list">11.3. Admin-area to edit some configurations, like the list of clientside-only mods, whether regeneration of server packs is allowed, reading the log file(s), enabling/disabling installed addons, etc.</p>
+            <p class="sub-list">11.4. Upload an Overwolf modpack export to generate a server pack from it. (Must contain a valid `manifest.json`-file like <a href="https://haste.zneix.eu/cinadiwubi.json" rel="noreferrer noopener" target="_blank">this one</a></p>
+          <p class="my-list">12. Addons!</p>
+            <p class="sub-list">12.1. Users can provide addons which will be executed after the generation of a server pack. Add them to the `addons`-directory.</p>
+            <p class="sub-list">12.2. Example addon at <a href="https://github.com/Griefed/ServerPackCreatorExampleAddon" rel="noreferrer noopener" target="_blank">ServerPackCreatorExampleAddon</a></p>
+        </strong></h6>
+      </div>
     </q-intersection>
 
     <q-intersection class="my-intersection" once transition="scale">
-      <q-card-section>
-        <div class="justify-center items-center">
-          <h6><strong>
-            For more information on how to run ServerPackCreator (GUI, CLI, Docker), how to configure
-            ServerPackCreator<br>
-            and what other possibilities ServerPackCreator holds, please visit the GitHub page over at
-            <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
+      <div class="justify-center items-center">
+        <h6><strong>
+          For more information on how to run ServerPackCreator (GUI, CLI, Docker), how to configure
+          ServerPackCreator<br>
+          and what other possibilities ServerPackCreator holds, please visit the GitHub page over at
+          <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
             <span class="has-inline-color" style="color:#c0ffee">
               Griefed/ServerPackCreator.
-            </span></a>
-          </strong></h6>
-          <h6><strong>
-            If you wish to learn about the technical side of things, the JavaDocs are available thanks to GitHub
-            pages,<br>
-            over at <a href="https://griefed.github.io/ServerPackCreator/" rel="noreferrer noopener" target="_blank">
+            </span>
+          </a>
+        </strong></h6>
+        <h6><strong>
+          If you wish to learn about the technical side of things, the JavaDocs are available thanks to GitHub pages,<br>
+          over at
+          <a href="https://griefed.github.io/ServerPackCreator/" rel="noreferrer noopener" target="_blank">
             <span class="has-inline-color" style="color:#c0ffee">
-              griefed.github.io/ServerPackCreator
-            </span></a>
-            . Make sure to check
-            <a href="https://github.com/Griefed/ServerPackCreator/blob/main/CONTRIBUTING.md" rel="noreferrer noopener"
-               target="_blank">
+            griefed.github.io/ServerPackCreator
+            </span>
+          </a>
+          . Make sure to check
+          <a href="https://github.com/Griefed/ServerPackCreator/blob/main/CONTRIBUTING.md" rel="noreferrer noopener"
+             target="_blank">
             <span class="has-inline-color" style="color:#c0ffee">
-              CONTRIBUTING
-            </span></a>
-            in the GitHub Repository if you wish<br>
-            to make a contribution to ServerPackCreator.
-          </strong></h6>
-        </div>
-      </q-card-section>
+            CONTRIBUTING
+            </span>
+          </a>
+          in the GitHub Repository if you wish<br>
+          to make a contribution to ServerPackCreator.
+        </strong></h6>
+      </div>
     </q-intersection>
 
     <q-intersection class="my-intersection" once transition="scale">
-      <q-card-section>
-        <div class="row justify-center items-center">
+
+      <h5><strong>
+        None of this would have been possible without the excellent IDEs by JetBrains. They have kindly provided this open source project with an All Products Pack license.
+      </strong></h5>
+
+      <div class="row justify-center items-center">
           <div class="col-5">
             <div class="col-4 offset-md-0 sm-12">
               <a href="https://www.jetbrains.com/" rel="noreferrer noopener"
@@ -115,10 +172,10 @@
             </span></a>
             </div>
           </div>
-        </div>
-        JetBrains, IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.
 
-      </q-card-section>
+          JetBrains, IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.
+        </div>
+
     </q-intersection>
   </q-card>
 </template>
