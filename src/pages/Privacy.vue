@@ -107,7 +107,7 @@
 
 <script>
 export default {
-  name: "privacy"
+  name: "privacy_page"
 }
 </script>
 

@@ -128,7 +128,7 @@
 import {ref} from "vue";
 
 export default {
-  name: "minecraft",
+  name: "minecraft_page",
   setup() {
     return {
       slide: ref(1),
