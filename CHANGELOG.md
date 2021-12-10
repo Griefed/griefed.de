@@ -1,3 +1,20 @@
+### [1.1.15](https://git.griefed.de/Griefed/griefed-de/compare/1.1.14...1.1.15) (2021-12-10)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump actions/setup-node from 2.4.1 to 2.5.0 ([a5176c6](https://git.griefed.de/Griefed/griefed-de/commit/a5176c6e04b79f5054bdf9ff1db2986fd969821a))
+* **deps:** bump lsiobase/nginx from 3.14 to 3.15-php8-version-ef5b8f3b ([69559dc](https://git.griefed.de/Griefed/griefed-de/commit/69559dc8c3c48859a67e30f3a3c90c491ff1e03a))
+* **deps:** bump lsiobase/nginx from 3.14 to 3.15-version-7641cf5a ([c25f837](https://git.griefed.de/Griefed/griefed-de/commit/c25f837986e1149d98761d8e8d2b54555bc22a9c))
+* Add workflow for tests on Github ([c5bc804](https://git.griefed.de/Griefed/griefed-de/commit/c5bc80461b8e61525702ce97f3784aca337876ac))
+
+
+### Other
+
+* **deps:** update dependency @quasar/app to v3.2.4 ([88c316d](https://git.griefed.de/Griefed/griefed-de/commit/88c316db3c57c9c80f93ac6a87e617a4736ef063))
+* **deps:** update jamesives/github-pages-deploy-action action to v4.1.7 ([48f5cd0](https://git.griefed.de/Griefed/griefed-de/commit/48f5cd00c60d273dc56f5c0417bdbdc64177ecf0))
+* **deps:** update node.js to v16.13.1 ([259aa3a](https://git.griefed.de/Griefed/griefed-de/commit/259aa3af1b1223b3e185a3e6c6c9cd0dc077660b))
+
 ### [1.1.14](https://git.griefed.de/Griefed/griefed-de/compare/1.1.13...1.1.14) (2021-11-24)
 
 
