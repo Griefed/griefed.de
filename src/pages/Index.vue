@@ -166,13 +166,10 @@
             </div>
           </div>
           <div class="col-4 offset-md-0 sm-12">
-            <q-img src="~assets/griefed.webp" width="100%"/>
+            <q-img src="~assets/sam_icon.webp" width="100%"/>
 
-            <b>With kind permission by @Debbysheen_ to use this picture as my avatar:</b><br>
-            <a href="https://twitter.com/Debbysheen_/status/1159173289719341057?s=20" rel="noreferrer noopener"
-               target="_blank">
-              <b>Link to tweet</b>
-              </a>
+            <b>In case you are wondering, that's our cat. So, no, I didn't just take this photo from ze interwebz.</b>
+
           </div>
         </div>
       </q-card-section>
