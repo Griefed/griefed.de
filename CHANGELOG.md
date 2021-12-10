@@ -1,3 +1,10 @@
+### [1.1.16](https://git.griefed.de/Griefed/griefed-de/compare/1.1.15...1.1.16) (2021-12-10)
+
+
+### 🛠 Fixes
+
+* Use new avatar ([3e7c414](https://git.griefed.de/Griefed/griefed-de/commit/3e7c414d33405e177cf9dc819c132e3f4d42da9c))
+
 ### [1.1.15](https://git.griefed.de/Griefed/griefed-de/compare/1.1.14...1.1.15) (2021-12-10)
 
 
