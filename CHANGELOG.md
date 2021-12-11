@@ -1,3 +1,16 @@
+### [1.1.17](https://git.griefed.de/Griefed/griefed-de/compare/1.1.16...1.1.17) (2021-12-11)
+
+
+### 🛠 Fixes
+
+* **deps:** update dependency quasar to v2.3.4 ([346a429](https://git.griefed.de/Griefed/griefed-de/commit/346a429b1ffda9f94e93d64018631cbb3143bb11))
+
+
+### Other
+
+* **deps:** update dependency eslint to v8.4.1 ([97c34fc](https://git.griefed.de/Griefed/griefed-de/commit/97c34fc60a9c63579a4d53d2689f86cfd84dbfdd))
+* **deps:** update dependency eslint-plugin-vue to v8.2.0 ([a124b57](https://git.griefed.de/Griefed/griefed-de/commit/a124b57e20fe8e3bf25eef12f13b23b65f0f7bc8))
+
 ### [1.1.16](https://git.griefed.de/Griefed/griefed-de/compare/1.1.15...1.1.16) (2021-12-10)
 
 
