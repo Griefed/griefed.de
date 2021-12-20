@@ -1,3 +1,10 @@
+### [1.1.19](https://git.griefed.de/Griefed/griefed-de/compare/1.1.18...1.1.19) (2021-12-20)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump JamesIves/github-pages-deploy-action ([10f649a](https://git.griefed.de/Griefed/griefed-de/commit/10f649a597e040b4f01e299ddd3a3c4963195a2c))
+
 ### [1.1.18](https://git.griefed.de/Griefed/griefed-de/compare/1.1.17...1.1.18) (2021-12-17)
 
 
