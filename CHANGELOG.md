@@ -1,3 +1,10 @@
+### [1.1.20](https://git.griefed.de/Griefed/griefed-de/compare/1.1.19...1.1.20) (2022-01-04)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump actions/setup-node from 2.5.0 to 2.5.1 ([9bdb43e](https://git.griefed.de/Griefed/griefed-de/commit/9bdb43e52e0a147fddb93df125f7ab12c23f6b26))
+
 ### [1.1.19](https://git.griefed.de/Griefed/griefed-de/compare/1.1.18...1.1.19) (2021-12-20)
 
 
