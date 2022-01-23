@@ -4,7 +4,7 @@ stages:
   - build
 
 test quasar:
-  image: griefed/gitlab-ci-cd:1.0.4
+  image: griefed/gitlab-ci-cd:1.1.0
   stage: test
   cache:
     paths:
@@ -17,7 +17,7 @@ test quasar:
 
 test docker:
   stage: test
-  image: griefed/gitlab-ci-cd:1.0.4
+  image: griefed/gitlab-ci-cd:1.1.0
   services:
     - name: docker:dind
       alias: docker
@@ -44,7 +44,7 @@ test docker:
       - $CI_COMMIT_TITLE =~ /^RELEASE:.+$/
 
 pages:
-  image: griefed/gitlab-ci-cd:1.0.4
+  image: griefed/gitlab-ci-cd:1.1.0
   stage: build
   cache:
     paths:
@@ -63,7 +63,7 @@ pages:
 release:
   needs: ['test docker','test quasar']
   stage: release
-  image: griefed/gitlab-ci-cd:1.0.4
+  image: griefed/gitlab-ci-cd:1.1.0
   services:
     - name: docker:dind
       alias: docker
@@ -82,7 +82,7 @@ release:
 
 build:
   stage: build
-  image: griefed/gitlab-ci-cd:1.0.4
+  image: griefed/gitlab-ci-cd:1.1.0
   services:
     - name: docker:dind
       alias: docker
