@@ -3,15 +3,10 @@ name: Test
 on:
   push:
   pull_request:
-    branches:
-      - main
-      - master
-      - develop
-      - dependabot
   workflow_dispatch:
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -27,7 +22,14 @@ jobs:
       - run: quasar build
       - run: pwd && ls -al *
 
-      # DOCKER RELATED
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v5
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
@@ -37,5 +39,8 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
+          build-args: |
+            BRANCH_OR_TAG=${{ steps.branch-name.outputs.current_branch }}
+            HOSTER=github.com
           platforms: linux/amd64,linux/arm64
           push: false
