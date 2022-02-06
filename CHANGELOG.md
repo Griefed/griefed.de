@@ -1,3 +1,21 @@
+### [1.1.22](https://git.griefed.de/Griefed/griefed-de/compare/1.1.21...1.1.22) (2022-02-06)
+
+
+### 🦊 CI/CD
+
+* Cleanup jobs and workflows. ([34baa45](https://git.griefed.de/Griefed/griefed-de/commit/34baa45fe2d776802ff795576cf6ddfaeb054ecc))
+* Renovate config ([497a191](https://git.griefed.de/Griefed/griefed-de/commit/497a191a8f167d9fa58c448d48d247243cfc0bca))
+
+
+### 🛠 Fixes
+
+* Fix newer images not displaying the website correctly. Switch to gitlab-ci-cd for builder stage. Integrate branch, host into docker build ([5b39b52](https://git.griefed.de/Griefed/griefed-de/commit/5b39b5291bd8f3ed583bfc6fcf452fdde27b7257))
+
+
+### Other
+
+* Versioning...as per usual, occasionally manually bump it :D ([6030f60](https://git.griefed.de/Griefed/griefed-de/commit/6030f6050b740f97f5aaea74291be595d21073fa))
+
 ### [1.1.21](https://git.griefed.de/Griefed/griefed-de/compare/1.1.20...1.1.21) (2022-01-28)
 
 
