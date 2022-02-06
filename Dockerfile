@@ -1,33 +1,29 @@
-FROM node:16.13.1-alpine3.13 AS builder
+FROM griefed/gitlab-ci-cd:2.0.0 AS builder
+
+ARG BRANCH_OR_TAG=webservice
+ARG HOSTER=git.griefed.de
 
 RUN \
-  apk add \
-    git \
-    npm && \
   git clone \
-    https://git.griefed.de/Griefed/griefed-de.git \
+    -b $BRANCH_OR_TAG \
+      https://$HOSTER/Griefed/griefed-de.git \
       /tmp/griefed.de && \
   cd /tmp/griefed.de && \
-  npm install -g npm@7.17.0 && \
-  npm install -g @quasar/cli && \
   npm install && \
   quasar build
 
-FROM lsiobase/nginx:3.15
+FROM ghcr.io/linuxserver/nginx:1.20.2
 
 LABEL maintainer="Griefed <griefed@griefed.de>"
 
 RUN \
-  mkdir -p \
-    /app/griefed.de && \
+  rm -rf \
+    /config/www && \
   echo "**** Cleanup ****" && \
     rm -rf \
       /root/.cache \
       /tmp/*
 
-COPY --from=builder tmp/griefed.de/dist/spa/ /app/griefed.de
-COPY root/ /
+COPY --from=builder /tmp/griefed.de/dist/spa/ /config/www
 
 EXPOSE 80 443
-
-VOLUME /config
