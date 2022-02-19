@@ -1,4 +1,4 @@
-FROM griefed/gitlab-ci-cd:2.0.0 AS builder
+FROM griefed/gitlab-ci-cd:2.0.2 AS builder
 
 ARG BRANCH_OR_TAG=webservice
 ARG HOSTER=git.griefed.de
