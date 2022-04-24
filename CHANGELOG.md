@@ -1,3 +1,36 @@
+### [1.1.23](https://git.griefed.de/Griefed/griefed-de/compare/1.1.22...1.1.23) (2022-04-24)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump nanoid from 3.1.30 to 3.2.0 ([3d005f8](https://git.griefed.de/Griefed/griefed-de/commit/3d005f8d20a7e2e2c5fd4de2359748bd75bf34bf))
+* **GitHub:** Correctly execute (pre)release actions when tags are pushed. ([2ec4778](https://git.griefed.de/Griefed/griefed-de/commit/2ec477875a1e38a52b43ba24e52222668a2eec45))
+
+
+### Other
+
+* **deps:** update actions/setup-node action to v3 ([3a39849](https://git.griefed.de/Griefed/griefed-de/commit/3a3984924ea76a931b3376840b256ffa9ef8a7d2))
+* **deps:** update actions/setup-node action to v3.1.0 ([8dd1653](https://git.griefed.de/Griefed/griefed-de/commit/8dd16536d65285a020167c7cd75e861afcd13082))
+* **deps:** update dependency @babel/eslint-parser to v7.17.0 ([482e90b](https://git.griefed.de/Griefed/griefed-de/commit/482e90b136d8ab90e7512e32be5c8c42093063f8))
+* **deps:** update dependency @quasar/app to v3.3.3 ([f264362](https://git.griefed.de/Griefed/griefed-de/commit/f264362f9e054207b9e20ce817b5906322093823))
+* **deps:** update dependency @quasar/cli to v1.3.2 ([9e1f01a](https://git.griefed.de/Griefed/griefed-de/commit/9e1f01a1ddc4631fba0a16c169cbb535f77e6777))
+* **deps:** update dependency @quasar/extras to v1.12.5 ([5139168](https://git.griefed.de/Griefed/griefed-de/commit/5139168c3094fc07af6955e4c30f3a6817bda01d))
+* **deps:** update dependency axios to v0.26.0 ([e6be17b](https://git.griefed.de/Griefed/griefed-de/commit/e6be17b78f6f0d57bbf76d37d6e6e700c2f48723))
+* **deps:** update dependency axios to v0.26.1 ([bb1f109](https://git.griefed.de/Griefed/griefed-de/commit/bb1f109ee8b5cb77020890a2383d34842ec6ae0c))
+* **deps:** update dependency core-js to v3.21.0 ([c626b62](https://git.griefed.de/Griefed/griefed-de/commit/c626b625f6cd8b37b69f46b877dc777a6001b215))
+* **deps:** update dependency core-js to v3.21.1 ([94402e8](https://git.griefed.de/Griefed/griefed-de/commit/94402e8fa3ab9e9b27a9f34c7b5c6683bb671f51))
+* **deps:** update dependency eslint to v8.10.0 ([775d6a1](https://git.griefed.de/Griefed/griefed-de/commit/775d6a1c4ecc120976bb56ca0fe48637e2640f45))
+* **deps:** update dependency eslint to v8.9.0 ([5a8b6f1](https://git.griefed.de/Griefed/griefed-de/commit/5a8b6f1481fc6dfa2fd1cb0978a2b3d97f6cef69))
+* **deps:** update dependency eslint-config-prettier to v8.4.0 ([70f56b7](https://git.griefed.de/Griefed/griefed-de/commit/70f56b7a0bae990b54d7a60a4f5753e0a18348d5))
+* **deps:** update dependency eslint-config-prettier to v8.5.0 ([b043df8](https://git.griefed.de/Griefed/griefed-de/commit/b043df87f87b9b20ec754935a9987c608146d4ae))
+* **deps:** update dependency eslint-plugin-vue to v8.5.0 ([e1cf6a9](https://git.griefed.de/Griefed/griefed-de/commit/e1cf6a93088e02f9306fb3fd89f699be80eab2c9))
+* **deps:** update dependency griefed/gitlab-ci-cd to v2.0.3 ([6ad0f61](https://git.griefed.de/Griefed/griefed-de/commit/6ad0f61c86e409261c4e39f8de769693c0d1b998))
+* **deps:** update dependency griefed/gitlab-ci-cd to v2.0.4 ([ce92c6b](https://git.griefed.de/Griefed/griefed-de/commit/ce92c6b95a02bf7be011df91aa24479706237fcb))
+* **deps:** update dependency griefed/gitlab-ci-cd to v2.0.5 ([7aa8ab4](https://git.griefed.de/Griefed/griefed-de/commit/7aa8ab4a9483e109f0c931c3a77c90458890587a))
+* **deps:** update dependency quasar to v2.5.5 ([a0f5f83](https://git.griefed.de/Griefed/griefed-de/commit/a0f5f838d93264a673c410351be5425247ce665d))
+* **deps:** update griefed/gitlab-ci-cd docker tag to v2.0.2 ([bd08a8d](https://git.griefed.de/Griefed/griefed-de/commit/bd08a8de70f5eb55c917543e71d954e1f1dfe3e0))
+* **deps:** update jamesives/github-pages-deploy-action action to v4.2.5 ([62e0627](https://git.griefed.de/Griefed/griefed-de/commit/62e0627ec8cfb81a32f21fde7b1300836df5c444))
+
 ### [1.1.22](https://git.griefed.de/Griefed/griefed-de/compare/1.1.21...1.1.22) (2022-02-06)
 
 
