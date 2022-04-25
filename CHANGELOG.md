@@ -1,3 +1,14 @@
+## [1.2.0](https://git.griefed.de/Griefed/griefed-de/compare/1.1.23...1.2.0) (2022-04-25)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump actions/checkout from 2 to 3 ([2a755fd](https://git.griefed.de/Griefed/griefed-de/commit/2a755fdabe7696ab8d3a2cedcc2e6f0277a44965))
+* **deps:** bump actions/setup-node from 3.1.0 to 3.1.1 ([64f2a1a](https://git.griefed.de/Griefed/griefed-de/commit/64f2a1a9bae6693a9480dd091a2c0e554bc8ad8e))
+* **deps:** bump ansi-regex from 4.1.0 to 4.1.1 ([95487fc](https://git.griefed.de/Griefed/griefed-de/commit/95487fc824c548eb406c60588e4b0a83a0598c5f))
+* **deps:** bump async from 2.6.3 to 2.6.4 ([de17654](https://git.griefed.de/Griefed/griefed-de/commit/de17654490dad1eece9e4400ad2c7aacea276e9f))
+* **deps:** bump JamesIves/github-pages-deploy-action ([8426f06](https://git.griefed.de/Griefed/griefed-de/commit/8426f0671254c4afb84b4fca3d204eb0d1c1aaf5))
+
 ### [1.1.23](https://git.griefed.de/Griefed/griefed-de/compare/1.1.22...1.1.23) (2022-04-24)
 
 
