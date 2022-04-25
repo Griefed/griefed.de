@@ -46,6 +46,8 @@ analyzeCommits:
         release: false
       - type: test      # Adding missing tests or correcting existing tests
         release: false
+      - type: improv    # A change which improves an already existing feature or aspect
+        release: minor
 
 # Responsible for generating the content of the release note.
 # If multiple plugins with a generateNotes step are defined,
