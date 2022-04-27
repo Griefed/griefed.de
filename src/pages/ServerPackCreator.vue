@@ -71,12 +71,6 @@
           </a>
         </div>
 
-        <div class="col">
-          <a href="https://www.bisecthosting.com/griefed" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/bisect_logo.webp" width="85%"/>
-          </a>
-        </div>
-
       </div>
 
       <div class="row no-wrap justify-center items-center">
@@ -84,9 +78,6 @@
       </div>
       <div class="row no-wrap justify-center items-center">
         <code>JProfiler and ej-technologies logos property of ej-technologies GmbH</code>
-      </div>
-      <div class="row no-wrap justify-center items-center">
-        <code>BisectHosting logo property of BisectHosting</code>
       </div>
     </q-intersection>
 
