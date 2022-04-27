@@ -1,3 +1,10 @@
+### [1.2.1](https://git.griefed.de/Griefed/griefed-de/compare/1.2.0...1.2.1) (2022-04-27)
+
+
+### 👀 Reverts
+
+* **ServerPackCreator page:** Remove some elemets again, as ServerPackCreator is not related to that company in terms of sponsoring. ([6d37b11](https://git.griefed.de/Griefed/griefed-de/commit/6d37b1182ab67fc8988b2c70bc07fb86589884cc))
+
 ## [1.2.0](https://git.griefed.de/Griefed/griefed-de/compare/1.1.23...1.2.0) (2022-04-25)
 
 
