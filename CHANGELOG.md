@@ -1,3 +1,10 @@
+## [1.3.0](https://git.griefed.de/Griefed/griefed-de/compare/1.2.1...1.3.0) (2022-05-01)
+
+
+### 🚀 Features
+
+* **Downloads and Docker pulls:** Display ServerPackCreator downloads and Docker pulls on ServerPackCreator-page. ([59193f3](https://git.griefed.de/Griefed/griefed-de/commit/59193f3d413be5a0bb30de8e84d5e626fec5af43))
+
 ### [1.2.1](https://git.griefed.de/Griefed/griefed-de/compare/1.2.0...1.2.1) (2022-04-27)
 
 
