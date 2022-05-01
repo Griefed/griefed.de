@@ -183,7 +183,6 @@
 
 <script>
 import {ref} from 'vue'
-import axios from "axios";
 
 export default {
   name: 'PageIndex',
@@ -199,7 +198,7 @@ export default {
     }
   },
   mounted() {
-    axios.get('https://fleet.griefed.de/api/v1/images').then(response => (
+    this.$api.get('https://fleet.griefed.de/api/v1/images').then(response => (
       this.dockerPulls = response.data.data.totalPullCount.toLocaleString('en-US')
     ))
   }

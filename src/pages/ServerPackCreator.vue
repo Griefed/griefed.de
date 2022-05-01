@@ -27,6 +27,15 @@
           the spark which sent me off into the world of programming in Java.<br>
           <br>
           And here we are.
+          <br>
+          <q-chip color="secondary" size="xl" text-color="white">
+            <q-avatar color="primary" icon="mdi-github"/>
+            <b>Downloads: {{ downloads }}</b>
+          </q-chip>
+          <q-chip color="secondary" size="xl" text-color="white">
+            <q-avatar color="primary" icon="mdi-docker"/>
+            <b>Docker pulls: {{ dockerPulls }}</b>
+          </q-chip>
         </h6>
 
       </div>
@@ -236,6 +245,60 @@ export default {
     return {
       slide: ref(1),
     }
+  },
+  data() {
+    return {
+      downloads: ref(0),
+      dockerPulls: ref(0)
+    }
+  },
+  mounted() {
+    this.$axios.get('https://api.github.com/repos/Griefed/ServerPackCreator/releases?per_page=10000')
+      .then(response => {
+
+        this.downloads = 0;
+
+        response.data.forEach(release => {
+
+          release.assets.forEach(asset => {
+
+            this.downloads += asset.download_count;
+          })
+
+        })
+
+      })
+      .catch(error => {
+        this.$q.notify({
+          timeout: 3000,
+          icon: 'error',
+          color: 'negative',
+          message: 'Can not communicate with GitHub'
+        })
+      });
+
+    this.$axios.get('https://fleet.griefed.de/api/v1/images')
+      .then(response => {
+
+        this.dockerPulls = 0;
+
+        response.data.data.repositories.griefed.forEach(repository => {
+
+          if (repository.name === 'serverpackcreator') {
+            this.dockerPulls = repository.pullCount;
+          }
+
+        })
+
+      })
+      .catch(error => {
+        this.$q.notify({
+          timeout: 3000,
+          icon: 'error',
+          color: 'negative',
+          message: 'Can not communicate with Fleet'
+        })
+      });
   }
 }
 </script>
