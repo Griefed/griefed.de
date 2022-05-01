@@ -28,11 +28,11 @@
           <br>
           And here we are.
           <br>
-          <q-chip color="secondary" size="xl" text-color="white">
+          <q-chip v-if="downloads > 0" color="secondary" size="xl" text-color="white">
             <q-avatar color="primary" icon="mdi-github"/>
             <b>Downloads: {{ downloads }}</b>
           </q-chip>
-          <q-chip color="secondary" size="xl" text-color="white">
+          <q-chip v-if="dockerPulls > 0" color="secondary" size="xl" text-color="white">
             <q-avatar color="primary" icon="mdi-docker"/>
             <b>Docker pulls: {{ dockerPulls }}</b>
           </q-chip>
