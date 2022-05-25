@@ -213,6 +213,7 @@ export default {
 }
 
 .my-intersection {
+  text-align: center;
   height: 100%;
   width: 100%;
 }

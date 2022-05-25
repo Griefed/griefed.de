@@ -28,69 +28,164 @@
           <br>
           And here we are.
           <br>
-          <q-chip v-if="downloads > 0" color="secondary" size="xl" text-color="white">
-            <q-avatar color="primary" icon="mdi-github"/>
-            <b>Downloads: {{ downloads }}</b>
-          </q-chip>
-          <q-chip v-if="dockerPulls > 0" color="secondary" size="xl" text-color="white">
-            <q-avatar color="primary" icon="mdi-docker"/>
-            <b>Docker pulls: {{ dockerPulls }}</b>
-          </q-chip>
         </h6>
 
       </div>
     </q-intersection>
 
-    <q-intersection class="my-intersection" once transition="scale">
-      <div class="row no-wrap justify-center items-center">
-        <h5><strong>
-          ServerPackCreator would not be where or what it is today without these wonderful companies and their products:
-        </strong></h5>
-      </div>
+    <div class="row flex-center no-wrap">
+      <q-intersection v-if="downloads > 0" class="my-intersection" once transition="scale">
+        <q-chip color="secondary" size="xl" text-color="white">
+          <q-avatar color="primary" icon="mdi-github"/>
+          <b>Downloads: {{ downloads }}</b>
+        </q-chip>
+      </q-intersection>
+      <q-intersection v-if="dockerPulls > 0" class="my-intersection" once transition="scale">
+        <q-chip color="secondary" size="xl" text-color="white">
+          <q-avatar color="primary" icon="mdi-docker"/>
+          <b>Docker pulls: {{ dockerPulls }}</b>
+        </q-chip>
+      </q-intersection>
+    </div>
 
-      <div class="row justify-center items-center">
+    <div class="row no-wrap justify-center items-center">
+      <h5><strong>
+        ServerPackCreator would not be where or what it is today without these wonderful companies and their products:
+      </strong></h5>
+    </div>
 
-        <div class="col">
-          <a href="https://www.jetbrains.com/" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/jetbrains.webp" width="100%"/>
-          </a>
+<!-- JETBRAINS -->
+    <q-intersection
+      class="my-intersection"
+      once
+      transition="scale">
+      <q-card-section>
+        <div class="row justify-center items-center">
+          <q-card-section horizontal>
+            <q-card-section class="q-pt-xl">
+
+              <div class="text-h2 text-weight-bolder q-mt-xl q-mb-xl">JetBrains IDEs</div>
+              <div class="text-h4 text-weight-bolder text-grey">
+                ServerPackCreator wouldn't be what it is today without the excellent IDEs by JetBrains. They have kindly provided me with a license for the development of ServerPackCreator under their
+                <a href="https://www.jetbrains.com/community/opensource/#support" rel="noreferrer noopener" target="_blank">
+                  OpenSource-Program.
+                </a>
+              </div>
+
+              <q-separator spaced color="accent" inset/>
+
+              <div class="row no-wrap">
+                <div class="column flex-center">
+                  <a href="https://www.jetbrains.com/webstorm/" rel="noreferrer noopener" target="_blank">
+                    <q-img width="250px" src="~assets/webstorm.webp"/>
+                  </a>
+                  <div class="text-h6 text-grey">
+                    WebStorm is used for the development of the webservice-portion of ServerPackCreator. It's an integrated development environment for JavaScript and related technologies.
+                  </div>
+                </div>
+
+                <div class="column flex-center">
+                  <a href="https://www.jetbrains.com/idea/" rel="noreferrer noopener" target="_blank">
+                    <q-img width="250px" src="~assets/idea.webp"/>
+                  </a>
+                  <div class="text-h6 text-grey">
+                    IntelliJ IDEA is used to develop the backend and Swing-GUI of ServerPackCreator. It's an incredibly capable and ergonomic IDE for JVM.
+                  </div>
+                </div>
+              </div>
+
+              <q-card-actions class="flex flex-center">
+                <q-btn flat color="info" href="https://www.jetbrains.com/" rel="noreferrer noopener" target="_blank">
+                  JETBRAINS
+                </q-btn>
+                <q-separator inset vertical color="accent" spaced/>
+                <q-btn flat color="info" href="https://www.jetbrains.com/webstorm/" rel="noreferrer noopener" target="_blank">
+                  WEBSTORM
+                </q-btn>
+                <q-separator inset vertical color="accent" spaced/>
+                <q-btn flat color="info" href="https://www.jetbrains.com/idea/" rel="noreferrer noopener" target="_blank">
+                  INTELLIJ IDEA
+                </q-btn>
+              </q-card-actions>
+
+            </q-card-section>
+
+            <q-card-section class="col-5 flex flex-center">
+              <a href="https://www.jetbrains.com/" rel="noreferrer noopener" target="_blank">
+                <q-img width="700px" class="rounded-borders" src="~assets/jetbrains.webp"/>
+              </a>
+              <div class="row no-wrap justify-center items-center">
+                <code>JetBrains, IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.</code>
+              </div>
+            </q-card-section>
+          </q-card-section>
         </div>
-
-        <div class="col">
-          <a href="https://www.jetbrains.com/" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/idea.webp" width="85%"/>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="https://www.jetbrains.com/" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/webstorm.webp" width="85%"/>
-          </a>
-        </div>
-
-        <div class="col">
-          <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" rel="noreferrer noopener" target="_blank">
-            <div class="row flex-center">
-              <q-img src="~assets/jprofiler.webp" width="70%"/>
-            </div>
-
-            <div class="row flex-center">
-              <q-img src="~assets/ej-technologies.webp" width="100%"/>
-            </div>
-          </a>
-        </div>
-
-      </div>
-
-      <div class="row no-wrap justify-center items-center">
-        <code>JetBrains, IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.</code>
-      </div>
-      <div class="row no-wrap justify-center items-center">
-        <code>JProfiler and ej-technologies logos property of ej-technologies GmbH</code>
-      </div>
+      </q-card-section>
     </q-intersection>
 
-    <q-intersection class="my-intersection" once transition="scale">
+<!-- EJ TECHNOLOGIES -->
+    <q-intersection
+      class="my-intersection"
+      once
+      transition="scale">
+      <q-card-section>
+        <div class="row justify-center items-center">
+          <q-card-section horizontal>
+
+            <q-card-section class="col-5 flex flex-center">
+              <a href="https://www.jetbrains.com/" rel="noreferrer noopener" target="_blank">
+                <q-img width="700px" class="rounded-borders" src="~assets/ej-technologies.webp"/>
+              </a>
+              <div class="row no-wrap justify-center items-center">
+                <code>JProfiler and ej-technologies logos property of ej-technologies GmbH</code>
+              </div>
+            </q-card-section>
+
+            <q-card-section class="q-pt-xl">
+              <div class="text-h2 text-weight-bolder q-mt-xl q-mb-xl">ej-Technologies</div>
+              <div class="text-h4 text-weight-bolder text-grey">
+                ej-Technologies' JProfiler helps identifying and fixing performance issues in ServerPackCreator. They have kindly provided me with a license for the development of ServerPackCreator under their
+                <a href="https://www.ej-technologies.com/buy/jprofiler/openSource" rel="noreferrer noopener" target="_blank">
+                  OpenSource-Program.
+                </a>
+              </div>
+
+              <q-separator spaced color="accent" inset/>
+
+              <div class="row no-wrap flex-center">
+                <div class="column flex flex-center" style="margin-right: 20px;">
+                  <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" rel="noreferrer noopener" target="_blank">
+                    <q-img width="250px" src="~assets/jprofiler_banner.webp"/>
+                  </a>
+                </div>
+
+                <div class="column flex flex-center" style="margin-left: 20px;">
+                  <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" rel="noreferrer noopener" target="_blank">
+                    <q-img width="150px" src="~assets/jprofiler.webp"/>
+                  </a>
+                </div>
+              </div>
+
+              <div class="text-h6 text-grey">
+                JProfiler's intuitive UI helps you resolve performance bottlenecks, pin down memory leaks and understand threading issues.
+              </div>
+
+              <q-card-actions class="flex flex-center">
+                <q-btn flat color="info" href="https://www.ej-technologies.com/" rel="noreferrer noopener" target="_blank">
+                  EJ-TECHNOLOGIES
+                </q-btn>
+                <q-separator inset vertical color="accent" spaced/>
+                <q-btn flat color="info" href="https://www.ej-technologies.com/products/jprofiler/overview.html" rel="noreferrer noopener" target="_blank">
+                  JPROFILER
+                </q-btn>
+              </q-card-actions>
+            </q-card-section>
+          </q-card-section>
+        </div>
+      </q-card-section>
+    </q-intersection>
+
+    <q-intersection class="my-intersection center" once transition="scale">
       <h4><strong>
         Screenshots
       </strong></h4>
@@ -100,7 +195,7 @@
       <div class="row justify-center items-center">
         <div class="col">
           <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/cli_windows.webp" width="60%"/>
+            <q-img src="~assets/cli_windows.webp" width="100%"/>
           </a>
         </div>
       </div>
@@ -111,13 +206,13 @@
       <div class="row justify-center items-center">
         <div class="col">
           <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/gui_windows_light.webp" width="80%"/>
+            <q-img src="~assets/gui_windows_light.webp" width="100%"/>
           </a>
         </div>
-
+        <q-separator vertical inset spaced color="accent"/>
         <div class="col">
           <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/gui_windows_dark.webp" width="80%"/>
+            <q-img src="~assets/gui_windows_dark.webp" width="100%"/>
           </a>
         </div>
       </div>
@@ -128,24 +223,27 @@
       <div class="row justify-center items-center">
         <div class="col">
           <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/web_zip_light.webp" width="90%"/>
+            <q-img src="~assets/web_zip_light.webp" width="100%"/>
           </a>
         </div>
+        <q-separator vertical inset spaced color="accent"/>
         <div class="col">
           <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/web_zip_dark.webp" width="90%"/>
+            <q-img src="~assets/web_zip_dark.webp" width="100%"/>
           </a>
         </div>
       </div>
+      <q-separator inset spaced color="accent"/>
       <div class="row justify-center items-center">
         <div class="col">
           <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/web_downloads_light.webp" width="90%"/>
+            <q-img src="~assets/web_downloads_light.webp" width="100%"/>
           </a>
         </div>
+        <q-separator vertical inset spaced color="accent"/>
         <div class="col">
           <a href="https://github.com/Griefed/ServerPackCreator" rel="noreferrer noopener" target="_blank">
-            <q-img src="~assets/web_downloads_dark.webp" width="90%"/>
+            <q-img src="~assets/web_downloads_dark.webp" width="100%"/>
           </a>
         </div>
       </div>
@@ -309,6 +407,17 @@ export default {
   background-image: url("~assets/background.webp");
   background-repeat: repeat;
   background-attachment: fixed;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.companies {
+  width: 100%;
+  background: transparent;
 }
 
 .list {
