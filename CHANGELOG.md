@@ -1,3 +1,5 @@
+## [1.5.0](https://git.griefed.de/Griefed/griefed-de/compare/1.4.0...1.5.0) (2022-05-25)
+
 ## [1.4.0](https://git.griefed.de/Griefed/griefed-de/compare/1.3.0...1.4.0) (2022-05-01)
 
 ## [1.3.0](https://git.griefed.de/Griefed/griefed-de/compare/1.2.1...1.3.0) (2022-05-01)
