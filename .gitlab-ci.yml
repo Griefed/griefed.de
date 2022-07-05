@@ -12,7 +12,7 @@ workflow:
     - when: always
 
 test quasar:
-  image: griefed/gitlab-ci-cd:2.0.7
+  image: griefed/gitlab-ci-cd:2.0.8
   stage: test
   cache:
     paths:
@@ -25,7 +25,7 @@ test quasar:
 
 test docker:
   stage: test
-  image: griefed/gitlab-ci-cd:2.0.7
+  image: griefed/gitlab-ci-cd:2.0.8
   services:
     - name: docker:dind
       alias: docker
@@ -44,7 +44,7 @@ test docker:
     - if: '$CI_SERVER_HOST == "git.griefed.de"'
 
 pages:
-  image: griefed/gitlab-ci-cd:2.0.7
+  image: griefed/gitlab-ci-cd:2.0.8
   stage: build
   cache:
     paths:
@@ -63,7 +63,7 @@ pages:
 release:
   needs: ['test docker','test quasar']
   stage: release
-  image: griefed/gitlab-ci-cd:2.0.7
+  image: griefed/gitlab-ci-cd:2.0.8
   services:
     - name: docker:dind
       alias: docker
@@ -82,7 +82,7 @@ release:
 
 build:
   stage: build
-  image: griefed/gitlab-ci-cd:2.0.7
+  image: griefed/gitlab-ci-cd:2.0.8
   services:
     - name: docker:dind
       alias: docker
