@@ -1,3 +1,15 @@
+## [1.5.1](https://git.griefed.de/Griefed/griefed-de/compare/1.5.0...1.5.1) (2022-07-04)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump actions/setup-node from 3.1.1 to 3.3.0 ([c3c2ac1](https://git.griefed.de/Griefed/griefed-de/commit/c3c2ac16f351b601794c1912d26ecd68665597ab))
+* **deps:** bump docker/build-push-action from 2 to 3 ([843bff9](https://git.griefed.de/Griefed/griefed-de/commit/843bff928e9c643b3cc318d21b16f1fd913bf13f))
+* **deps:** bump docker/setup-buildx-action from 1 to 2 ([e1b5b1d](https://git.griefed.de/Griefed/griefed-de/commit/e1b5b1dc4e82b03b22053e3a96beed921a768c7e))
+* **deps:** bump docker/setup-qemu-action from 1 to 2 ([066ee4e](https://git.griefed.de/Griefed/griefed-de/commit/066ee4eb0595e33569aa6c2561bdae5c76cd8f1c))
+* **deps:** bump griefed/gitlab-ci-cd from 2.0.5 to 2.0.8 ([ee9df83](https://git.griefed.de/Griefed/griefed-de/commit/ee9df83776bf5bb0bbe0c0f3e68c50269cf666d5))
+* **deps:** bump JamesIves/github-pages-deploy-action ([a5a6be5](https://git.griefed.de/Griefed/griefed-de/commit/a5a6be56d5890df6bb225ff7b221ea796f247ea3))
+
 ## [1.5.0](https://git.griefed.de/Griefed/griefed-de/compare/1.4.0...1.5.0) (2022-05-25)
 
 ## [1.4.0](https://git.griefed.de/Griefed/griefed-de/compare/1.3.0...1.4.0) (2022-05-01)
