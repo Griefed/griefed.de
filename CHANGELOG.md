@@ -1,3 +1,12 @@
+## [1.5.2](https://git.griefed.de/Griefed/griefed-de/compare/1.5.1...1.5.2) (2022-07-27)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump actions/setup-node from 3.3.0 to 3.4.1 ([06d8af5](https://git.griefed.de/Griefed/griefed-de/commit/06d8af52709173505c2e087af504822f02ac3087))
+* **deps:** bump JamesIves/github-pages-deploy-action ([053f37b](https://git.griefed.de/Griefed/griefed-de/commit/053f37b8daae92c17a4773a9a983d58c33b5d018))
+* Cleanups and scheduled job for Docker container package updates ([c81c7da](https://git.griefed.de/Griefed/griefed-de/commit/c81c7da1784e3ecaf0a09f6234e424636d710987))
+
 ## [1.5.1](https://git.griefed.de/Griefed/griefed-de/compare/1.5.0...1.5.1) (2022-07-04)
 
 
