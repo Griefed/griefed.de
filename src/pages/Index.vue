@@ -42,11 +42,8 @@
       transition="scale">
       <q-card-section>
         <div class="row justify-center items-center">
-          <div class="col-4 offset-md-0 sm-12">
-            <q-img src="~assets/spc.webp" width="100%"/>
-          </div>
           <div class="col sm-12">
-            <q-img src="~assets/scp4.webp" width="80%"/>
+            <q-img src="~assets/spc_banner.webp" width="80%"/>
             <div class="has-text-align-center">
               <h6>
                 ServerPackCreator is a passion project on which I am working in my spare time. It is also the main
