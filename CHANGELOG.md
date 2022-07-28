@@ -1,3 +1,10 @@
+## [1.6.0](https://git.griefed.de/Griefed/griefed-de/compare/1.5.2...1.6.0) (2022-07-28)
+
+
+### 🚀 Features
+
+* Add tsParticles and redesign index to include more info regarding projects of mine ([50d831a](https://git.griefed.de/Griefed/griefed-de/commit/50d831afa6559f11930db3cde8336829935f4cab))
+
 ## [1.5.2](https://git.griefed.de/Griefed/griefed-de/compare/1.5.1...1.5.2) (2022-07-27)
 
 
