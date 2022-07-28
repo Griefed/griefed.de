@@ -57,9 +57,7 @@ export default {
 <style scoped>
 .my-card {
   /*noinspection CssUnknownTarget*/
-  background-image: url("~assets/background.webp");
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background: transparent repeat fixed;
 }
 
 .my-section {

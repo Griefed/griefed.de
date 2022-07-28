@@ -33,9 +33,7 @@ export default {
 
 <style>
 .background {
-  background-image: url("~assets/background.webp");
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background: transparent repeat fixed;
 }
 
 </style>

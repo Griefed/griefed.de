@@ -7,11 +7,11 @@
           <img :ratio="323/54" alt="header" src="~assets/header.webp" width="250">
         </q-item>
 
-        <a href="" rel="noreferrer noopener" target="_blank">
+<!--        <a href="" rel="noreferrer noopener" target="_blank">
           <q-btn flat stretch to="/">
             <span class="has-inline-color" style="color:#c0ffee">Home</span>
           </q-btn>
-        </a>
+        </a>-->
 
         <q-toolbar-title></q-toolbar-title>
 
@@ -86,12 +86,14 @@
         <div class="col">
           <div class="full-height full-width">
             <q-scroll-area class="full-height full-width page">
+              <div
+                id="particles-js"
+              />
               <router-view/>
             </q-scroll-area>
           </div>
         </div>
       </q-page>
-
     </q-page-container>
 
     <q-footer class="footer shadow-5" elevated height-hint="50">
@@ -122,16 +124,120 @@
 </template>
 
 <script>
+import {tsParticles} from 'tsparticles';
+
 export default {
   name: 'MainLayout',
   data() {
     return {
-      minecraft: false,
     }
+  },
+  mounted() {
+    tsParticles.load("particles-js", {
+      "fpsLimit": 30,
+      "particles": {
+        "number": {
+          "value": 50,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": ["#325358", "#C0FFEE", "#31CCEC", "#6A1A78"]
+        },
+        "shape": {
+          "type": ["circle", "triangle", "edge", "polygon"],
+          "stroke": {
+            "width": 0,
+            "color": ["#325358", "#C0FFEE", "#31CCEC", "#6A1A78"]
+          },
+          "polygon": {
+            "nb_sides": 6
+          }
+        },
+        "opacity": {
+          "value": 1,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3.5,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "links": {
+          "enable": true,
+          "distance": 150,
+          "color": "#C0FFEE",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1.5,
+          "direction": "right",
+          "random": true,
+          "straight": false,
+          "outModes": {
+            "default": "out",
+            "bottom": "out",
+            "left": "out",
+            "right": "out",
+            "top": "out"
+          },
+          "bounce": false
+        },
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": ["bubble", "grab"]
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 200,
+            "size": 4,
+            "duration": 5,
+            "opacity": 1,
+            "speed": 0.1
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
   }
 }
 </script>
 
+<!--suppress CssReplaceWithShorthandSafely -->
 <style>
 .toolbar {
   border-bottom: #c0ffee 1px solid;
