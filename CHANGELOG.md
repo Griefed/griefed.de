@@ -1,3 +1,10 @@
+## [1.6.1](https://git.griefed.de/Griefed/griefed-de/compare/1.6.0...1.6.1) (2022-07-28)
+
+
+### 🛠 Fixes
+
+* **Copyright year:** Automatically acquire the current year. ([84f35d7](https://git.griefed.de/Griefed/griefed-de/commit/84f35d761533115033eaf35baebdc5c0576c0847))
+
 ## [1.6.0](https://git.griefed.de/Griefed/griefed-de/compare/1.5.2...1.6.0) (2022-07-28)
 
 
