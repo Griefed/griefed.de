@@ -1,3 +1,10 @@
+## [1.6.2](https://git.griefed.de/Griefed/griefed-de/compare/1.6.1...1.6.2) (2022-07-28)
+
+
+### 🛠 Fixes
+
+* Replace images in ServerPackCreator section ([fc1b0c3](https://git.griefed.de/Griefed/griefed-de/commit/fc1b0c386440b4ce6d8140441bf470aa9cbe60d4))
+
 ## [1.6.1](https://git.griefed.de/Griefed/griefed-de/compare/1.6.0...1.6.1) (2022-07-28)
 
 
