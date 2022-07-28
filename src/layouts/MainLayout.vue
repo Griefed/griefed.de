@@ -117,7 +117,7 @@
           </q-item-section>
         </q-item>
         <q-toolbar-title></q-toolbar-title>
-        Copyright © 2021 Griefed.de
+        Copyright © {{year}} Griefed.de
       </q-toolbar>
     </q-footer>
   </q-layout>
@@ -128,12 +128,11 @@ import {tsParticles} from 'tsparticles';
 
 export default {
   name: 'MainLayout',
-  data() {
-    return {
-    }
-  },
-  mounted() {
-    tsParticles.load("particles-js", {
+  setup() {
+
+    let year = new Date().getFullYear();
+
+    let options = {
       "fpsLimit": 30,
       "particles": {
         "number": {
@@ -232,7 +231,15 @@ export default {
         }
       },
       "retina_detect": true
-    });
+    };
+
+    return {
+      year,
+      options
+    }
+  },
+  mounted() {
+    tsParticles.load("particles-js", this.options);
   }
 }
 </script>

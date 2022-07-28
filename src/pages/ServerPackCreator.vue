@@ -39,13 +39,13 @@
     </q-intersection>
 
     <div class="row flex-center no-wrap">
-      <q-intersection v-if="downloads > 0" class="my-intersection" once transition="scale">
+      <q-intersection class="my-intersection" once transition="scale">
         <q-chip color="secondary" size="xl" text-color="white">
           <q-avatar color="primary" icon="mdi-github"/>
           <b>Downloads: {{ downloads }}</b>
         </q-chip>
       </q-intersection>
-      <q-intersection v-if="dockerPulls > 0" class="my-intersection" once transition="scale">
+      <q-intersection class="my-intersection" once transition="scale">
         <q-chip color="secondary" size="xl" text-color="white">
           <q-avatar color="primary" icon="mdi-docker"/>
           <b>Docker pulls: {{ dockerPulls }}</b>
@@ -365,12 +365,8 @@ export default {
   setup() {
     return {
       slide: ref(1),
-    }
-  },
-  data() {
-    return {
-      downloads: ref(0),
-      dockerPulls: ref(0)
+      downloads: ref('N/A'),
+      dockerPulls: ref('N/A')
     }
   },
   mounted() {
