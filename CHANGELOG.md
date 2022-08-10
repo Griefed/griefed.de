@@ -1,3 +1,15 @@
+## [1.6.3](https://git.griefed.de/Griefed/griefed-de/compare/1.6.2...1.6.3) (2022-08-10)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump griefed/gitlab-ci-cd from 2.0.8 to 2.0.9 ([c5cefca](https://git.griefed.de/Griefed/griefed-de/commit/c5cefca0895a0fd081228f3f20fa1ed7cf7aeb10))
+
+
+### Other
+
+* Add list of package versions. ([80aa2d1](https://git.griefed.de/Griefed/griefed-de/commit/80aa2d1bdb9ed19a99198409aeaa726eef07d069))
+
 ## [1.6.2](https://git.griefed.de/Griefed/griefed-de/compare/1.6.1...1.6.2) (2022-07-28)
 
 
