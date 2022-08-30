@@ -1,3 +1,11 @@
+## [1.6.4](https://git.griefed.de/Griefed/griefed-de/compare/1.6.3...1.6.4) (2022-08-30)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump griefed/gitlab-ci-cd from 2.0.9 to 2.2.0 ([a468e3e](https://git.griefed.de/Griefed/griefed-de/commit/a468e3eddbe16ff65b746aedac4c8bb63c967bdb))
+* **deps:** bump tj-actions/branch-names from 5 to 6 ([3f8a9c0](https://git.griefed.de/Griefed/griefed-de/commit/3f8a9c05ef6a93c8869490b8eb066a1330e9dec4))
+
 ## [1.6.3](https://git.griefed.de/Griefed/griefed-de/compare/1.6.2...1.6.3) (2022-08-10)
 
 
