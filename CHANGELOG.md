@@ -1,3 +1,19 @@
+## [1.6.5](https://git.griefed.de/Griefed/griefed-de/compare/1.6.4...1.6.5) (2022-09-14)
+
+
+### 💈 Style
+
+* **ServerPackCreator page:** Update project page with new screenshots and information. Restyle content in q-cards ([c6abdcc](https://git.griefed.de/Griefed/griefed-de/commit/c6abdcc2eb3e0278703f319e94c8f88328afe3e3))
+
+
+### Other
+
+* **deps:** update dependency @quasar/extras to v1.15.2 ([cff6b38](https://git.griefed.de/Griefed/griefed-de/commit/cff6b38844fdcb13c2a71b943a4b158c05d3c578))
+* **deps:** update dependency core-js to v3.25.0 ([1649e57](https://git.griefed.de/Griefed/griefed-de/commit/1649e578536c91e405d9e4102820697cfdc5029e))
+* **deps:** update dependency eslint to v8.23.0 ([77e5b4c](https://git.griefed.de/Griefed/griefed-de/commit/77e5b4c085c3f94a25843257ca645b99ff77ba7a))
+* **deps:** update dependency eslint-plugin-vue to v9.4.0 ([41672c1](https://git.griefed.de/Griefed/griefed-de/commit/41672c103deb518bdf487db32643488c7dacde13))
+* **deps:** update dependency griefed/gitlab-ci-cd to v2.2.1 ([ee97d83](https://git.griefed.de/Griefed/griefed-de/commit/ee97d83f9c797643bdb5e141c2641b78f91ec432))
+
 ## [1.6.4](https://git.griefed.de/Griefed/griefed-de/compare/1.6.3...1.6.4) (2022-08-30)
 
 
