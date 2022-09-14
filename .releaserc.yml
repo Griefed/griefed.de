@@ -43,7 +43,7 @@ analyzeCommits:
       - type: revert    # Reverts a previous commit
         release: patch
       - type: style     # Changes that do not affect the meaning of the code
-        release: false
+        release: true
       - type: test      # Adding missing tests or correcting existing tests
         release: false
       - type: improv    # A change which improves an already existing feature or aspect
