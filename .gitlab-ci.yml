@@ -4,10 +4,10 @@ stages:
   - build
 
 services:
-  - name: ghcr.io/griefed/gitlab-ci-cd:2.0.9
+  - name: ghcr.io/griefed/gitlab-ci-cd:2.2.2
     alias: docker
 
-image: ghcr.io/griefed/gitlab-ci-cd:2.0.9
+image: ghcr.io/griefed/gitlab-ci-cd:2.2.2
 
 workflow:
   rules:
@@ -18,7 +18,7 @@ workflow:
     - when: always
 
 test quasar:
-  image: ghcr.io/griefed/gitlab-ci-cd:2.0.9
+  image: ghcr.io/griefed/gitlab-ci-cd:2.2.2
   stage: test
   cache:
     paths:
@@ -31,7 +31,7 @@ test quasar:
 
 test docker:
   stage: test
-  image: ghcr.io/griefed/gitlab-ci-cd:2.0.9
+  image: ghcr.io/griefed/gitlab-ci-cd:2.2.2
   variables:
     project_name: $CI_PROJECT_NAME
     SEMANTIC_RELEASE_PACKAGE: $CI_PROJECT_NAME
@@ -47,7 +47,7 @@ test docker:
     - if: '$CI_SERVER_HOST == "git.griefed.de"'
 
 pages:
-  image: ghcr.io/griefed/gitlab-ci-cd:2.0.9
+  image: ghcr.io/griefed/gitlab-ci-cd:2.2.2
   stage: build
   cache:
     paths:
@@ -66,7 +66,7 @@ pages:
 release:
   needs: ['test docker','test quasar']
   stage: release
-  image: ghcr.io/griefed/gitlab-ci-cd:2.0.9
+  image: ghcr.io/griefed/gitlab-ci-cd:2.2.2
   variables:
     project_name: $CI_PROJECT_NAME
     SEMANTIC_RELEASE_PACKAGE: $CI_PROJECT_NAME
@@ -82,7 +82,7 @@ release:
 
 build:
   stage: build
-  image: ghcr.io/griefed/gitlab-ci-cd:2.0.9
+  image: ghcr.io/griefed/gitlab-ci-cd:2.2.2
   variables:
     project_name: $CI_PROJECT_NAME
     SEMANTIC_RELEASE_PACKAGE: $CI_PROJECT_NAME
