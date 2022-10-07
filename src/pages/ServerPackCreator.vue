@@ -13,16 +13,25 @@
 
         <div class="row flex-center no-wrap" style="margin-top: 45px;">
           <q-intersection class="my-intersection" once transition="scale">
-            <q-chip color="secondary" size="xl" text-color="white">
-              <q-avatar color="primary" icon="mdi-github"/>
-              <b>Downloads: {{ downloads }}</b>
-            </q-chip>
+            <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/griefed/serverpackcreator/total?label=GitHub%20Downloads&logo=GitHub&style=plastic">
           </q-intersection>
+
+          <q-separator inset vertical color="accent" spaced/>
+
           <q-intersection class="my-intersection" once transition="scale">
-            <q-chip color="secondary" size="xl" text-color="white">
-              <q-avatar color="primary" icon="mdi-docker"/>
-              <b>Docker pulls: {{ dockerPulls }}</b>
-            </q-chip>
+            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/griefed/serverpackcreator?label=GitHub%20Stars&logo=GitHub&style=plastic">
+          </q-intersection>
+
+          <q-separator inset vertical color="accent" spaced/>
+
+          <q-intersection class="my-intersection" once transition="scale">
+            <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/griefed/serverpackcreator?label=Docker%20Downloads&logo=Docker&style=plastic">
+          </q-intersection>
+
+          <q-separator inset vertical color="accent" spaced/>
+
+          <q-intersection class="my-intersection" once transition="scale">
+            <img alt="Docker Stars" src="https://img.shields.io/docker/stars/griefed/serverpackcreator?label=Docker%20Stars&logo=Docker&style=plastic">
           </q-intersection>
         </div>
 
