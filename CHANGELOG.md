@@ -1,3 +1,17 @@
+## [1.6.6](https://git.griefed.de/Griefed/griefed-de/compare/1.6.5...1.6.6) (2022-10-07)
+
+
+### 💈 Style
+
+* **ServerPackCreator:** Switch to shields.io badges for SPC stats ([80507d0](https://git.griefed.de/Griefed/griefed-de/commit/80507d0e505f28d07ecea26007168c1724b61be1))
+
+
+### Other
+
+* **deps:** update dependency @quasar/extras to v1.15.4 ([3df4be8](https://git.griefed.de/Griefed/griefed-de/commit/3df4be8126b8b194eb4f504a1a6bb94b21aa3814))
+* **deps:** update dependency core-js to v3.25.5 ([bba8551](https://git.griefed.de/Griefed/griefed-de/commit/bba855107aad90f65a0ec44d3bc10a7ecaf94668))
+* **deps:** update ghcr.io/griefed/gitlab-ci-cd docker tag to v2.2.2 ([fe4a1c1](https://git.griefed.de/Griefed/griefed-de/commit/fe4a1c1dbb69b4efd8a0d86734ee8ae32be36a01))
+
 ## [1.6.5](https://git.griefed.de/Griefed/griefed-de/compare/1.6.4...1.6.5) (2022-09-14)
 
 
