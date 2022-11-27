@@ -137,8 +137,7 @@
                       </a>
                       <div class="text-h6 text-grey">
                         IntelliJ IDEA is used to develop the backend and Swing-GUI of ServerPackCreator. It's an
-                        incredibly
-                        capable and ergonomic IDE for JVM.
+                        incredibly capable and ergonomic IDE for JVM.
                       </div>
                     </div>
                   </div>
@@ -227,8 +226,7 @@
 
                   <div class="text-h6 text-grey section">
                     JProfiler's intuitive UI helps you resolve performance bottlenecks, pin down memory leaks and
-                    understand
-                    threading issues.
+                    understand threading issues.
                   </div>
 
                   <q-card-actions class="flex flex-center section">

@@ -8,7 +8,8 @@ const routes = [
       { path: '/minecraft', component: () => import('pages/Minecraft.vue') },
       { path: '/about', component: () => import('pages/About.vue') },
       { path: '/privacy', component: () => import('pages/Privacy.vue') },
-      { path: '/serverpackcreator', component: () => import('pages/ServerPackCreator.vue') }
+      { path: '/serverpackcreator', component: () => import('pages/ServerPackCreator.vue') },
+      { path: '/serverpackcreatornew', component: () => import('pages/ServerPackCreatorNew.vue') }
     ]
   },
 
