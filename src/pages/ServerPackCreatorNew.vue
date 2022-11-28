@@ -11,8 +11,7 @@
       control-color="white"
       transition-prev="slide-right"
       transition-next="slide-left"
-      height="600px"
-    >
+      height="500px">
       <q-carousel-slide class="q-pa-none" :name="1" img-src="~assets/serverpackcreator/powershell.webp">
         <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
           <div class="custom-caption">
@@ -119,344 +118,6 @@
           <q-btn type="a" href="https://github.com/Griefed/ServerPackCreator/releases/latest" size="lg"
                  :style="'background:'+ primaryColour +'; color: white'" label="Get The Latest Version"/>
         </h3>
-      </div>
-    </div>
-    <div style="background: #f7f7f7" id="id_portfolio">
-      <div class="row">
-        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-          <h5 class="text-center"><strong>Platform Support</strong>
-            <br>
-            <span class="text-center text-grey text-h6">
-                  Windows, Ubuntu and MacOS are officially supported via installers.<br>
-                For other platforms, try the JAR-file!
-                </span>
-          </h5>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center" style="padding-bottom: 99px">
-        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-          <div style="line-height:0">
-                <span v-for="index in 6" :key="index">
-                  <q-flashcard :no-hover="hover" :style="style">
-                    <q-flashcard-section transition="nudge-in" :active="active">
-                      <img :src="require(`src/statics/serverpackcreator/cards/${index}.png`)" width=340 height=263
-                           alt="">
-                    </q-flashcard-section>
-                    <q-flashcard-section transition="fade-in" class="fit" :active="active">
-                      <div class="fit" :style="background_style"></div>
-                      <q-flashcard-section v-if="index < 4" transition="drop-down" class="text-center my-header"
-                                           :active="active">
-                        CLI Mode
-                      </q-flashcard-section>
-                      <q-flashcard-section v-else transition="drop-down" class="text-center my-header" :active="active">
-                        GUI Mode
-                      </q-flashcard-section>
-                      <q-flashcard-section v-if="index < 4" transition="slide-up-in" class="my-text" :active="active">
-                        Generating server packs right from the commandline.
-                      </q-flashcard-section>
-                      <q-flashcard-section v-else transition="slide-up-in" class="my-text" :active="active">
-                        Convenient, extensive and quick to configure and generate.
-                      </q-flashcard-section>
-                    </q-flashcard-section>
-                  </q-flashcard>
-                  <br v-if="index===3"/>
-                  </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row" style="background-color: #000000ad !important;" id="id_about_us">
-      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-        <h5 class="text-center text-white"><strong>About Us</strong>
-          <br><br>
-          <span
-            class="text-center text-grey text-h6">
-                <p>
-                ServerPackCreator is a passion project on which I am working in my spare time. It is also the main
-                reason for why I got into programming in the first place.
-              </p>
-              <p>
-                I started getting into Java programming in february 2021, when I was working on an update for one of my
-                Minecraft modpacks,
-                Survive Create Prosper 4, and got tired and bored with manually creating a server pack everytime I
-                wanted to update and
-                test something, or just release a new server pack for the new modpack version.
-              </p>
-              <p>
-                The thought <br><strong><code><i>There must be a way to automate this, or at least make it less
-                tedious...</i></code></strong><br>was the spark which sent me off
-                into the world of programming.
-              </p>
-              <p>
-                And here we are.
-              </p>
-              </span>
-        </h5>
-      </div>
-    </div>
-    <div class="row text-center flex flex-center" style="background-color: #000000ad !important;">
-      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-        <h5 class="text-center text-grey">ServerPackCreator would not be where or what it is today without these
-          wonderful companies and their products:</h5>
-      </div>
-      <div class="col-md-12 col-lg-12 col-sx-12 col-sm-12 q-gutter-md flex flex-center">
-        <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-          <q-card @mouseover="hoverOver(1)" @mouseout="hoverOutTimeout(1)" style="border: none;"
-                  class="my-card text-center box-shadow" flat bordered>
-            <q-img src="~assets/jprofiler.webp" alt=""/>
-
-            <q-card-section>
-              <div class="text-overline text-orange-9">EJ TECHNOLOGIES</div>
-              <div :class="about_heading_1" :style="'color: ' + about_heading_color_1"
-                   class="about_heading_1 text-h6 q-mt-sm q-mb-xs">JPROFILER
-              </div>
-              <div :class="about_heading_1" :style="'color: ' + about_heading_color_1"
-                   class="about_heading_1 q-mt-sm q-mb-xs">
-                <code><strong>
-                  JProfiler's intuitive UI helps you resolve performance bottlenecks, pin down memory leaks and
-                  understand threading issues.
-                </strong></code>
-              </div>
-              <div class="text-caption text-grey-6">
-                JProfiler and ej-technologies logos property of ej-technologies GmbH
-              </div>
-            </q-card-section>
-          </q-card>
-        </div>
-        <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-          <q-card @mouseover="hoverOver(2)" @mouseout="hoverOutTimeout(2)"
-                  :style="'color: ' + about_heading_color_2" style="border: none;"
-                  class="my-card text-center box-shadow" flat bordered>
-            <q-img src="~assets/idea.webp" alt=""/>
-
-            <q-card-section>
-              <div class="text-overline text-orange-9">JETBRAINS</div>
-              <div :class="about_heading_2" :style="'color: ' + about_heading_color_2"
-                   class="text-h6 q-mt-sm q-mb-xs">INTELLIJ IDEA
-              </div>
-              <div :class="about_heading_2" :style="'color: ' + about_heading_color_2"
-                   class="about_heading_1 q-mt-sm q-mb-xs">
-                <code><strong>
-                  IntelliJ IDEA is used to develop the backend and Swing-GUI of ServerPackCreator. It's an
-                  incredibly capable and ergonomic IDE for JVM.
-                </strong></code>
-              </div>
-              <div class="text-caption text-grey-6">
-                IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.
-              </div>
-            </q-card-section>
-          </q-card>
-        </div>
-        <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-          <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)" style="border: none;"
-                  class="my-card text-center box-shadow" flat bordered>
-            <q-img src="~assets/webstorm.webp" alt=""/>
-
-            <q-card-section>
-              <div class="text-overline text-orange-9">JETBRAINS</div>
-              <div :class="about_heading_3" :style="'color: ' + about_heading_color_3"
-                   class="text-h6 q-mt-sm q-mb-xs">WEBSTORM
-              </div>
-              <div :class="about_heading_3" :style="'color: ' + about_heading_color_3"
-                   class="about_heading_1 q-mt-sm q-mb-xs">
-                <code><strong>
-                  WebStorm is used for the development of the webservice-portion of ServerPackCreator. It's an
-                  integrated development environment for JavaScript and related technologies.
-                </strong></code>
-              </div>
-              <div class="text-caption text-grey-6">
-                IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.
-              </div>
-            </q-card-section>
-          </q-card>
-        </div>
-      </div>
-    </div>
-    <div style="background: #f7f7f7" id="id_services">
-      <div class="row">
-        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-          <h5 class="text-center"><strong>Help - Support - Contributing</strong></h5>
-        </div>
-      </div>
-      <div class="q-pa-xl">
-        <div class="row q-col-gutter-sm ">
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-            <q-item class="box-shadow q-pa-none q-ml-xs ">
-              <q-item-section side :style="'background-color:' + primaryColour"
-                              class="q-pa-sm q-mr-none text-white">
-                <q-icon name="compare_arrows" size="65px"></q-icon>
-              </q-item-section>
-              <q-item-section class="q-pa-md q-ml-none">
-                <q-item-label class="text-h6 text-grey-9 text-uppercase">Contributing</q-item-label>
-                <q-item-label class="text-grey-8">Want to contribute to ServerPackCreator? Check out the <br>
-                  <strong>
-                    <a href="https://github.com/Griefed/ServerPackCreator/blob/main/CONTRIBUTING.md"
-                       rel="noreferrer noopener"
-                       target="_blank">Contributing-Guidelines</a>
-                  </strong>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-            <q-item class="box-shadow q-pa-none q-ml-xs">
-              <q-item-section side :style="'background-color:' + primaryColour"
-                              class="q-pa-sm q-mr-none text-white">
-                <q-icon name="far fa-life-ring" size="65px"></q-icon>
-              </q-item-section>
-              <q-item-section class="q-pa-md q-ml-none">
-                <q-item-label class="text-h6 text-grey-9 text-uppercase">Support</q-item-label>
-                <q-item-label class="text-grey-8">Encountered a bug in ServerPackCreator?<br>
-                  <strong>
-                    <a href="https://github.com/Griefed/ServerPackCreator/issues"
-                       rel="noreferrer noopener"
-                       target="_blank">Report issues on GitHub.</a>
-                  </strong>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-            <q-item class="box-shadow q-pa-none q-ml-xs q-mr-xs">
-              <q-item-section side :style="'background-color:' + primaryColour"
-                              class="q-pa-sm q-mr-none text-white">
-                <q-icon name="fas fa-book" size="65px"></q-icon>
-              </q-item-section>
-              <q-item-section class="q-pa-md q-ml-none">
-                <q-item-label class="text-h6 text-grey-9 text-uppercase">Wiki</q-item-label>
-                <q-item-label class="text-grey-8">Need help or details about ServerPackCreators features?<br>
-                  <strong>
-                    <a href="https://wiki.griefed.de/en/Documentation/ServerPackCreator/ServerPackCreator-Help"
-                       rel="noreferrer noopener"
-                       target="_blank">Check out the official Wiki</a>
-                  </strong>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </div>
-        </div>
-        <div class="row q-col-gutter-sm q-mt-lg">
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-            <q-item class="box-shadow q-pa-none q-ml-xs ">
-              <q-item-section side :style="'background-color:' + primaryColour"
-                              class="q-pa-sm q-mr-none text-white">
-                <q-icon name="fas fa-code-branch" size="65px"></q-icon>
-              </q-item-section>
-              <q-item-section class="q-pa-md q-ml-none">
-                <q-item-label class="text-h6 text-grey-9 text-uppercase">Sources</q-item-label>
-                <q-item-label class="text-grey-8">Intereseted in the source code of ServerPackCreator?<br>
-                  <strong>
-                    <a href="https://github.com/Griefed/ServerPackCreator"
-                       rel="noreferrer noopener"
-                       target="_blank">See the publicly available GitHub-Repository</a>
-                  </strong>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-            <q-item class="box-shadow q-pa-none q-ml-xs">
-              <q-item-section side :style="'background-color:' + primaryColour"
-                              class="q-pa-sm q-mr-none text-white">
-                <q-icon name="fas fa-paper-plane" size="65px"></q-icon>
-              </q-item-section>
-              <q-item-section class="q-pa-md q-ml-none">
-                <q-item-label class="text-h6 text-grey-9 text-uppercase">Community</q-item-label>
-                <q-item-label class="text-grey-8">Want to talk to other users of ServerPackCreator, or the team?<br>
-                  <strong>
-                    <a href="https://discord.griefed.de/"
-                       rel="noreferrer noopener"
-                       target="_blank">Join the Discord server!</a>
-                  </strong>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-            <q-item class="box-shadow q-pa-none q-ml-xs q-mr-xs">
-              <q-item-section side :style="'background-color:' + primaryColour"
-                              class="q-pa-sm q-mr-none text-white">
-                <q-icon name="fab fa-wordpress" size="65px"></q-icon>
-              </q-item-section>
-              <q-item-section class="q-pa-md q-ml-none">
-                <q-item-label class="text-h6 text-grey-9 text-uppercase">News</q-item-label>
-                <q-item-label class="text-grey-8">I occasionally write blog-posts, sometimes Minecraft-related.<br>
-                  <strong>
-                    <a href="https://blog.griefed.de/"
-                       rel="noreferrer noopener"
-                       target="_blank">Check out the blog.</a>
-                  </strong>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="quote" id="id_testimonial">
-      <div style="background-color: #000000ad !important;">
-        <q-carousel
-          v-model="review_slide"
-          swipeable
-          animated
-          infinite
-          autoplay
-          arrows
-          navigation
-          padding
-          navigation-position="bottom"
-          class="text-white full-height bg-transparent q-mx-xl"
-        >
-          <q-carousel-slide style="padding-bottom: 140px" name="style" class="column no-wrap flex-center">
-            <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
-                 src="/statics/images/team_1.jpg" width=150 height=150>
-            <div class="q-mt-md text-h6 text-center">
-              <span :style="'color:'+primaryColour">John Doe</span><br><span
-              class="text-overline">Organization Founder</span>
-            </div>
-            <div class="q-mt-md text-h6 text-center">
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-              labore et dolore magna aliqua.
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-              labore et dolore magna aliqua.
-            </div>
-          </q-carousel-slide>
-          <q-carousel-slide style="padding-bottom: 140px" name="tv" class="column no-wrap flex-center">
-            <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
-                 src="/statics/images/team_2.jpg" width=150 height=150>
-            <div class="q-mt-md text-h6 text-center">
-              <span :style="'color:'+primaryColour">John Doe</span><br><span
-              class="text-overline">Lead Developer</span>
-            </div>
-            <div class="q-mt-md text-h6 text-center">
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-              labore et dolore magna aliqua.
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-              labore et dolore magna aliqua.
-            </div>
-          </q-carousel-slide>
-          <q-carousel-slide style="padding-bottom: 140px" name="layers" class="column no-wrap flex-center">
-            <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
-                 src="/statics/images/team_3.jpg" width=150 height=150>
-            <div class="q-mt-md text-h6 text-center">
-              <span :style="'color:'+primaryColour">John Doe</span><br><span
-              class="text-overline">Product Owner</span>
-            </div>
-            <div class="q-mt-md text-h6 text-center">
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-              labore et dolore magna aliqua.
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-              labore et dolore magna aliqua.
-            </div>
-          </q-carousel-slide>
-        </q-carousel>
       </div>
     </div>
     <div class="pricing" id="id_pricing">
@@ -613,6 +274,343 @@
         <br>
       </div>
     </div>
+    <div class="row" style="background-color: #000000ad !important;" id="id_about_us">
+      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+        <h5 class="text-center text-white"><strong>About Us</strong>
+          <br><br>
+          <span class="text-center text-grey text-h6">
+            <p>
+                ServerPackCreator is a passion project on which I am working in my spare time. It is also the main
+                reason for why I got into programming in the first place.
+            </p>
+            <p>
+                I started getting into Java programming in february 2021, when I was working on an update for one of my
+                Minecraft modpacks,
+                Survive Create Prosper 4, and got tired and bored with manually creating a server pack everytime I
+                wanted to update and
+                test something, or just release a new server pack for the new modpack version.
+            </p>
+            <p>
+                The thought <br><strong><code><i>There must be a way to automate this, or at least make it less
+                tedious...</i></code></strong><br>was the spark which sent me off
+                into the world of programming.
+            </p>
+            <p>
+                And here we are.
+            </p>
+          </span>
+        </h5>
+      </div>
+    </div>
+    <div class="row text-center flex flex-center" style="background-color: #000000ad !important;">
+      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+        <h5 class="text-center text-grey">ServerPackCreator would not be where or what it is today without these
+          wonderful companies and their products:</h5>
+      </div>
+      <div class="col-md-12 col-lg-12 col-sx-12 col-sm-12 q-gutter-md flex flex-center">
+        <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
+          <q-card @mouseover="hoverOver(1)" @mouseout="hoverOutTimeout(1)" style="border: none;"
+                  class="my-card text-center box-shadow" flat bordered>
+            <q-img src="~assets/jprofiler.webp" alt=""/>
+
+            <q-card-section>
+              <div class="text-overline text-orange-9">EJ TECHNOLOGIES</div>
+              <div :class="about_heading_1" :style="'color: ' + about_heading_color_1"
+                   class="about_heading_1 text-h6 q-mt-sm q-mb-xs">JPROFILER
+              </div>
+              <div :class="about_heading_1" :style="'color: ' + about_heading_color_1"
+                   class="about_heading_1 q-mt-sm q-mb-xs">
+                <code><strong>
+                  JProfiler's intuitive UI helps you resolve performance bottlenecks, pin down memory leaks and
+                  understand threading issues.
+                </strong></code>
+              </div>
+              <div class="text-caption text-grey-6">
+                JProfiler and ej-technologies logos property of ej-technologies GmbH
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
+          <q-card @mouseover="hoverOver(2)" @mouseout="hoverOutTimeout(2)"
+                  :style="'color: ' + about_heading_color_2" style="border: none;"
+                  class="my-card text-center box-shadow" flat bordered>
+            <q-img src="~assets/idea.webp" alt=""/>
+
+            <q-card-section>
+              <div class="text-overline text-orange-9">JETBRAINS</div>
+              <div :class="about_heading_2" :style="'color: ' + about_heading_color_2"
+                   class="text-h6 q-mt-sm q-mb-xs">INTELLIJ IDEA
+              </div>
+              <div :class="about_heading_2" :style="'color: ' + about_heading_color_2"
+                   class="about_heading_1 q-mt-sm q-mb-xs">
+                <code><strong>
+                  IntelliJ IDEA is used to develop the backend and Swing-GUI of ServerPackCreator. It's an
+                  incredibly capable and ergonomic IDE for JVM.
+                </strong></code>
+              </div>
+              <div class="text-caption text-grey-6">
+                IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
+          <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)" style="border: none;"
+                  class="my-card text-center box-shadow" flat bordered>
+            <q-img src="~assets/webstorm.webp" alt=""/>
+
+            <q-card-section>
+              <div class="text-overline text-orange-9">JETBRAINS</div>
+              <div :class="about_heading_3" :style="'color: ' + about_heading_color_3"
+                   class="text-h6 q-mt-sm q-mb-xs">WEBSTORM
+              </div>
+              <div :class="about_heading_3" :style="'color: ' + about_heading_color_3"
+                   class="about_heading_1 q-mt-sm q-mb-xs">
+                <code><strong>
+                  WebStorm is used for the development of the webservice-portion of ServerPackCreator. It's an
+                  integrated development environment for JavaScript and related technologies.
+                </strong></code>
+              </div>
+              <div class="text-caption text-grey-6">
+                IntelliJ IDEA and WebStorm logos property of JetBrains s.r.o.
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+      </div>
+    </div>
+    <div style="background: #f7f7f7" id="id_portfolio">
+      <div class="row">
+        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+          <h5 class="text-center"><strong>Platform Support</strong>
+            <br>
+            <span class="text-center text-grey text-h6">
+                  Windows, Ubuntu and MacOS are officially supported via installers.<br>
+                For other platforms, try the JAR-file!
+                </span>
+          </h5>
+        </div>
+      </div>
+      <br>
+      <div class="row text-center" style="padding-bottom: 99px">
+        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+          <div style="line-height:0">
+                <span v-for="index in 6" :key="index">
+                  <q-flashcard :no-hover="hover" :style="style">
+                    <q-flashcard-section transition="nudge-in" :active="active">
+                      <img :src="require(`src/statics/serverpackcreator/cards/${index}.png`)" width=340 height=263
+                           alt="">
+                    </q-flashcard-section>
+                    <q-flashcard-section transition="fade-in" class="fit" :active="active">
+                      <div class="fit" :style="background_style"></div>
+                      <q-flashcard-section v-if="index < 4" transition="drop-down" class="text-center my-header"
+                                           :active="active">
+                        CLI Mode
+                      </q-flashcard-section>
+                      <q-flashcard-section v-else transition="drop-down" class="text-center my-header" :active="active">
+                        GUI Mode
+                      </q-flashcard-section>
+                      <q-flashcard-section v-if="index < 4" transition="slide-up-in" class="my-text" :active="active">
+                        Generating server packs right from the commandline.
+                      </q-flashcard-section>
+                      <q-flashcard-section v-else transition="slide-up-in" class="my-text" :active="active">
+                        Convenient, extensive and quick to configure and generate.
+                      </q-flashcard-section>
+                    </q-flashcard-section>
+                  </q-flashcard>
+                  <br v-if="index===3"/>
+                  </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quote" id="id_testimonial">
+      <div style="background-color: #000000ad !important;">
+        <q-carousel
+          v-model="review_slide"
+          swipeable
+          animated
+          infinite
+          autoplay
+          arrows
+          navigation
+          padding
+          navigation-position="bottom"
+          class="text-white full-height bg-transparent q-mx-xl"
+        >
+          <q-carousel-slide style="padding-bottom: 140px" name="style" class="column no-wrap flex-center">
+            <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
+                 src="/statics/images/team_1.jpg" width=150 height=150>
+            <div class="q-mt-md text-h6 text-center">
+              <span :style="'color:'+primaryColour">John Doe</span><br><span
+              class="text-overline">Organization Founder</span>
+            </div>
+            <div class="q-mt-md text-h6 text-center">
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
+              labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
+              labore et dolore magna aliqua.
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide style="padding-bottom: 140px" name="tv" class="column no-wrap flex-center">
+            <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
+                 src="/statics/images/team_2.jpg" width=150 height=150>
+            <div class="q-mt-md text-h6 text-center">
+              <span :style="'color:'+primaryColour">John Doe</span><br><span
+              class="text-overline">Lead Developer</span>
+            </div>
+            <div class="q-mt-md text-h6 text-center">
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
+              labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
+              labore et dolore magna aliqua.
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide style="padding-bottom: 140px" name="layers" class="column no-wrap flex-center">
+            <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
+                 src="/statics/images/team_3.jpg" width=150 height=150>
+            <div class="q-mt-md text-h6 text-center">
+              <span :style="'color:'+primaryColour">John Doe</span><br><span
+              class="text-overline">Product Owner</span>
+            </div>
+            <div class="q-mt-md text-h6 text-center">
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
+              labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut<br>
+              labore et dolore magna aliqua.
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
+      </div>
+    </div>
+    <div style="background: #f7f7f7" id="id_services">
+      <div class="row">
+        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+          <h5 class="text-center"><strong>Help - Support - Contributing</strong></h5>
+        </div>
+      </div>
+      <div class="q-pa-xl">
+        <div class="row q-col-gutter-sm ">
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <q-item class="box-shadow q-pa-none q-ml-xs ">
+              <q-item-section side :style="'background-color:' + primaryColour"
+                              class="q-pa-sm q-mr-none text-white">
+                <q-icon name="compare_arrows" size="65px"></q-icon>
+              </q-item-section>
+              <q-item-section class="q-pa-md q-ml-none">
+                <q-item-label class="text-h6 text-grey-9 text-uppercase">Contributing</q-item-label>
+                <q-item-label class="text-grey-8">Want to contribute to ServerPackCreator? Check out the <br>
+                  <strong>
+                    <a href="https://github.com/Griefed/ServerPackCreator/blob/main/CONTRIBUTING.md"
+                       rel="noreferrer noopener"
+                       target="_blank">Contributing-Guidelines</a>
+                  </strong>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <q-item class="box-shadow q-pa-none q-ml-xs">
+              <q-item-section side :style="'background-color:' + primaryColour"
+                              class="q-pa-sm q-mr-none text-white">
+                <q-icon name="far fa-life-ring" size="65px"></q-icon>
+              </q-item-section>
+              <q-item-section class="q-pa-md q-ml-none">
+                <q-item-label class="text-h6 text-grey-9 text-uppercase">Support</q-item-label>
+                <q-item-label class="text-grey-8">Encountered a bug in ServerPackCreator?<br>
+                  <strong>
+                    <a href="https://github.com/Griefed/ServerPackCreator/issues"
+                       rel="noreferrer noopener"
+                       target="_blank">Report issues on GitHub.</a>
+                  </strong>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <q-item class="box-shadow q-pa-none q-ml-xs q-mr-xs">
+              <q-item-section side :style="'background-color:' + primaryColour"
+                              class="q-pa-sm q-mr-none text-white">
+                <q-icon name="fas fa-book" size="65px"></q-icon>
+              </q-item-section>
+              <q-item-section class="q-pa-md q-ml-none">
+                <q-item-label class="text-h6 text-grey-9 text-uppercase">Wiki</q-item-label>
+                <q-item-label class="text-grey-8">Need help or details about ServerPackCreators features?<br>
+                  <strong>
+                    <a href="https://wiki.griefed.de/en/Documentation/ServerPackCreator/ServerPackCreator-Help"
+                       rel="noreferrer noopener"
+                       target="_blank">Check out the official Wiki</a>
+                  </strong>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>
+        </div>
+        <div class="row q-col-gutter-sm q-mt-lg">
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <q-item class="box-shadow q-pa-none q-ml-xs ">
+              <q-item-section side :style="'background-color:' + primaryColour"
+                              class="q-pa-sm q-mr-none text-white">
+                <q-icon name="fas fa-code-branch" size="65px"></q-icon>
+              </q-item-section>
+              <q-item-section class="q-pa-md q-ml-none">
+                <q-item-label class="text-h6 text-grey-9 text-uppercase">Sources</q-item-label>
+                <q-item-label class="text-grey-8">Intereseted in the source code of ServerPackCreator?<br>
+                  <strong>
+                    <a href="https://github.com/Griefed/ServerPackCreator"
+                       rel="noreferrer noopener"
+                       target="_blank">See the publicly available GitHub-Repository</a>
+                  </strong>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <q-item class="box-shadow q-pa-none q-ml-xs">
+              <q-item-section side :style="'background-color:' + primaryColour"
+                              class="q-pa-sm q-mr-none text-white">
+                <q-icon name="fas fa-paper-plane" size="65px"></q-icon>
+              </q-item-section>
+              <q-item-section class="q-pa-md q-ml-none">
+                <q-item-label class="text-h6 text-grey-9 text-uppercase">Community</q-item-label>
+                <q-item-label class="text-grey-8">Want to talk to other users of ServerPackCreator, or the team?<br>
+                  <strong>
+                    <a href="https://discord.griefed.de/"
+                       rel="noreferrer noopener"
+                       target="_blank">Join the Discord server!</a>
+                  </strong>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <q-item class="box-shadow q-pa-none q-ml-xs q-mr-xs">
+              <q-item-section side :style="'background-color:' + primaryColour"
+                              class="q-pa-sm q-mr-none text-white">
+                <q-icon name="fab fa-wordpress" size="65px"></q-icon>
+              </q-item-section>
+              <q-item-section class="q-pa-md q-ml-none">
+                <q-item-label class="text-h6 text-grey-9 text-uppercase">News</q-item-label>
+                <q-item-label class="text-grey-8">I occasionally write blog-posts, sometimes Minecraft-related.<br>
+                  <strong>
+                    <a href="https://blog.griefed.de/"
+                       rel="noreferrer noopener"
+                       target="_blank">Check out the blog.</a>
+                  </strong>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>
+        </div>
+      </div>
+    </div>
   </q-layout>
 </template>
 
@@ -661,17 +659,6 @@ export default {
       return {
         width: '340px',
         height: '263px',
-        backgroundImage: `url('https://raw.githubusercontent.com/quasarframework/quasar-ui-qflashcard/dev/demo/src/statics/bgimg.jpg')`, // eslint-disable-line
-        textAlign: 'center',
-        boxShadow: '1px 1px 2px #e6e6e6',
-        display: 'inline-block'
-      }
-    },
-    team_style() {
-      return {
-        width: '260px',
-        height: '263px',
-        backgroundImage: `url('https://raw.githubusercontent.com/quasarframework/quasar-ui-qflashcard/dev/demo/src/statics/bgimg.jpg')`, // eslint-disable-line
         textAlign: 'center',
         boxShadow: '1px 1px 2px #e6e6e6',
         display: 'inline-block'
