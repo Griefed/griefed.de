@@ -11,9 +11,10 @@
       control-color="white"
       transition-prev="slide-right"
       transition-next="slide-left"
-      height="550px">
-      <q-carousel-slide class="q-pa-none" :name="1" img-src="~assets/serverpackcreator/powershell.webp">
-        <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.85) !important;">
+      height="600px">
+      <q-carousel-slide class="q-pa-none" style="word-wrap: break-word;display: block;"
+                        :name="1" img-src="~assets/serverpackcreator/powershell.webp">
+        <div class="full-height flex flex-center" style="background-color: rgba(0, 0, 0, 0.85) !important;">
           <div class="custom-caption">
             <div class="text-h2 main_line animation_2">
               SERVER PACKS <span class="text-orange-9">MADE EASY</span>
@@ -25,8 +26,9 @@
           </div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide class="q-pa-none" :name="2" img-src="~assets/serverpackcreator/linux.webp">
-        <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.85) !important;">
+      <q-carousel-slide class="q-pa-none" style="word-break: break-all;word-wrap: break-word;display: block;"
+                        :name="2" img-src="~assets/serverpackcreator/linux.webp">
+        <div class="full-height flex flex-center" style="background-color: rgba(0, 0, 0, 0.85) !important;">
           <div class="custom-caption">
             <div class="text-h2 main_line animation_2" style="font-size:65px;">
               POPULAR <span class="text-orange-9">MODLOADERS</span> SUPPORTED
@@ -38,8 +40,9 @@
           </div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide class="q-pa-none" :name="3" img-src="~assets/serverpackcreator/macos.webp">
-        <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.85) !important;">
+      <q-carousel-slide class="q-pa-none" style="word-break: break-all;word-wrap: break-word;display: block;"
+                        :name="3" img-src="~assets/serverpackcreator/macos.webp">
+        <div class="full-height flex flex-center" style="background-color: rgba(0, 0, 0, 0.85) !important;">
           <div class="custom-caption">
             <div class="text-h2 main_line animation_2" style="font-size:65px;">
               HIGHLY <span class="text-orange-9">CUSTOMIZABLE</span>
@@ -70,7 +73,6 @@
           <q-card-section>
             <q-icon size="110px" name="terminal" :style="'color:'+primaryColour"/>
             <div class="text-h6">CLI</div>
-
           </q-card-section>
 
           <q-card-section class="q-pt-none">
@@ -83,7 +85,6 @@
           <q-card-section>
             <q-icon size="110px" name="web" :style="'color:'+primaryColour"/>
             <div class="text-h6">WEB</div>
-
           </q-card-section>
 
           <q-card-section class="q-pt-none">
@@ -97,7 +98,6 @@
           <q-card-section>
             <q-icon size="110px" name="mdi-puzzle" :style="'color:'+primaryColour"/>
             <div class="text-h6">PLUGINS</div>
-
           </q-card-section>
 
           <q-card-section class="q-pt-none">
@@ -106,8 +106,8 @@
         </q-card>
       </div>
     </div>
-    <div class="quote">
-      <div class="q-pt-xl full-width full-height flex flex-center" style="background-color: #00000088 !important;">
+    <div>
+      <div class="q-pt-xl full-height flex flex-center" style="background-color: #00000088 !important;display: block;">
         <h3 class="text-white text-center"><strong>
           Working on an update to your modpack?<br>
           Want to play your favourite modpack with your friends?<br><br>
@@ -120,8 +120,8 @@
         </strong></h3>
       </div>
     </div>
-    <div class="pricing">
-      <div class="" style="background: #f7f7f7">
+    <div>
+      <div style="background: #f7f7f7">
         <div class="row">
           <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
             <h5 class="text-center text-grey-10"><strong>Features Excerpt</strong>
@@ -303,7 +303,7 @@
             <p>
                 And here we are.
             </p>
-            <span class="row flex-center no-wrap" style="margin-top: 45px;">
+            <span class="row flex flex-center" style="margin-top: 45px;">
               <img alt="GitHub all releases"
                    src="https://img.shields.io/github/downloads/griefed/serverpackcreator/total?color=c0ffee&label=GitHub%20Downloads&labelColor=325358&logo=GitHub&style=for-the-badge">
               <q-separator inset vertical color="accent" spaced/>
@@ -497,52 +497,60 @@
         </div>
       </div>
     </div>
-    <div>
-      <div style="background-color: #00000088 !important;">
-        <q-carousel
-          v-model="review_slide"
-          swipeable
-          animated
-          infinite
-          autoplay
-          arrows
-          navigation
-          padding
-          navigation-position="bottom"
-          class="text-white bg-transparent q-mx-xl"
-          height="600px">
-          <q-carousel-slide style="padding-bottom: 140px" class="column no-wrap flex-center" name="1">
-            <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/world-of-dragons">
-              <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
-                   src="~assets/serverpackcreator/testimonials/kreezxil.webp" width=150 height=150 alt="">
-            </a>
-            <div class="q-mt-md text-h6 text-center">
+    <div style="background-color: #00000088 !important;">
+      <q-carousel
+        animated
+        v-model="reviewSlide"
+        padding
+        arrows
+        swipeable
+        navigation
+        infinite
+        autoplay
+        control-color="white"
+        transition-prev="slide-right"
+        transition-next="slide-left"
+        height="700px"
+        class="bg-transparent text-white">
+        <q-carousel-slide style="padding-bottom: 160px" class="column flex flex-center" name="1">
+          <div class="q-mt-md text-h6 text-center">
+            <div>
               <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/world-of-dragons"
+                 rel="noreferrer noopener" target="_blank">
+                <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
+                     src="~assets/serverpackcreator/testimonials/kreezxil.webp" width=150 height=150 alt="">
+              </a>
+              <br>
+              <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/fantasy-minecraft-fabric"
                  rel="noreferrer noopener" target="_blank">
                 World of Dragons
               </a>
               <br>
               <span class="text-overline">by Kreezxil</span>
             </div>
-            <div class="q-mt-md text-h6 text-center">
+            <div>
               "Before ServerPackCreator I would use my own well-documented manual method to create server packs.<br>
               See <a href="https://kreezcraft.com/uupt" rel="noreferrer noopener" target="_blank">
               Forge Server from Forge Pack</a> and also
               <a href="https://kreezcraft.com/n0cp" rel="noreferrer noopener" target="_blank">
                 Fabric Server from a Fabric Pack
               </a>.<br>
-              The two methods are very similar but time consuming. ServerPackCreator (SPC) allows you to do all of that
+              The two methods are very similar but time consuming. ServerPackCreator (SPC) allows you to do all of
+              that
               with a few simple quick button clicks!<br>
               Because of this, I'm also a sponsor."
             </div>
-          </q-carousel-slide>
-          <q-carousel-slide style="padding-bottom: 140px" class="column no-wrap flex-center" name="2">
-            <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/fantasy-minecraft-fabric"
-               rel="noreferrer noopener" target="_blank">
-              <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
-                   src="~assets/serverpackcreator/testimonials/kyber_6.webp" width=150 height=150 alt="">
-            </a>
-            <div class="q-mt-md text-h6 text-center">
+          </div>
+        </q-carousel-slide>
+        <q-carousel-slide class="column flex flex-center" name="2">
+          <div class="q-mt-md text-h6 text-center">
+            <div>
+              <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/fantasy-minecraft-fabric"
+                 rel="noreferrer noopener" target="_blank">
+                <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
+                     src="~assets/serverpackcreator/testimonials/kyber_6.webp" width=150 height=150 alt="">
+              </a>
+              <br>
               <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/fantasy-minecraft-fabric"
                  rel="noreferrer noopener" target="_blank">
                 Fantasy Minecraft FABRIC
@@ -550,18 +558,22 @@
               <br>
               <span class="text-overline">by Kyber_6</span>
             </div>
-            <div class="q-mt-md text-h6 text-center">
+            <br>
+            <div>
               "ServerPackCreator has made the process of creating Server Packs for our Modpack much more quick and
               efficient."
             </div>
-          </q-carousel-slide>
-          <q-carousel-slide style="padding-bottom: 140px" class="column no-wrap flex-center" name="3">
-            <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/modded-oneblock-skyblock"
-               rel="noreferrer noopener" target="_blank">
-              <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
-                   src="~assets/serverpackcreator/testimonials/darkly.webp" width=150 height=150 alt="">
-            </a>
-            <div class="q-mt-md text-h6 text-center">
+          </div>
+        </q-carousel-slide>
+        <q-carousel-slide class="column flex-center" name="3">
+          <div class="q-mt-md text-h6 text-center">
+            <div>
+              <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/modded-oneblock-skyblock"
+                 rel="noreferrer noopener" target="_blank">
+                <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
+                     src="~assets/serverpackcreator/testimonials/darkly.webp" width=150 height=150 alt="">
+              </a>
+              <br>
               <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/modded-oneblock-skyblock"
                  rel="noreferrer noopener" target="_blank">
                 Modded Oneblock Skyblock
@@ -569,12 +581,13 @@
               <br>
               <span class="text-overline">by Darkly</span>
             </div>
-            <div class="q-mt-md text-h6 text-center">
+            <br>
+            <div>
               "Server pack creator is like a Instant Pot, it has everything you need to make a yummy server pack."
             </div>
-          </q-carousel-slide>
-        </q-carousel>
-      </div>
+          </div>
+        </q-carousel-slide>
+      </q-carousel>
     </div>
     <div style="background: #f7f7f7">
       <div class="row">
@@ -696,8 +709,10 @@
         </div>
       </div>
       <div class="text-center">
-        The <a href="https://github.com/mayank091193/vue-quasar-company-profile-website" rel="noreferrer noopener" target="_blank">vue-quasar-company-profile-website</a>-template,
-        by <a href="https://github.com/mayank091193" rel="noreferrer noopener" target="_blank">mayank091193</a>, was used in the creation of the
+        The <a href="https://github.com/mayank091193/vue-quasar-company-profile-website" rel="noreferrer noopener"
+               target="_blank">vue-quasar-company-profile-website</a>-template,
+        by <a href="https://github.com/mayank091193" rel="noreferrer noopener" target="_blank">mayank091193</a>, was
+        used in the creation of the
         ServerPackCreator-website.
       </div>
     </div>
@@ -717,7 +732,7 @@ export default {
   data() {
     return {
       slide: 1,
-      review_slide: '1',
+      reviewSlide: '1',
       bg_color: 'rgb(0, 163, 82)',
       hover: false,
       active: false,

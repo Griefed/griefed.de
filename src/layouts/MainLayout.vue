@@ -2,82 +2,72 @@
   <q-layout :class="$q.dark.isActive ? 'background_dark' : 'background'" view="hHh Lpr lff">
     <q-header :class="$q.dark.isActive ? 'header_dark' : 'header_normal'" elevated reveal>
       <q-toolbar class="shadow-5 toolbar">
-
         <q-item to="/">
+          <!--suppress CheckImageSize, HtmlUnknownAttribute -->
           <img :ratio="323/54" alt="header" src="~assets/header.webp" width="250">
         </q-item>
 
-<!--        <a href="" rel="noreferrer noopener" target="_blank">
-          <q-btn flat stretch to="/">
-            <span class="has-inline-color" style="color:#c0ffee">Home</span>
-          </q-btn>
-        </a>-->
+        <q-space></q-space>
 
-        <q-toolbar-title></q-toolbar-title>
-
-        <a href="https://blog.griefed.de" rel="noreferrer noopener" target="_blank">
-          <q-btn flat stretch>
-            <span class="has-inline-color" style="color:#c0ffee">News</span>
-          </q-btn>
-        </a>
-
-        <a href="" rel="noreferrer noopener" target="_blank">
-          <q-btn flat stretch to="/serverpackcreator">
-            <span class="has-inline-color" style="color:#c0ffee">ServerPackCreator</span>
-          </q-btn>
-        </a>
-
-        <a href="" rel="noreferrer noopener" target="_blank">
-          <q-btn flat stretch to="/Minecraft">
-            <span class="has-inline-color" style="color:#c0ffee">Minecraft</span>
-          </q-btn>
-        </a>
-
-        <a href="https://github.com/Griefed" rel="noreferrer noopener" target="_blank">
-          <q-btn flat stretch>
-            <span class="has-inline-color" style="color:#c0ffee">GitHub</span>
-          </q-btn>
-        </a>
-
-        <a href="https://hub.docker.com/u/griefed" rel="noreferrer noopener" target="_blank">
-          <q-btn flat stretch>
-            <span class="has-inline-color" style="color:#c0ffee">DockerHub</span>
-          </q-btn>
-        </a>
-
-        <a href="https://wiki.griefed.de/" rel="noreferrer noopener" target="_blank">
-          <q-btn flat stretch>
-            <span class="has-inline-color" style="color:#c0ffee">Wiki</span>
-          </q-btn>
-        </a>
-
-        <q-btn
-          :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
-          class="q-mr-xs"
-          dense
-          flat
-          round
-          @click="$q.fullscreen.toggle()">
-          <q-tooltip
-            v-close-popup
-            :disable="$q.platform.is.mobile">
-            {{ $q.fullscreen.isActive ? 'Exit Fullscreen' : 'Toggle Fullscreen' }}
-          </q-tooltip>
-        </q-btn>
-
-        <!--        <q-btn
-                  :icon="$q.dark.isActive ? 'nights_stay' : 'wb_sunny'"
-                  class="q-mr-xs"
-                  flat
-                  round
-                  @click="$q.dark.toggle()">
-                  <q-tooltip
-                    v-close-popup
-                    :disable="$q.platform.is.mobile">
-                    {{ $q.dark.isActive ? 'Disable Dark mode' : 'Enable Dark mode' }}
-                  </q-tooltip>
-                </q-btn>-->
-
+        <q-tabs shrink dense indicator-color="white">
+          <q-tab>
+            <a href="https://blog.griefed.de" rel="noreferrer noopener" target="_blank">
+              <q-btn flat stretch>
+                <span class="has-inline-color" style="color:#c0ffee">News</span>
+              </q-btn>
+            </a>
+          </q-tab>
+          <q-tab>
+            <a href="" rel="noreferrer noopener" target="_blank">
+              <q-btn flat stretch to="/serverpackcreator">
+                <span class="has-inline-color" style="color:#c0ffee">ServerPackCreator</span>
+              </q-btn>
+            </a>
+          </q-tab>
+          <q-tab>
+            <a href="" rel="noreferrer noopener" target="_blank">
+              <q-btn flat stretch to="/Minecraft">
+                <span class="has-inline-color" style="color:#c0ffee">Minecraft</span>
+              </q-btn>
+            </a>
+          </q-tab>
+          <q-tab>
+            <a href="https://github.com/Griefed" rel="noreferrer noopener" target="_blank">
+              <q-btn flat stretch>
+                <span class="has-inline-color" style="color:#c0ffee">GitHub</span>
+              </q-btn>
+            </a>
+          </q-tab>
+          <q-tab>
+            <a href="https://hub.docker.com/u/griefed" rel="noreferrer noopener" target="_blank">
+              <q-btn flat stretch>
+                <span class="has-inline-color" style="color:#c0ffee">DockerHub</span>
+              </q-btn>
+            </a>
+          </q-tab>
+          <q-tab>
+            <a href="https://wiki.griefed.de/" rel="noreferrer noopener" target="_blank">
+              <q-btn flat stretch>
+                <span class="has-inline-color" style="color:#c0ffee">Wiki</span>
+              </q-btn>
+            </a>
+          </q-tab>
+          <q-tab>
+            <q-btn
+              :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
+              class="q-mr-xs"
+              dense
+              flat
+              round
+              @click="$q.fullscreen.toggle()">
+              <q-tooltip
+                v-close-popup
+                :disable="$q.platform.is.mobile">
+                {{ $q.fullscreen.isActive ? 'Exit Fullscreen' : 'Toggle Fullscreen' }}
+              </q-tooltip>
+            </q-btn>
+          </q-tab>
+        </q-tabs>
       </q-toolbar>
     </q-header>
 
