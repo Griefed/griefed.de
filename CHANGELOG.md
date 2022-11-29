@@ -1,3 +1,16 @@
+## [1.6.9](https://git.griefed.de/Griefed/griefed-de/compare/1.6.8...1.6.9) (2022-11-29)
+
+
+### 🦊 CI/CD
+
+* Prevent unnecessary CI runs after a release was generated. ([dbe6521](https://git.griefed.de/Griefed/griefed-de/commit/dbe6521cac43fb0c96e4b08c25e8788172dc7ce5))
+
+
+### 🛠 Fixes
+
+* Correct link to Kreezxils modpack. ([ee0bcd1](https://git.griefed.de/Griefed/griefed-de/commit/ee0bcd160d4ad76f6aeb1b5072c5e1c9e6d7daf3))
+* Readibility in platform cards ([272be71](https://git.griefed.de/Griefed/griefed-de/commit/272be718e803b48fe506e985828f4cb25cbd98c8))
+
 ## [1.6.8](https://git.griefed.de/Griefed/griefed-de/compare/1.6.7...1.6.8) (2022-11-29)
 
 
