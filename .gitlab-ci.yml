@@ -7,13 +7,13 @@ services:
   - name: ghcr.io/griefed/gitlab-ci-cd:2.2.3
     alias: docker
 
-image: ghcr.io/griefed/gitlab-ci-cd:2.2.3
-
 workflow:
   rules:
     - if: '$CI_MERGE_REQUEST_EVENT_TYPE == "detached"'
       when: never
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: never
+    - if: '$CI_COMMIT_TITLE =~ /^RELEASE:.+$/ && $CI_COMMIT_BRANCH'
       when: never
     - when: always
 
