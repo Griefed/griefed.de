@@ -443,24 +443,27 @@
       <br>
       <div class="row text-center" style="padding-bottom: 40px">
         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-          <span v-for="index in 3" :key="index">
+          <span v-for="index in 3" :key="index"  class="text-bold">
             <q-flashcard :no-hover="hover" :style="styleTop">
               <q-flashcard-section transition="nudge-in" :active="active">
                 <img :src="require(`assets/serverpackcreator/cards/${index}.png`)" width=340 height=263 alt="">
               </q-flashcard-section>
               <q-flashcard-section transition="fade-in" class="fit" :active="active">
-                <div class="fit" :style="background_style"></div>
-                <q-flashcard-section v-if="index < 4" transition="drop-down" class="text-center my-header"
+                <div class="fit" :style="background_style"/>
+                <q-flashcard-section v-if="index <= 3" transition="drop-down" class="text-center my-header"
                                      :active="active">
                   CLI Mode
                 </q-flashcard-section>
-                <q-flashcard-section v-else transition="drop-down" class="text-center my-header" :active="active">
+                <q-flashcard-section v-if="index >= 4" transition="drop-down" class="text-center my-header"
+                                     :active="active">
                   GUI Mode
                 </q-flashcard-section>
-                <q-flashcard-section v-if="index < 4" transition="slide-up-in" class="my-text" :active="active">
+                <q-flashcard-section v-if="index <= 3" transition="slide-up-in" class="my-text"
+                                     :active="active">
                   Generating server packs right from the commandline.
                 </q-flashcard-section>
-                <q-flashcard-section v-else transition="slide-up-in" class="my-text" :active="active">
+                <q-flashcard-section v-if="index >= 4" transition="slide-up-in" class="my-text"
+                                     :active="active">
                   Convenient, extensive and quick to configure and generate.
                 </q-flashcard-section>
               </q-flashcard-section>
@@ -478,13 +481,14 @@
               </q-flashcard-section>
               <q-flashcard-section transition="fade-in" class="fit" :active="active">
                 <div class="fit" :style="background_style"></div>
-                <q-flashcard-section v-if="index + 3 < 4" transition="drop-down" class="text-center my-header"
+                <q-flashcard-section v-if="index + 3 < 4" transition="slide-up-in" class="text-bold text-center my-header"
                                      :active="active">
                   CLI Mode
                 </q-flashcard-section>
-                <q-flashcard-section v-else transition="drop-down" class="text-center my-header" :active="active">
+                <q-flashcard-section v-else transition="slide-up-in" class="text-center my-header" :active="active">
                   GUI Mode
                 </q-flashcard-section>
+
                 <q-flashcard-section v-if="index + 3 < 4" transition="slide-up-in" class="my-text" :active="active">
                   Generating server packs right from the commandline.
                 </q-flashcard-section>
@@ -842,9 +846,10 @@ export default {
   background-color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   margin: 20px 0 0 68px;
-  padding: 25px;
+  padding: 10px;
+  font-weight: bold;
 }
 
 .my-text {
@@ -853,11 +858,12 @@ export default {
   height: 90px;
   color: white;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   margin: 79px 0 0 0;
   padding: 20px;
   line-height: normal;
   font-family: Georgia, serif;
+  font-weight: bold;
   font-style: italic;
 }
 
