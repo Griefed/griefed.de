@@ -521,7 +521,7 @@
                      src="~assets/serverpackcreator/testimonials/kreezxil.webp" width=150 height=150 alt="">
               </a>
               <br>
-              <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/fantasy-minecraft-fabric"
+              <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/world-of-dragons"
                  rel="noreferrer noopener" target="_blank">
                 World of Dragons
               </a>
