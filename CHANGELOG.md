@@ -1,3 +1,20 @@
+## [1.6.8](https://git.griefed.de/Griefed/griefed-de/compare/1.6.7...1.6.8) (2022-11-29)
+
+
+### 🦊 CI/CD
+
+* Only build Docker images for amd64 as we do not need the others for the homepage. ([eda72da](https://git.griefed.de/Griefed/griefed-de/commit/eda72da463ca414725ef98df3b9adc7b44053f6e))
+
+
+### 🛠 Fixes
+
+* Fix header menu not being accessible on mobile. Fix SPC page not being responsible and properly scaling on mobile or small screens. ([d76470c](https://git.griefed.de/Griefed/griefed-de/commit/d76470cffef4e99c3baf31fb4b9cb737bce37e3b))
+
+
+### Other
+
+* Update version ([d0b4a28](https://git.griefed.de/Griefed/griefed-de/commit/d0b4a282412322a5aefbef37ca348731768f0008))
+
 ## [1.6.7](https://git.griefed.de/Griefed/griefed-de/compare/1.6.6...1.6.7) (2022-11-29)
 
 
