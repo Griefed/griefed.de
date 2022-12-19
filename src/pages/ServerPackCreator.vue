@@ -106,173 +106,169 @@
         </q-card>
       </div>
     </div>
-    <div>
-      <div class="q-pt-xl full-height flex flex-center" style="background-color: #00000088 !important;display: block;">
-        <h3 class="text-white text-center"><strong>
-          Working on an update to your modpack?<br>
-          Want to play your favourite modpack with your friends?<br><br>
-          Run <span class="text-orange-9">ServerPackCreator</span> and BAM!<br>
-          You've got a server pack for your modpack.
-          <br>
-          <br>
-          <q-btn type="a" href="https://github.com/Griefed/ServerPackCreator/releases/latest" size="lg"
-                 :style="'background:'+ primaryColour +'; color: white'" label="Get The Latest Version"/>
-        </strong></h3>
-      </div>
+    <div class="q-pt-xl full-height flex flex-center" style="background-color: #00000088 !important;">
+      <h3 class="text-white text-center"><strong>
+        Working on an update to your modpack?<br>
+        Want to play your favourite modpack with your friends?<br><br>
+        Run <span class="text-orange-9">ServerPackCreator</span> and BAM!<br>
+        You've got a server pack for your modpack.
+        <br>
+        <br>
+        <q-btn type="a" href="https://github.com/Griefed/ServerPackCreator/releases/latest" size="lg"
+               :style="'background:'+ primaryColour +'; color: white'" label="Get The Latest Version"/>
+      </strong></h3>
     </div>
-    <div>
-      <div style="background: #f7f7f7">
-        <div class="row">
-          <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-            <h5 class="text-center text-grey-10"><strong>Features Excerpt</strong>
-              <br>
-              <span
-                class="text-center text-blue-grey-10 text-h6">The most important features in a quick overview</span>
-            </h5>
-          </div>
+    <div style="background: #f7f7f7">
+      <div class="row">
+        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+          <h5 class="text-center text-grey-10"><strong>Features Excerpt</strong>
+            <br>
+            <span
+              class="text-center text-blue-grey-10 text-h6">The most important features in a quick overview</span>
+          </h5>
         </div>
-        <div class="row q-col-gutter-sm q-px-xl">
-          <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 q-px-lg">
-            <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)"
-                    class="my-other-card text-center box-shadow" flat bordered>
-              <q-card-section class="text-white" style="background: #ec982f">
-                <div class="text-h6 text-center">
-                  FILES
-                </div>
-              </q-card-section>
-              <q-card-section class="q-pa-md">
-                <q-list dense padding style="border-bottom: 1px solid lightgrey;">
-                  <q-item>
-                    Exclude clientside-only mods
-                  </q-item>
-                  <q-item>
-                    Add any files and/or directories
-                  </q-item>
-                  <q-item>
-                    Custom, automatically scaled, server icon
-                  </q-item>
-                  <q-item>
-                    Custom server.properties
-                  </q-item>
-                </q-list>
-              </q-card-section>
-              <q-card-section>
-                <div class="text-center q-mt-xs">
-                  Fully customize which files and directories get added to your server pack.
-                  Automatically, or manually, exclude mods which could break the server. Let ServerPackCreator scale
-                  the server icon for your server. The GUI provides a preview of the server icon for you.
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 q-px-lg">
-            <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)"
-                    class="my-other-card text-center box-shadow" flat bordered>
-              <q-card-section class="text-white" style="background: #f4655f">
-                <div class="text-h6 text-center">
-                  MODLOADERS
-                </div>
-              </q-card-section>
-              <q-card-section class="q-pa-md">
-                <q-list dense padding style="border-bottom: 1px solid lightgrey;">
-                  <q-item>
-                    Forge
-                  </q-item>
-                  <q-item>
-                    Fabric
-                  </q-item>
-                  <q-item>
-                    Quilt
-                  </q-item>
-                  <q-item>
-                    Legacy Fabric
-                  </q-item>
-                </q-list>
-              </q-card-section>
-              <q-card-section>
-                <div class="text-center q-mt-xs">
-                  The most commonly used modloaders for Minecraft are supported. Start scripts shipped with every
-                  generated
-                  server pack take care of the modloader server installation. Let ServerPackCreator install the
-                  modloader
-                  server for immediate testing.
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 q-px-lg">
-            <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)"
-                    class="my-other-card text-center box-shadow" flat bordered>
-              <q-card-section class="text-white q-pa-md" style="background: #8b3bbd">
-                <div class="text-h6 text-center">
-                  ADVANCED
-                </div>
-              </q-card-section>
-              <q-card-section class="q-pa-md">
-                <q-list dense padding style="border-bottom: 1px solid lightgrey;">
-                  <q-item>
-                    Java Arguments / JVM flags
-                  </q-item>
-                  <q-item>
-                    Start script templating
-                  </q-item>
-                  <q-item>
-                    Minecraft Pre-releases and Snapshots
-                  </q-item>
-                  <q-item>
-                    Aikar's Flags
-                  </q-item>
-                </q-list>
-              </q-card-section>
-              <q-card-section>
-                <div class="text-center q-mt-xs">
-                  Customize the JVM flags, or use Aikar's flags, to run your server with. Create your own start
-                  script
-                  templates and use your own placeholders for script generation for maximum customization. Use
-                  Minecraft
-                  snapshots or pre-releases if you like living on the edge.
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 q-px-lg">
-            <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)"
-                    class="my-other-card text-center box-shadow" flat bordered>
-              <q-card-section class="text-white" style="background: #3b97d1">
-                <div class="text-h6 text-center">
-                  PLUGINS
-                </div>
-              </q-card-section>
-              <q-card-section class="q-pa-md">
-                <q-list dense padding style="border-bottom: 1px solid lightgrey;">
-                  <q-item>
-                    Configuration checks
-                  </q-item>
-                  <q-item>
-                    Server pack generation tasks
-                  </q-item>
-                  <q-item>
-                    Per server pack configurations and UIs
-                  </q-item>
-                  <q-item>
-                    Program wide configurations and UIs
-                  </q-item>
-                </q-list>
-              </q-card-section>
-              <q-card-section>
-                <div class="text-center q-mt-xs">
-                  Use plugins to add new features in various places. Custom actions to run before, during and after
-                  server pack generation. Custom configuration checks and UI elements on a per server pack basis,
-                  and ServerPackCreator wide settings and UI elements.
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
       </div>
+      <div class="row q-col-gutter-sm q-px-xl">
+        <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 q-px-lg">
+          <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)"
+                  class="my-other-card text-center box-shadow" flat bordered>
+            <q-card-section class="text-white" style="background: #ec982f">
+              <div class="text-h6 text-center">
+                FILES
+              </div>
+            </q-card-section>
+            <q-card-section class="q-pa-md">
+              <q-list dense padding style="border-bottom: 1px solid lightgrey;">
+                <q-item>
+                  Exclude clientside-only mods
+                </q-item>
+                <q-item>
+                  Add any files and/or directories
+                </q-item>
+                <q-item>
+                  Custom, automatically scaled, server icon
+                </q-item>
+                <q-item>
+                  Custom server.properties
+                </q-item>
+              </q-list>
+            </q-card-section>
+            <q-card-section>
+              <div class="text-center q-mt-xs">
+                Fully customize which files and directories get added to your server pack.
+                Automatically, or manually, exclude mods which could break the server. Let ServerPackCreator scale
+                the server icon for your server. The GUI provides a preview of the server icon for you.
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 q-px-lg">
+          <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)"
+                  class="my-other-card text-center box-shadow" flat bordered>
+            <q-card-section class="text-white" style="background: #f4655f">
+              <div class="text-h6 text-center">
+                MODLOADERS
+              </div>
+            </q-card-section>
+            <q-card-section class="q-pa-md">
+              <q-list dense padding style="border-bottom: 1px solid lightgrey;">
+                <q-item>
+                  Forge
+                </q-item>
+                <q-item>
+                  Fabric
+                </q-item>
+                <q-item>
+                  Quilt
+                </q-item>
+                <q-item>
+                  Legacy Fabric
+                </q-item>
+              </q-list>
+            </q-card-section>
+            <q-card-section>
+              <div class="text-center q-mt-xs">
+                The most commonly used modloaders for Minecraft are supported. Start scripts shipped with every
+                generated
+                server pack take care of the modloader server installation. Let ServerPackCreator install the
+                modloader
+                server for immediate testing.
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 q-px-lg">
+          <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)"
+                  class="my-other-card text-center box-shadow" flat bordered>
+            <q-card-section class="text-white q-pa-md" style="background: #8b3bbd">
+              <div class="text-h6 text-center">
+                ADVANCED
+              </div>
+            </q-card-section>
+            <q-card-section class="q-pa-md">
+              <q-list dense padding style="border-bottom: 1px solid lightgrey;">
+                <q-item>
+                  Java Arguments / JVM flags
+                </q-item>
+                <q-item>
+                  Start script templating
+                </q-item>
+                <q-item>
+                  Minecraft Pre-releases and Snapshots
+                </q-item>
+                <q-item>
+                  Aikar's Flags
+                </q-item>
+              </q-list>
+            </q-card-section>
+            <q-card-section>
+              <div class="text-center q-mt-xs">
+                Customize the JVM flags, or use Aikar's flags, to run your server with. Create your own start
+                script
+                templates and use your own placeholders for script generation for maximum customization. Use
+                Minecraft
+                snapshots or pre-releases if you like living on the edge.
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 q-px-lg">
+          <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)"
+                  class="my-other-card text-center box-shadow" flat bordered>
+            <q-card-section class="text-white" style="background: #3b97d1">
+              <div class="text-h6 text-center">
+                PLUGINS
+              </div>
+            </q-card-section>
+            <q-card-section class="q-pa-md">
+              <q-list dense padding style="border-bottom: 1px solid lightgrey;">
+                <q-item>
+                  Configuration checks
+                </q-item>
+                <q-item>
+                  Server pack generation tasks
+                </q-item>
+                <q-item>
+                  Per server pack configurations and UIs
+                </q-item>
+                <q-item>
+                  Program wide configurations and UIs
+                </q-item>
+              </q-list>
+            </q-card-section>
+            <q-card-section>
+              <div class="text-center q-mt-xs">
+                Use plugins to add new features in various places. Custom actions to run before, during and after
+                server pack generation. Custom configuration checks and UI elements on a per server pack basis,
+                and ServerPackCreator wide settings and UI elements.
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
     </div>
     <div class="row" style="background-color: #00000088 !important;">
       <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
