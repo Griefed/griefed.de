@@ -1,3 +1,16 @@
+## [1.6.10](https://git.griefed.de/Griefed/griefed-de/compare/1.6.9...1.6.10) (2022-12-19)
+
+
+### 🛠 Fixes
+
+* Correctly display background in SPC flavour block ([cf554ac](https://git.griefed.de/Griefed/griefed-de/commit/cf554aced4cdfd0c412b8f8352be0c1b86ead8b0))
+
+
+### Other
+
+* **deps:** update dependency @quasar/extras to v1.15.6 ([4d8819d](https://git.griefed.de/Griefed/griefed-de/commit/4d8819dda989f2a3c94252dba4756a0f7dcffcec))
+* **deps:** update dependency quasar to v2.10.2 ([79e2d9d](https://git.griefed.de/Griefed/griefed-de/commit/79e2d9d3e7a036f82f2ead65a8589b74a5bb663d))
+
 ## [1.6.9](https://git.griefed.de/Griefed/griefed-de/compare/1.6.8...1.6.9) (2022-11-29)
 
 
