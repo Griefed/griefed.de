@@ -9,9 +9,10 @@
       infinite
       autoplay
       control-color="white"
-      transition-prev="slide-right"
-      transition-next="slide-left"
-      height="600px">
+      transition-prev="jump-right"
+      transition-next="jump-left"
+      height="600px"
+      style="background-color: #000000 !important;">
       <q-carousel-slide class="q-pa-none" style="word-wrap: break-word;display: block;"
                         :name="1" img-src="~assets/serverpackcreator/powershell.webp">
         <div class="full-height flex flex-center" style="background-color: rgba(0, 0, 0, 0.85) !important;">
