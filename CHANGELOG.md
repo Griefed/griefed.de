@@ -1,3 +1,20 @@
+## [1.6.11](https://git.griefed.de/Griefed/griefed-de/compare/1.6.10...1.6.11) (2023-01-05)
+
+
+### 🛠 Fixes
+
+* Smooth transition for ServerPackCreator-page carousel ([34760cc](https://git.griefed.de/Griefed/griefed-de/commit/34760cc3a582a02c9247bdd46174e37e8244efb1))
+
+
+### Other
+
+* **deps:** update dependency @quasar/extras to v1.15.9 ([3faa955](https://git.griefed.de/Griefed/griefed-de/commit/3faa955ce3be84c6b1dc2b7f5affac40abd75ed5))
+* **deps:** update dependency core-js to v3.27.1 ([72d3e8c](https://git.griefed.de/Griefed/griefed-de/commit/72d3e8c954fb5fd6c222d026a1bcf854425f13c4))
+* **deps:** update dependency eslint to v8.31.0 ([45041a3](https://git.griefed.de/Griefed/griefed-de/commit/45041a3318b752a4292ff28160f962ae36af52e6))
+* **deps:** update dependency eslint-plugin-vue to v9.8.0 ([f6ea8ba](https://git.griefed.de/Griefed/griefed-de/commit/f6ea8baf7e0614903f53aea5187b60a976ef1609))
+* **deps:** update ghcr.io/griefed/gitlab-ci-cd docker tag to v2.2.5 ([06fd8fd](https://git.griefed.de/Griefed/griefed-de/commit/06fd8fde85da5669c2d9ba94cc95fdfcfd5cea62))
+* **deps:** update griefed/gitlab-ci-cd docker tag to v2.2.5 ([77c03d0](https://git.griefed.de/Griefed/griefed-de/commit/77c03d006f23cc3319b50ce85e515974be006a48))
+
 ## [1.6.10](https://git.griefed.de/Griefed/griefed-de/compare/1.6.9...1.6.10) (2022-12-19)
 
 
