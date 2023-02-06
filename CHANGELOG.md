@@ -1,3 +1,16 @@
+## [1.6.12](https://git.griefed.de/Griefed/griefed-de/compare/1.6.11...1.6.12) (2023-01-23)
+
+
+### 🦊 CI/CD
+
+* **deps:** bump griefed/gitlab-ci-cd from 2.2.0 to 2.2.4 ([67e47ee](https://git.griefed.de/Griefed/griefed-de/commit/67e47ee3f2d19fa711767338329df73a749158ef))
+* **deps:** bump terser from 5.10.0 to 5.14.2 ([ff0cad4](https://git.griefed.de/Griefed/griefed-de/commit/ff0cad4d2d30d24fc933c21102c6cde855ec63c0))
+
+
+### Other
+
+* Update GitHub workflows ([d7f6efb](https://git.griefed.de/Griefed/griefed-de/commit/d7f6efb258b17e62840e9c30aa67db6e16645409))
+
 ## [1.6.11](https://git.griefed.de/Griefed/griefed-de/compare/1.6.10...1.6.11) (2023-01-05)
 
 
