@@ -549,12 +549,12 @@
               <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/fantasy-minecraft-fabric"
                  rel="noreferrer noopener" target="_blank">
                 <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + primaryColour"
-                     src="~assets/serverpackcreator/testimonials/kyber_6.webp" width=150 height=150 alt="">
+                     src="~assets/serverpackcreator/testimonials/fantasy_minecraft.webp" width=150 height=150 alt="">
               </a>
               <br>
               <a style="color: #ed6b00" href="https://www.curseforge.com/minecraft/modpacks/fantasy-minecraft-fabric"
                  rel="noreferrer noopener" target="_blank">
-                Fantasy Minecraft FABRIC
+                Fantasy Minecraft
               </a>
               <br>
               <span class="text-overline">by Kyber_6</span>
