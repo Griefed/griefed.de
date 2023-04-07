@@ -1,3 +1,29 @@
+## [1.6.13](https://git.griefed.de/Griefed/griefed-de/compare/1.6.12...1.6.13) (2023-04-07)
+
+
+### 🛠 Fixes
+
+* Update branding of Fantasy Minecraft modpack as per the request by [@kyber-6](https://git.griefed.de/kyber-6) ([e47c0b4](https://git.griefed.de/Griefed/griefed-de/commit/e47c0b460fae99b173bf88badb4b74e1ebbd361b))
+
+
+### Other
+
+* **deps:** update dependency @quasar/extras to v1.15.10 ([6336893](https://git.griefed.de/Griefed/griefed-de/commit/6336893d4fdb052bf689f58fb65433fc7a65081a))
+* **deps:** update dependency @quasar/extras to v1.15.11 ([2c675e4](https://git.griefed.de/Griefed/griefed-de/commit/2c675e47ea6008c19523ed1e669017869890b111))
+* **deps:** update dependency @quasar/extras to v1.16.2 ([bd39217](https://git.griefed.de/Griefed/griefed-de/commit/bd392173220f5b1c3ea3ffdcb4090596469e6350))
+* **deps:** update dependency axios to v1 ([3b5d24e](https://git.griefed.de/Griefed/griefed-de/commit/3b5d24eb1cc175f1608b149e7919d9cafcd1a886))
+* **deps:** update dependency core-js to v3.27.2 ([51002c5](https://git.griefed.de/Griefed/griefed-de/commit/51002c5eef71047e438a2783384485b75c71feb6))
+* **deps:** update dependency eslint to v8.37.0 ([cc0b025](https://git.griefed.de/Griefed/griefed-de/commit/cc0b025b20a195629d02d15c53986b5711f5f85c))
+* **deps:** update dependency eslint-config-prettier to v8.6.0 ([a8a87a9](https://git.griefed.de/Griefed/griefed-de/commit/a8a87a948db7e0adcfe21cc8c6fd74c5ba624f76))
+* **deps:** update dependency eslint-webpack-plugin to v4 ([9c8d5a5](https://git.griefed.de/Griefed/griefed-de/commit/9c8d5a530deca798a45b920d5f4f9d1565fb4d7a))
+* **deps:** update dependency quasar to v2.11.10 ([3060a46](https://git.griefed.de/Griefed/griefed-de/commit/3060a46b15734d5d57901c2d79f53bf4b6cfd0bb))
+* **deps:** update dependency quasar to v2.11.7 ([138e072](https://git.griefed.de/Griefed/griefed-de/commit/138e072fdc81a8ebf52ff6c53efcf5b0934f04f4))
+* **deps:** update docker/build-push-action action to v4 ([f4c1f20](https://git.griefed.de/Griefed/griefed-de/commit/f4c1f208f7395f04561ef02f9e5c69f6a07d5fbe))
+* **deps:** update ghcr.io/griefed/gitlab-ci-cd docker tag to v2.2.7 ([c2f8925](https://git.griefed.de/Griefed/griefed-de/commit/c2f8925e5bf8ca3b1bbb2fc466873a8eb83c37d7))
+* **deps:** update ghcr.io/linuxserver/nginx docker tag to v1.22.1 ([ff635c4](https://git.griefed.de/Griefed/griefed-de/commit/ff635c4e703af6665c521e409e3202ba8afec8d6))
+* **deps:** update griefed/gitlab-ci-cd docker tag to v2.2.7 ([dc09861](https://git.griefed.de/Griefed/griefed-de/commit/dc09861c1ddb15de5e105a04609ebf36b89f4804))
+* **deps:** update griefed/gitlab-ci-cd docker tag to v2.2.9 ([873427c](https://git.griefed.de/Griefed/griefed-de/commit/873427c8272d183dcd7d2fe5ecf2151277b077cb))
+
 ## [1.6.12](https://git.griefed.de/Griefed/griefed-de/compare/1.6.11...1.6.12) (2023-01-23)
 
 
