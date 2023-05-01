@@ -7,8 +7,7 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') },
       { path: '/minecraft', component: () => import('pages/Minecraft.vue') },
       { path: '/about', component: () => import('pages/About.vue') },
-      { path: '/privacy', component: () => import('pages/Privacy.vue') },
-      { path: '/serverpackcreator', component: () => import('pages/ServerPackCreator.vue') }
+      { path: '/privacy', component: () => import('pages/Privacy.vue') }
     ]
   },
 
