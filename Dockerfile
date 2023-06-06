@@ -12,7 +12,7 @@ RUN \
   npm install && \
   quasar build
 
-FROM ghcr.io/linuxserver/nginx:1.22.1
+FROM ghcr.io/linuxserver/nginx:1.24.0
 
 LABEL maintainer="Griefed <griefed@griefed.de>"
 
