@@ -1,3 +1,10 @@
+## [1.6.14](https://git.griefed.de/Griefed/griefed-de/compare/1.6.13...1.6.14) (2023-05-01)
+
+
+### 🛠 Fixes
+
+* Remove tsparticles before version 1 support is officially removed. Upgrading to the 2.x-package-clusterfuck will not be considered. ([929fded](https://git.griefed.de/Griefed/griefed-de/commit/929fdedeb211b135bfc8e657f1061aac1f89cf2f))
+
 ## [1.6.13](https://git.griefed.de/Griefed/griefed-de/compare/1.6.12...1.6.13) (2023-04-07)
 
 

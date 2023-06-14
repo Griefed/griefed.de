@@ -1,4 +1,4 @@
-FROM griefed/gitlab-ci-cd:2.2.9 AS builder
+FROM griefed/gitlab-ci-cd:2.2.11 AS builder
 
 ARG BRANCH_OR_TAG=webservice
 ARG HOSTER=git.griefed.de
@@ -12,7 +12,7 @@ RUN \
   npm install && \
   quasar build
 
-FROM ghcr.io/linuxserver/nginx:1.22.1
+FROM ghcr.io/linuxserver/nginx:1.24.0
 
 LABEL maintainer="Griefed <griefed@griefed.de>"
 
