@@ -3,29 +3,26 @@
 
     <q-card-section class="my-section">
       <h3><strong>
-        Angaben gemaess § 5 TMG / Information according to § 5 TMG
+        Angaben gemaess § 5 TMG
       </strong></h3>
       <h5><strong>
         Alle Produktnamen, Logos und Marken sind Eigentum ihrer jeweiligen Inhaber.<br>
         Alle Firmen-, Produkt- und Servicenamen, die auf dieser Website verwendet werden, dienen nur zu
         Identifikationszwecken.<br>
-        Die Verwendung dieser Namen, Logos und Marken stellt keine Unterstützung dar.<br><br>
-
-        All product names, logos and trademarks are the property of their respective owners.<br>
-        All company, product and service names used on this website are for identification purposes only.<br>
-        The use of these names, logos and trademarks does not constitute endorsement.<br><br>
-
+        Die Verwendung dieser Namen, Logos und Marken stellt keine Unterstützung dar.<br>
+        <br>
+        <br>
         Kontakt/Contact:<br>
-        E-Mail: kontakt@griefed.de<br>
-        Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV /<br>Responsible for the content according to § 55 para. 2
-        RStV:<br>
-        Pondworth<br>
-        c/o Block Services<br>
-        Stuttgarter Str. 106<br>
-        70736 Fellbach<br>
+        E-Mail: contact@griefed.de<br>
+        <br>
+        Angaben gemäß § 5 TMG:<br>
+        David Hengstmann<br>
+        c/o PURE4U GbR<br>
+        Amtstraße 22<br>
+        44575 Castrop-Rauxel<br>
         Quelle/Source:
-        <a href="https://www.e-recht24.de/impressum-generator.html" rel="noreferrer noopener" target="_blank">
-          <span class="has-inline-color" style="color:#c0ffee">https://www.e-recht24.de/impressum-generator.html</span></a>
+        <a href="https://pure4u.de/impressum/" rel="noreferrer noopener" target="_blank">
+          <span class="has-inline-color" style="color:#c0ffee">https://pure4u.de/impressum/</span></a>
       </strong></h5>
     </q-card-section>
 
