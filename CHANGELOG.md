@@ -1,3 +1,31 @@
+## [1.8.0](https://git.griefed.de/Griefed/griefed-de/compare/1.7.0...1.8.0) (2024-01-03)
+
+
+### 🦊 CI/CD
+
+* Use docker proxy to reduce traffic ([30d7986](https://git.griefed.de/Griefed/griefed-de/commit/30d79865ca3d32a18a706a29526b53a418d4c0d8))
+
+
+### 🚀 Features
+
+* Add Mastodon tag for verification ([cca26c7](https://git.griefed.de/Griefed/griefed-de/commit/cca26c71f48c60307ad42a1e727450040931c890))
+
+
+### Other
+
+* **deps:** update dependency @babel/eslint-parser to v7.22.15 ([ecc6961](https://git.griefed.de/Griefed/griefed-de/commit/ecc6961d8c8748fdff3aeda93b1e5f9ea28453bd))
+* **deps:** update dependency @babel/eslint-parser to v7.22.6 ([873b1db](https://git.griefed.de/Griefed/griefed-de/commit/873b1dba82be6e98fff4cc163f7d5648e36c208b))
+* **deps:** update dependency @quasar/extras to v1.16.7 ([110531c](https://git.griefed.de/Griefed/griefed-de/commit/110531cd1ba8b54344aea746927831ae664701de))
+* **deps:** update dependency core-js to v3.31.0 ([841dee7](https://git.griefed.de/Griefed/griefed-de/commit/841dee75a3d782cc157c5406b1ffdda374927ce2))
+* **deps:** update dependency eslint to v8.44.0 ([aa97dc6](https://git.griefed.de/Griefed/griefed-de/commit/aa97dc6cdd5172d4ed10688b4c37dd2dc10ba02c))
+* **deps:** update dependency eslint-config-prettier to v9 ([71047e6](https://git.griefed.de/Griefed/griefed-de/commit/71047e6cc1bf36836f31c570c9989145a81c2407))
+* **deps:** update dependency eslint-plugin-vue to v9.15.1 ([f4f0b34](https://git.griefed.de/Griefed/griefed-de/commit/f4f0b3489654108b54eba6059487ac202f27c469))
+* **deps:** update dependency quasar to v2.12.3 ([29bc2f8](https://git.griefed.de/Griefed/griefed-de/commit/29bc2f8ad9210ed6418cf2926cb24c37a0b4b635))
+* **deps:** update ghcr.io/griefed/gitlab-ci-cd docker tag to v2.2.12 ([5d83bbb](https://git.griefed.de/Griefed/griefed-de/commit/5d83bbb5852c158afe2abf51c544e8b04711c9e9))
+* **deps:** update griefed/gitlab-ci-cd docker tag to v2.2.12 ([261ac78](https://git.griefed.de/Griefed/griefed-de/commit/261ac78a3b887aef362e5b83ebb6f814d69e0717))
+* **deps:** update griefed/gitlab-ci-cd docker tag to v2.2.14 ([d24c34e](https://git.griefed.de/Griefed/griefed-de/commit/d24c34e002e1d1919e990645975b39d6a5e974d8))
+* **deps:** update griefed/gitlab-ci-cd docker tag to v2.2.16 ([dd0fd07](https://git.griefed.de/Griefed/griefed-de/commit/dd0fd0784af36490f67aade0c1d916adc2a4a3a1))
+
 ## [1.7.0](https://git.griefed.de/Griefed/griefed-de/compare/1.6.14...1.7.0) (2023-06-14)
 
 
