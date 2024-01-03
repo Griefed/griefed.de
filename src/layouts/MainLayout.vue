@@ -1,4 +1,5 @@
 <template>
+  <a hidden rel="me" href="https://mastodon.griefed.de/@griefed">Mastodon</a>
   <q-layout :class="$q.dark.isActive ? 'background_dark' : 'background'" view="hHh Lpr lff">
     <q-header :class="$q.dark.isActive ? 'header_dark' : 'header_normal'" elevated reveal>
       <q-toolbar class="shadow-5 toolbar">
