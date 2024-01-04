@@ -1,3 +1,10 @@
+## [1.8.1](https://git.griefed.de/Griefed/griefed-de/compare/1.8.0...1.8.1) (2024-01-04)
+
+
+### 🛠 Fixes
+
+* Hopefully fix Mastodon verification ([429d43c](https://git.griefed.de/Griefed/griefed-de/commit/429d43c6b51eaa881954cde1aaf8356e7f1e4212))
+
 ## [1.8.0](https://git.griefed.de/Griefed/griefed-de/compare/1.7.0...1.8.0) (2024-01-03)
 
 
