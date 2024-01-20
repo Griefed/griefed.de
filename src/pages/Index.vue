@@ -1,4 +1,5 @@
 <template>
+  <a hidden rel="me" href="https://mastodon.griefed.de/@griefed">Mastodon</a>
   <q-carousel v-model="slide"
               :autoplay="6000" animated class="shadow-1 my-carousel"
               full-width height="870px" infinite
