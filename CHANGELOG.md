@@ -1,3 +1,10 @@
+## [1.8.2](https://git.griefed.de/Griefed/griefed-de/compare/1.8.1...1.8.2) (2024-01-20)
+
+
+### 🛠 Fixes
+
+* Update axios to 1.6.0 to clear CVE warnings ([d8643f4](https://git.griefed.de/Griefed/griefed-de/commit/d8643f488867aee776d740aaf39cf2ea7b0d11d7))
+
 ## [1.8.1](https://git.griefed.de/Griefed/griefed-de/compare/1.8.0...1.8.1) (2024-01-04)
 
 
