@@ -17,7 +17,7 @@
         <br>
         Angaben gemäß § 5 TMG:<br>
         David Hengstmann<br>
-        c/o PURE4U GbR<br>
+        c/o LEADERLY UG (haftungsbeschränkt)<br>
         Amtstraße 22<br>
         44575 Castrop-Rauxel<br>
         Quelle/Source:
