@@ -1,3 +1,13 @@
+## [1.8.3](https://git.griefed.de/Griefed/griefed-de/compare/1.8.2...1.8.3) (2025-02-06)
+
+### 🦊 CI/CD
+
+* Update ci-cd images used ([0368ae2](https://git.griefed.de/Griefed/griefed-de/commit/0368ae20880d40b9f65cd82c1d1f5875bcdf95bb))
+
+### 🛠 Fixes
+
+* Update changed about address ([ef42c0b](https://git.griefed.de/Griefed/griefed-de/commit/ef42c0b46c4f64d5ac23d8f761ba58271e092406))
+
 ## [1.8.2](https://git.griefed.de/Griefed/griefed-de/compare/1.8.1...1.8.2) (2024-01-20)
 
 
