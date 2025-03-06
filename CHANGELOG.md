@@ -1,3 +1,9 @@
+## [1.8.4](https://git.griefed.de/Griefed/griefed-de/compare/1.8.3...1.8.4) (2025-03-06)
+
+### 🛠 Fixes
+
+* Note to self, when using semantic release pipelines, make sure to prevent typos ([af786f9](https://git.griefed.de/Griefed/griefed-de/commit/af786f920053eef16f73a923bc28c04ff1ae9d0a))
+
 ## [1.8.3](https://git.griefed.de/Griefed/griefed-de/compare/1.8.2...1.8.3) (2025-02-06)
 
 ### 🦊 CI/CD
