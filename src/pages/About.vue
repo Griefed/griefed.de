@@ -14,6 +14,7 @@
         <br>
         Kontakt/Contact:<br>
         E-Mail: contact@griefed.de<br>
+      </strong></h5>
 <!--        <br>
         Angaben gemäß § 5 TMG:<br>
         David Hengstmann<br>
@@ -24,7 +25,6 @@
         <a href="https://pure4u.de/impressum/" rel="noreferrer noopener" target="_blank">
           <span class="has-inline-color" style="color:#c0ffee">https://pure4u.de/impressum/</span>
         </a>-->
-      </strong></h5>
     </q-card-section>
 
     <q-card-section class="my-section">
