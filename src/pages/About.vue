@@ -2,9 +2,9 @@
   <q-card class="my-card text-left text-white">
 
     <q-card-section class="my-section">
-      <h3><strong>
+<!--      <h3><strong>
         Angaben gemaess § 5 TMG
-      </strong></h3>
+      </strong></h3>-->
       <h5><strong>
         Alle Produktnamen, Logos und Marken sind Eigentum ihrer jeweiligen Inhaber.<br>
         Alle Firmen-, Produkt- und Servicenamen, die auf dieser Website verwendet werden, dienen nur zu
@@ -14,7 +14,7 @@
         <br>
         Kontakt/Contact:<br>
         E-Mail: contact@griefed.de<br>
-        <br>
+<!--        <br>
         Angaben gemäß § 5 TMG:<br>
         David Hengstmann<br>
         c/o LEADERLY UG (haftungsbeschränkt)<br>
@@ -22,7 +22,8 @@
         44575 Castrop-Rauxel<br>
         Quelle/Source:
         <a href="https://pure4u.de/impressum/" rel="noreferrer noopener" target="_blank">
-          <span class="has-inline-color" style="color:#c0ffee">https://pure4u.de/impressum/</span></a>
+          <span class="has-inline-color" style="color:#c0ffee">https://pure4u.de/impressum/</span>
+        </a>-->
       </strong></h5>
     </q-card-section>
 
