@@ -6,14 +6,16 @@ tagFormat: '${version}'
 
 # Global plugin options (will be passed to all plugins)
 preset: 'conventionalcommits'
-gitlabUrl: 'https://git.griefed.de/' # your gitlab url
 
 # Responsible for verifying conditions necessary to proceed with the release:
 # configuration is correct, authentication token are valid, etc...
 verifyConditions:
   - '@semantic-release/changelog'
   - '@semantic-release/git'
-  - '@semantic-release/gitlab'
+  - path: '@semantic-release/exec'
+    # Replaces @semantic-release/gitlab's credential check: fail before any
+    # commit or tag is pushed if the Forgejo token is missing.
+    verifyConditionsCmd: 'test -n "$RELEASE_TOKEN" || { echo "RELEASE_TOKEN is not set" >&2; exit 1; }'
 
 # Responsible for determining the type of the next release (major, minor or patch).
 # If multiple plugins with a analyzeCommits step are defined, the release type will be
@@ -119,9 +121,17 @@ prepare:
 
 # Responsible for publishing the release.
 publish:
-  - path: '@semantic-release/gitlab'
-    # Publish a GitLab release
-    #  (https://docs.gitlab.com/ce/user/project/releases/index.html#add-release-notes-to-git-tags)
+  - path: '@semantic-release/exec'
+    # Publish a Forgejo release
+    #  (https://forgejo.org/docs/latest/user/releases/)
+    # @semantic-release/gitlab speaks the GitLab API and cannot be pointed at
+    # Forgejo, so the release is created through Forgejo's own API instead.
+    # The notes are piped in on stdin rather than passed as an argument: they
+    # are arbitrary markdown and must not be interpreted by the shell.
+    publishCmd: |
+      cat <<'SEMANTIC_RELEASE_NOTES_EOF' | node ./.forgejo/scripts/forgejo-release.mjs "${nextRelease.version}"
+      ${nextRelease.notes}
+      SEMANTIC_RELEASE_NOTES_EOF
 
 success: false
 
