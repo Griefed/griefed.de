@@ -24,12 +24,6 @@ jobs:
         with:
           persist-credentials: false
 
-      # The Dockerfile clones the sources itself and needs the bare hostname,
-      # while `github.server_url` carries the scheme.
-      - name: Determine hoster
-        id: hoster
-        run: echo "host=${GITHUB_SERVER_URL#*://}" >> "$GITHUB_OUTPUT"
-
       - name: Set up Buildx
         uses: https://data.forgejo.org/docker/setup-buildx-action@v3
 
@@ -45,9 +39,6 @@ jobs:
           load: true
           no-cache: true
           tags: griefed-de:packagecheck
-          build-args: |
-            BRANCH_OR_TAG=${{ github.ref_name }}
-            HOSTER=${{ steps.hoster.outputs.host }}
 
       - name: Collect package versions
         shell: bash

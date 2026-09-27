@@ -77,13 +77,6 @@ jobs:
       - name: Checkout
         uses: https://data.forgejo.org/actions/checkout@v5
 
-      # The Dockerfile clones the sources itself and needs the bare hostname,
-      # while `github.server_url` carries the scheme. Derive instead of
-      # hardcoding so the workflow survives a move to another host.
-      - name: Determine hoster
-        id: hoster
-        run: echo "host=${GITHUB_SERVER_URL#*://}" >> "$GITHUB_OUTPUT"
-
       - name: Set up QEMU
         uses: https://data.forgejo.org/docker/setup-qemu-action@v3
 
@@ -98,9 +91,6 @@ jobs:
           platforms: linux/amd64
           push: false
           no-cache: true
-          build-args: |
-            BRANCH_OR_TAG=${{ github.ref_name }}
-            HOSTER=${{ steps.hoster.outputs.host }}
 
   # Replaces the `release` stage. GitLab: `only: master`, `except: tags` and
   # `except: $CI_COMMIT_TITLE =~ /^RELEASE:.+$/`.

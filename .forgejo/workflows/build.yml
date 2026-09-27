@@ -46,7 +46,7 @@ jobs:
           ghcr_user="${GHCR_USER:-$DOCKERHUB_USER}"
 
           # OCI references must be lowercase; `github.repository` is not
-          # (it is `Griefed/griefed-de`).
+          # (it is `Griefed/griefed.de`).
           forge_host="${GITHUB_SERVER_URL#*://}"
           forge_repo="$(echo "$GITHUB_REPOSITORY" | tr '[:upper:]' '[:lower:]')"
 
@@ -107,6 +107,3 @@ jobs:
           push: true
           no-cache: true
           tags: ${{ steps.prep.outputs.tags }}
-          build-args: |
-            BRANCH_OR_TAG=${{ github.ref_name }}
-            HOSTER=${{ steps.prep.outputs.host }}

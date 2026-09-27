@@ -26,10 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Get branch name
-        id: branch-name
-        uses: tj-actions/branch-names@v7
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
@@ -39,8 +35,5 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          build-args: |
-            BRANCH_OR_TAG=${{ steps.branch-name.outputs.current_branch }}
-            HOSTER=github.com
           platforms: linux/amd64,linux/arm64
           push: false

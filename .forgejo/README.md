@@ -79,6 +79,17 @@ Converted from `.gitlab-ci.yml` (removed in the same commit; recoverable via
 * **`build.yml` is guarded with `startsWith(github.ref, 'refs/tags/')`.**
   Without it, a manual `workflow_dispatch` from a branch would publish that
   branch as `:latest` over the released image.
+* **`Dockerfile` now builds from the build context.** It used to `git clone`
+  `https://$HOSTER/Griefed/griefed-de.git` inside the builder stage, which
+  built whatever was on the server rather than the commit the workflow checked
+  out, required the repository to be anonymously readable, and hardcoded a
+  repository path that does not exist on this instance (the repository is
+  `Griefed/griefed.de`). git reports that 404 as
+  `fatal: could not read Username for 'https://git.griefed.de'`, which is what
+  broke the `Docker build` job of run 3. The builder stage now `COPY`s the
+  context, so the `BRANCH_OR_TAG` and `HOSTER` build args are gone from all
+  workflows and a `.dockerignore` keeps `node_modules`/`dist` out of the
+  context.
 * **Renovate will not update the action pins.** The `uses:` references are
   fully qualified (`https://data.forgejo.org/...`) so that they resolve the same
   way regardless of the instance's `DEFAULT_ACTIONS_URL`. Renovate's
@@ -89,11 +100,6 @@ Converted from `.gitlab-ci.yml` (removed in the same commit; recoverable via
 
 ## Known issues inherited from before the migration
 
-* `Dockerfile` does not build from the build context — it `git clone`s
-  `https://$HOSTER/Griefed/griefed-de.git` inside the builder stage. This means
-  the image is built from what is on the server, not from what the workflow
-  checked out, and **it will fail if the repository is not anonymously
-  readable**.
 * `Dockerfile`'s builder stage still uses `griefed/gitlab-ci-cd:2.2.16`. It is
   only a Node + Quasar toolchain image, so it works, but the name is now
   misleading.
