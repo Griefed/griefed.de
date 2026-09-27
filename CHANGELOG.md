@@ -1,3 +1,15 @@
+## [1.9.0](https://git.griefed.de/Griefed/griefed.de/compare/1.8.4...1.9.0) (2026-09-27)
+
+### ✨ Improvements
+
+* Impressum be gone ([95c57f4](https://git.griefed.de/Griefed/griefed.de/commit/95c57f486a2893b7a915cfa8385e2e5088b04807))
+
+### 🦊 CI/CD
+
+* Build the Docker image from the build context ([7a17fd7](https://git.griefed.de/Griefed/griefed.de/commit/7a17fd754c92db23b999e6f14cb55dc0622180de))
+* Move to forgejo CI ([2ab4c46](https://git.griefed.de/Griefed/griefed.de/commit/2ab4c46951c5b7801d725e9a1bbf4f30c8322889))
+* Pin the changelog preset to a version the writer can render ([d294b06](https://git.griefed.de/Griefed/griefed.de/commit/d294b06f864c7e9cb4ef23cadd5e90bf824be49b))
+
 ## [1.8.4](https://git.griefed.de/Griefed/griefed-de/compare/1.8.3...1.8.4) (2025-03-06)
 
 ### 🛠 Fixes
