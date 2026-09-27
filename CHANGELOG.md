@@ -1,3 +1,9 @@
+## [1.9.1](https://git.griefed.de/Griefed/griefed.de/compare/1.9.0...1.9.1) (2026-09-27)
+
+### 🛠 Fixes
+
+* **ci:** Drop the registry key from the Docker Hub login ([97c4ab2](https://git.griefed.de/Griefed/griefed.de/commit/97c4ab2be2f8462df9e9337f2e0c706801047746))
+
 ## [1.9.0](https://git.griefed.de/Griefed/griefed.de/compare/1.8.4...1.9.0) (2026-09-27)
 
 ### ✨ Improvements
