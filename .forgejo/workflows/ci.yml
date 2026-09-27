@@ -121,6 +121,16 @@ jobs:
           # 20 the app itself is built with.
           node-version: '24'
 
+      # conventional-changelog-conventionalcommits is deliberately held at 9.x.
+      # From 10.0.0 on, the preset's templates require
+      # conventional-changelog-writer@9, but @semantic-release/release-notes-
+      # generator@14 — the newest there is, and what semantic-release@25 pins
+      # with `^14.1.0` — still depends on conventional-changelog-writer@^8. The
+      # mismatch is not caught at install time; it surfaces at the generateNotes
+      # step as
+      #   Error: Missing helper: "conventional-changelog-conventionalcommits
+      #   requires conventional-changelog-writer@9 or newer ..."
+      # Bump this only once release-notes-generator ships a writer@9 dependency.
       # Installed globally and deliberately NOT added to package.json: the
       # release toolchain needs Node 24 while the app is built on Node 20, so a
       # shared dependency tree would mean permanent EBADENGINE warnings and
@@ -137,7 +147,7 @@ jobs:
             @semantic-release/changelog@7.0.0 \
             @semantic-release/exec@7.1.0 \
             @semantic-release/git@11.0.1 \
-            conventional-changelog-conventionalcommits@10.4.0
+            conventional-changelog-conventionalcommits@9.3.1
 
       - name: Release
         run: semantic-release

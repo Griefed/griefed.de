@@ -64,6 +64,14 @@ generateNotes:
     linkReferences: true
     presetConfig:
       types:  # looks like it only works with 'conventionalcommits' preset
+        # Every type that `analyzeCommits` can turn into a release needs an
+        # entry here, otherwise the preset hides it and the commit that caused
+        # the version bump is missing from the notes. `breaking` and `improv`
+        # were absent, which is why none of the five `improv:` commits in this
+        # repository's history ever appeared in CHANGELOG.md.
+        - type: 'breaking'
+          section: '💥 Breaking changes'
+          hidden: false
         - type: 'build'
           section: '🦊 CI/CD'
           hidden: false
@@ -84,6 +92,9 @@ generateNotes:
           hidden: false
         - type: 'fix'
           section: '🛠 Fixes'
+          hidden: false
+        - type: 'improv'
+          section: '✨ Improvements'
           hidden: false
         - type: 'perf'
           section: '⏩ Performance'
