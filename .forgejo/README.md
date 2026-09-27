@@ -90,6 +90,19 @@ Converted from `.gitlab-ci.yml` (removed in the same commit; recoverable via
   context, so the `BRANCH_OR_TAG` and `HOSTER` build args are gone from all
   workflows and a `.dockerignore` keeps `node_modules`/`dist` out of the
   context.
+* **The Docker Hub login step must not set `registry:`.** Docker Hub is the one
+  registry whose credentials are filed under a canonical key,
+  `https://index.docker.io/v1/`, rather than under its hostname. `docker login`
+  only rewrites the server address to that key when the argument is empty or
+  exactly `docker.io`, so `registry: index.docker.io` filed the credential
+  under `index.docker.io` and buildkit — which looks Docker Hub up under the
+  canonical key for host `registry-1.docker.io` — never found it. The push went
+  out anonymously and Docker Hub answered `insufficient_scope: authorization
+  failed`, on a step whose login had reported success moments earlier. `ghcr.io`
+  and the Forgejo registry are ordinary hosts and do take `registry:`. The tell
+  in a build log is a missing `[auth] <repo>:pull,push token for
+  registry-1.docker.io` line: if buildx never asked for a Docker Hub token, it
+  had no credentials to ask with.
 * **Renovate will not update the action pins.** The `uses:` references are
   fully qualified (`https://data.forgejo.org/...`) so that they resolve the same
   way regardless of the instance's `DEFAULT_ACTIONS_URL`. Renovate's

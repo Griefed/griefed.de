@@ -64,10 +64,28 @@ jobs:
           echo "ghcr_user=${ghcr_user}" >> "$GITHUB_OUTPUT"
           echo "host=${forge_host}" >> "$GITHUB_OUTPUT"
 
+      # No `registry:` on purpose — it must be omitted (or be exactly
+      # `docker.io`) for Docker Hub. `docker login` only rewrites the server
+      # address to the canonical credential key when the argument is empty or
+      # `docker.io`:
+      #
+      #   if opts.serverAddress != "" && opts.serverAddress != DefaultNamespace {
+      #       serverAddress = opts.serverAddress      // kept verbatim
+      #   } else {
+      #       serverAddress = IndexServer             // https://index.docker.io/v1/
+      #   }
+      #
+      # so `registry: index.docker.io` stored the credential under the literal
+      # key `index.docker.io`, while buildkit looks Docker Hub up under
+      # `https://index.docker.io/v1/` for host `registry-1.docker.io`
+      # (authprovider.go, DockerHubConfigfileKey). The lookup missed, buildx
+      # pushed anonymously, and the token endpoint answered with a pull-only
+      # scope — surfacing as `insufficient_scope: authorization failed` on a
+      # step whose login had just reported success. The tell is the absent
+      # `[auth] ... token for registry-1.docker.io` line in the build log.
       - name: Log in to Docker Hub
         uses: https://data.forgejo.org/docker/login-action@v3
         with:
-          registry: index.docker.io
           username: ${{ vars.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
