@@ -1,3 +1,9 @@
+## [1.9.2](https://git.griefed.de/Griefed/griefed.de/compare/1.9.1...1.9.2) (2026-09-28)
+
+### 🦊 CI/CD
+
+* Update installed packages in Docker container. ([c548541](https://git.griefed.de/Griefed/griefed.de/commit/c548541ee55af6e741d58b5edac231addad14699))
+
 ## [1.9.1](https://git.griefed.de/Griefed/griefed.de/compare/1.9.0...1.9.1) (2026-09-27)
 
 ### 🛠 Fixes
