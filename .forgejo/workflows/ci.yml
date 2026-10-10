@@ -35,8 +35,15 @@ jobs:
       - name: Set up Node.js
         uses: https://data.forgejo.org/actions/setup-node@v5
         with:
-          # package.json engines: node >= 16.9.1. @quasar/app 3.x is not
-          # compatible with current LTS, so this is pinned to 20.
+          # Pinned rather than ranged so CI is reproducible. Nothing in the
+          # tree declares an upper bound (@quasar/app 3.3.3 says
+          # `node >= 12.22.1`, quasar `>= 10.18.1`), and webpack 5.64.3 is past
+          # the 5.61 fix for ERR_OSSL_EVP_UNSUPPORTED, so Node 17+ needs no
+          # --openssl-legacy-provider. The release image's builder stage
+          # (griefed/gitlab-ci-cd:2.8.0) ships Node 22 and builds this tree
+          # cleanly, so 22 is the verified-good version; 20 is simply the
+          # conservative floor. Consider moving this to 22 to test on the same
+          # Node the published image is built with.
           node-version: '20'
           # Replaces the GitLab `cache: paths: [node_modules/]`. Caches the npm
           # download cache (~/.npm) rather than node_modules, which is the
