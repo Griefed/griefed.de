@@ -103,13 +103,31 @@ Converted from `.gitlab-ci.yml` (removed in the same commit; recoverable via
   in a build log is a missing `[auth] <repo>:pull,push token for
   registry-1.docker.io` line: if buildx never asked for a Docker Hub token, it
   had no credentials to ask with.
-* **Renovate will not update the action pins.** The `uses:` references are
-  fully qualified (`https://data.forgejo.org/...`) so that they resolve the same
-  way regardless of the instance's `DEFAULT_ACTIONS_URL`. Renovate's
-  `github-actions` manager does scan `.forgejo/workflows`, but it has no
-  working story yet for full-URL Forgejo actions
-  ([renovate#31666](https://github.com/renovatebot/renovate/discussions/31666)),
-  so these need bumping by hand for now.
+* **Renovate does update the action pins.** The `uses:` references are fully
+  qualified (`https://data.forgejo.org/...`) so that they resolve the same way
+  regardless of the instance's `DEFAULT_ACTIONS_URL`, and that is the form
+  Renovate handles natively. Its `github-actions` manager scans
+  `.forgejo/workflows` — the default file pattern is
+  `/(^|/)(workflow-templates|\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\.ya?ml$/`
+  — and has parsed the `https://host/owner/repo@ref` form since
+  [#24336](https://github.com/renovatebot/renovate/pull/24336)
+  (*Support for Gitea and Forgejo actions within `github-actions` manager*,
+  2023-09-10). It splits the hostname out of the ref, recognises Forgejo from
+  it, and queries the forgejo-tags datasource against that host rather than
+  github.com.
+  [renovate#31666](https://github.com/renovatebot/renovate/discussions/31666)
+  is sometimes read as saying otherwise, but it asks for the opposite case:
+  resolving a *bare* `uses: actions/checkout@v5` against the instance's
+  `DEFAULT_ACTIONS_URL` instead of assuming github.com. Renovate's parser
+  defaults a ref with no hostname to `github.com`, so bare refs would indeed go
+  unresolved — full URLs sidestep that entirely.
+
+* **`renovate.json` was modernized alongside this migration.** `config:base` ->
+  `config:recommended`; the old name only still resolves through Renovate's
+  `removedPresets` compatibility map. The `packageRules` entry was dropped
+  entirely -- it re-extended the very preset already applied repo-wide, scoped
+  to `package.json`, which did nothing. `renovate-config-validator` previously
+  reported `WARN: Config migration necessary` and now passes clean.
 
 ## Known issues inherited from before the migration
 

@@ -1,13 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
-  ],
-  "packageRules": [
-    {
-      "extends": "config:base",
-      "matchPaths": ["package.json"]
-    }
+    "config:recommended"
   ],
   "labels": ["dependencies"],
   "assignees": ["Griefed"]
